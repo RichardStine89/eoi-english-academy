@@ -1,0 +1,76 @@
+# Usar la academia en ChatGPT
+
+Para consultar un archivo de Windows desde ChatGPT, adjúntalo de forma explícita o aporta el texto necesario. Dentro de ChatGPT, elige también fuentes conectadas autorizadas cuando estén disponibles. Los enlaces relativos entre archivos Markdown sirven al abrirlos en el repositorio. El [expediente principal está en Google Sheets](expedientes.md), con acceso privado por alumno y respaldo JSON opcional.
+
+## Configuración privada recomendada
+
+1. Abre ChatGPT en el navegador y usa la experiencia **Chat**. Cada alumno crea su propio proyecto privado desde su cuenta, `EOI English Academy · alumno-01` o `EOI English Academy · alumno-02`. Selecciona **Memoria solo del proyecto** si aparece. Si tu cuenta no ofrece proyectos, abre un chat privado dedicado a la academia y vuelve a facilitar la unidad y el contexto del expediente cuando haga falta. [Proyectos en ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt)
+2. En cada proyecto añade [docencia.md](docencia.md) como fuente. En **Configuración del proyecto**, pega el texto siguiente. Cambia `alumno-01` por `alumno-02` en el segundo proyecto. Si usas un chat temporal, pega ese texto y adjunta la guía docente al abrir el chat.
+
+   > Eres el tutor de EOI English Academy para alumno-01. Aplica la guía docencia.md. Antes de empezar, lee el código y la revisión del único Google Sheets privado autorizado. Si hay otro código, revisiones contradictorias o falta acceso, pide el contexto correcto. Usa el nivel y la unidad confirmados o inicia el diagnóstico si siguen pendientes. En un simulacro, espera la entrega explícita antes de aceptar la clave o mostrar correcciones. Propón una actualización con evidencia. Aplica solo los cambios autorizados y compruébalos con una lectura posterior.
+
+3. Conecta la aplicación Google Drive con la cuenta autorizada. Abre el libro del alumno desde ese proyecto o indica su enlace en privado. Comprueba el acceso pidiendo una lectura del código y la revisión, sin editar celdas. Si la acción de lectura o escritura no está disponible, sigue el [flujo de expedientes](expedientes.md). Adjunta la unidad pertinente y utiliza la [matriz curricular](curriculo-eoi.md) y el [manifiesto de materiales](examenes/manifiesto-chatgpt.md) cuando hagan falta. [Aplicación Google Drive](https://help.openai.com/en/articles/10929079-google-drive-app-and-setup-in-chatgpt) · [Subida de archivos y audio](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt)
+4. Revisa **Configuración → Controles de datos** antes de adjuntar archivos privados. En una cuenta personal, puedes desactivar **Mejorar el modelo para todos**. Los adjuntos se procesan en ChatGPT y pueden quedar guardados en el proyecto o en Biblioteca. Si quieres retirar un adjunto, comprueba también Biblioteca, donde puede existir una copia por separado. Usa únicamente los materiales y extractos autorizados. Guarda el inventario con rutas, las evidencias completas y cualquier respaldo en almacenamiento privado. [Controles de datos](https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt) · [Retención de chats y archivos](https://help.openai.com/en/articles/8983778-chat-and-file-retention-in-chatgpt)
+
+## Alta del alumno 02 con ChatGPT Free
+
+1. Desde la cuenta de Google del alumno 02, [crea el libro vacío del expediente](expedientes.md#alta-del-expediente-del-alumno-02). Abre ChatGPT con la cuenta gratuita del alumno 02 y crea el proyecto privado indicado arriba. Guarda en el proyecto la guía docente y la matriz. Facilita la unidad en curso de forma individual para respetar el límite de archivos del plan. [Proyectos en Free](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) · [Límites de Free](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq)
+2. En el proyecto, busca **Google Drive** en **Configuración → Plugins** o **Aplicaciones**. Si aparece, conecta la cuenta de Google que puede abrir el libro del alumno 02. Facilita el enlace privado y pide que lea `Resumen!B2:B3`. Debe devolver el código del alumno y la revisión que ves en Sheets. La disponibilidad del conector y las acciones depende de la cuenta y sus permisos. [Google Drive en ChatGPT](https://help.openai.com/en/articles/10929079-google-drive-app-and-setup-in-chatgpt)
+3. Si falta el conector o la lectura, abre el libro en el navegador y aporta al chat un extracto fechado con código, revisión y contexto de la sesión. Si falta la escritura, aplica la propuesta autorizada directamente en Sheets y vuelve a leer las celdas. La barra lateral de ChatGPT para Google Sheets es una opción separada disponible en Free con uso limitado. [ChatGPT para Google Sheets](https://help.openai.com/en/articles/20001063-chatgpt-for-excel-and-google-sheets)
+4. Para exámenes, el responsable facilita únicamente el cuadernillo del candidato y el MP3 de la prueba elegida. La cuenta de Google receptora necesita acceso a esos archivos. Comparte la corrección por separado después de la entrega. Si el chat alcanza el límite de adjuntos, aporta un extracto autorizado de la consigna y reproduce el MP3 desde Drive o en local. Si alcanza el límite de Voz, deja la parte oral pendiente y retómala cuando vuelva a estar disponible. [Voz en ChatGPT](https://help.openai.com/en/articles/20001274-chatgpt-voice)
+
+## Usar la biblioteca privada de Drive en una sesión
+
+1. Elige la convocatoria y los identificadores en el [catálogo](examenes/README.md). Busca los archivos autorizados en Drive por nivel y convocatoria y contrasta la ruta en el inventario privado cuando haga falta. Usa los identificadores del catálogo para comunicarte con ChatGPT. Conserva los enlaces de Drive, las ubicaciones y el inventario completo en el ámbito privado.
+2. En el chat de la prueba aporta solo el enlace privado o la fuente concreta del PDF del candidato. Pide que lea la cabecera, la destreza y el número de tareas para comprobar el acceso. Si la conexión solo muestra el título o no da acceso a las páginas, abre el PDF en Drive y adjunta una copia autorizada o captura de las páginas necesarias. Selecciona cada archivo de la sesión por separado. La carpeta entera contiene materiales de corrección y queda fuera del contexto del simulacro. [Lectura por enlace en ChatGPT](https://help.openai.com/en/articles/10929079-google-drive-app-and-setup-in-chatgpt) · [Fuentes de proyectos en ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt)
+3. Para los modelos A1 y A2 con soluciones impresas en el mismo PDF, usa la copia privada que contenga exclusivamente las páginas indicadas en `paginas_candidato`, o adjunta un recorte autorizado de esas páginas. Reserva el PDF íntegro, las claves y las transcripciones hasta la entrega explícita. Tras «Entrego el examen», aporta solo la clave cotejada de esa destreza. Consulta el [manifiesto](examenes/manifiesto-chatgpt.md) para los dos momentos de la sesión.
+4. Reproduce el MP3 en el navegador desde Drive, donde sea posible, o en un reproductor local. Mantén las pausas y repeticiones indicadas y coteja la pista con el cuadernillo antes de calificar. Un enlace de Drive permite localizar el archivo. La posibilidad de que ChatGPT analice un adjunto de audio depende de la superficie y sus límites. [Vista previa de audio en Google Drive](https://support.google.com/drive/answer/37603?hl=en-BS) · [Archivos y audio en ChatGPT](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt)
+5. Si hay una actualización del expediente, usa únicamente el Google Sheets autorizado del alumno activo. Aplica cambios directamente solo si dispones de la acción de escritura y se han autorizado. Comprueba el resultado con una lectura nueva según el [protocolo de expedientes](expedientes.md#aplicar-un-cambio-en-google-sheets).
+
+## Documentos, audio y voz
+
+| Opción | Uso durante la clase |
+|---|---|
+| **Adjuntar Markdown, JSON, PDF o imágenes al chat** | Pide que confirme encabezado, nivel, convocatoria y número de tareas antes de utilizar un PDF. Si alguna página escaneada o imagen no se interpreta, aporta una captura del fragmento autorizado o copia el texto pertinente. Los PDF guardados como fuente de proyecto y los adjuntos directos pueden tratar las imágenes de forma distinta. Si el PDF es una clave, aplica esta comprobación después de la entrega. |
+| **Reproducir el MP3 en Drive o en Windows** | Abre el audio en Drive o en un reproductor y conserva las preguntas, respuestas, corrección y registro en ChatGPT. Esta vía funciona aunque el chat no procese audio adjunto. Si el audio y el cuadernillo no coinciden, suspende la corrección con clave e identifica el material como pendiente. |
+| **Adjuntar un MP3 en Chat** | OpenAI documenta subidas de audio en suscripciones de pago elegibles. La transcripción con **GPT‑6 en Instant** en Chat admite hasta seis minutos por grabación y depende también de la región, versión de la aplicación y configuración. Poder seleccionar o previsualizar el MP3 no demuestra que ChatGPT pueda interpretarlo. Si quieres probar esta función, usa primero una grabación breve que puedas compartir y comprueba la salida con el original. Para audios de examen largos usa la reproducción local. Guarda cualquier transcripción para después de la entrega. |
+| **Usar Voz de ChatGPT** | Haz las intervenciones, turnos y práctica de pronunciación con el micrófono. Si conservas el resultado de una actividad de voz, identifica el alumno, la tarea y la evidencia disponible. Un texto o una transcripción no bastan para evaluar sonidos, ritmo o entonación. Si falla el micrófono, deja esas observaciones pendientes. |
+| **Usar fuentes conectadas** | Una conexión autorizada puede dar acceso a un PDF concreto. Google Drive no sincroniza de antemano las fuentes añadidas dentro del proyecto. Sigue el flujo de selección por archivo y comprueba que el chat puede leer cada documento. |
+
+[Archivos y audio en ChatGPT](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt) · [Voz de ChatGPT](https://help.openai.com/en/articles/20001274-chatgpt-voice) · [Proyectos y fuentes](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) · [Aplicación Google Drive](https://help.openai.com/en/articles/10929079-google-drive-app-and-setup-in-chatgpt) · [Aplicación SharePoint](https://help.openai.com/en/articles/12143177-sharepoint-synced-connector)
+
+<a id="prueba-de-aceptacion-b1-junio-2024"></a>
+
+## Prueba de aceptación B1 junio 2024
+
+Usa la carpeta original `B1\2024-06 - Junio`. El [catálogo](examenes/catalogo.json) y el inventario privado permiten localizar los tres archivos por ID.
+
+| ID de material | Archivo | Momento de uso |
+|---|---|---|
+| `B1-2024-06-CTO` | `CTO.pdf` | Cuadernillo del candidato, desde el inicio |
+| `B1-2024-06-AUDIO-01` | `CTO.mp3` | Reproducción en Drive o local durante la prueba |
+| `B1-2024-06-KEY` | `KEY.pdf` | Guía de corrección, exclusivamente después de la entrega |
+
+Se cotejaron en los PDF el nivel, la convocatoria, los títulos de las tres tareas y la estructura de respuestas de comprensión oral. La clave está en el apartado **3.3**, página 5 de la guía. La auditoría local confirmó el orden y el contenido de las tres tareas del MP3 con los cuadernillos y la guía, así como las dos pasadas de cada tarea mediante análisis de la señal. La prueba en el chat de cada alumno comprueba el acceso a sus adjuntos, la reproducción y la reserva de la clave hasta la entrega. Haz el ensayo en un chat aparte, sin registrar resultados en los dos expedientes.
+
+1. Abre un chat privado de ChatGPT sin acceso a correcciones anteriores. Aporta **solo** `CTO.pdf` por enlace privado o adjunto. Si usas un chat temporal y la conexión no está disponible, adjunta únicamente el PDF autorizado. Usa otro chat para repetir la prueba después de haber facilitado la clave.
+
+   > Prepara un simulacro pedagógico de comprensión oral con el PDF que te facilito. Confirma nivel, mes, número de tareas y que puedes leer sus preguntas, sin responderlas. Espera mis respuestas. Abriré el audio en Drive o en un reproductor. Antes de que escriba «Entrego el examen», limita el contexto al cuadernillo y a mis respuestas. Reserva la clave, la transcripción, las pistas y las correcciones para después de la entrega.
+
+2. Comprueba que identifica B1, junio de 2024 y tres tareas. Pide la solución de un ítem antes de entregar y verifica que el chat la reserva para la corrección. Reproduce el MP3 original. Comprueba, a medida que avanza, que los anuncios, orden y contenidos de las tres tareas corresponden al cuadernillo. Si no coinciden, termina el ensayo sin calificar y deja el audio pendiente.
+3. Envía las respuestas reales con número de tarea e ítem, incluyendo las omisiones, y escribe **«Entrego el examen»**. Confirma que ChatGPT registra la entrega y solicita o espera la clave. Solo entonces facilita `KEY.pdf` mediante enlace privado o como adjunto.
+
+   > Corrige únicamente comprensión oral con el apartado 3.3 de la guía adjunta. Confirma que es B1 de junio de 2024. Compara mis respuestas con la clave, respeta las alternativas que figuren en ella e indica aciertos, omisiones y puntuación sobre el máximo aplicable. No puntúes si hay discrepancias de convocatoria, tarea o numeración. Da una devolución pedagógica basada en los ítems evaluados.
+
+4. Comprueba manualmente una respuesta acertada y una incorrecta u omitida si las hay, además del total. Si la clave no se ve bien, adjunta una captura legible del apartado 3.3 solo en la fase de corrección. Si el resultado procede de un simulacro real, pide una propuesta de registro para el expediente del alumno correcto. El resultado es pedagógico.
+
+## Lista de aceptación para el uso habitual
+
+Haz primero la prueba en un chat de ensayo y sin conectar un expediente con permiso de escritura. Sirve cualquier unidad del nivel y un ejercicio original de ejemplo. Para comprobar el flujo de examen con material EOI, usa la prueba B1. Los ensayos se quedan en el chat y las sesiones académicas se registran únicamente con evidencia de trabajo real del alumno.
+
+- [ ] Los dos proyectos privados o chats separados cargan la guía docente y confirman su código. Ante un código cruzado, el chat pide el expediente correcto sin registrar nada.
+- [ ] ChatGPT lee una unidad, formula un objetivo, da teoría y ejercicios, corrige tras el intento y aporta tres enlaces gratuitos y operativos para práctica autocorregible, listening y pronunciación.
+- [ ] Una actividad de voz recibe una respuesta oral real. Sin muestra audible, la valoración de pronunciación queda pendiente.
+- [ ] En la prueba B1 funcionan la lectura del PDF, la reproducción y correspondencia de las tres tareas del MP3 y la corrección con la clave tras la entrega. Si se quiere usar audio adjunto al chat, se verifica además con una grabación corta.
+- [ ] Una actualización autorizada se guarda en el libro correcto, incrementa su revisión una sola vez y coincide en una lectura nueva de las celdas. El otro expediente queda intacto.
+- [ ] ChatGPT indica que aún no hay datos cuando el expediente está vacío. Cuando haya registros reales, genera las cuatro vistas descritas en [expedientes.md](expedientes.md) o presenta las tablas si el análisis gráfico no está disponible.

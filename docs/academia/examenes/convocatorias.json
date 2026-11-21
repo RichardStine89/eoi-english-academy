@@ -1,0 +1,3115 @@
+{
+  "version_esquema": 1,
+  "fecha_inventario": "2026-11-19",
+  "referencias_institucionales": {
+    "archivo_historico_junta": "https://www.juntadeandalucia.es/educacion/portals/es/web/ced/idiomas/pruebas-de-certificacion/modelos-convocatoria-anterior",
+    "portal_certificacion_junta": "https://www.juntadeandalucia.es/educacion/portales/es/web/educacion/alumnado/idiomas/pruebas-certificacion"
+  },
+  "convocatorias": [
+    {
+      "id": "A1-MODELO-01",
+      "nivel": "A1",
+      "fecha": null,
+      "fecha_etiqueta_local": null,
+      "estado_fecha": "sin_fecha_confirmada",
+      "organismo": null,
+      "tipo": "modelo_origen_sin_confirmar",
+      "referencia_institucional": null,
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "A1-MODELO-01-CTE",
+        "A1-MODELO-01-CTO",
+        "A1-MODELO-01-PCTE",
+        "A1-MODELO-01-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "A1-MODELO-01-AUDIO-01",
+          "A1-MODELO-01-AUDIO-02"
+        ],
+        "estado": "incidencia",
+        "cuadernillo_propuesto": "A1-MODELO-01-CTO"
+      },
+      "solucionario": {
+        "archivo": null,
+        "estado": "clave_embebida_revision_parcial",
+        "tipo": "respuestas_embebidas",
+        "alcance_cotejado": [],
+        "procedencia": "impresa_en_modelo_de_origen_sin_confirmar",
+        "claves_embebidas": [
+          {
+            "archivo": "A1-MODELO-01-CTE",
+            "paginas": [
+              3
+            ]
+          },
+          {
+            "archivo": "A1-MODELO-01-CTO",
+            "paginas": [
+              2
+            ]
+          },
+          {
+            "archivo": "A1-MODELO-01-PCTE",
+            "paginas": [
+              3
+            ]
+          }
+        ],
+        "derivado_privado_en_drive": true,
+        "exclusiones_correccion_automatica": {
+          "archivo": "A1-MODELO-01-CTO",
+          "preguntas": [
+            3,
+            13,
+            15
+          ]
+        }
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": [
+        "modelo_sin_fecha_ni_organismo_confirmados",
+        "claves_embebidas_en_tres_pdf",
+        "algunas_respuestas_orales_necesitan_cotejo"
+      ]
+    },
+    {
+      "id": "A2-MODELO-01",
+      "nivel": "A2",
+      "fecha": null,
+      "fecha_etiqueta_local": null,
+      "estado_fecha": "sin_fecha_confirmada",
+      "organismo": null,
+      "tipo": "modelo_origen_sin_confirmar",
+      "referencia_institucional": null,
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "A2-MODELO-01-CTE",
+        "A2-MODELO-01-CTO",
+        "A2-MODELO-01-PCTE",
+        "A2-MODELO-01-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "A2-MODELO-01-AUDIO-01",
+          "A2-MODELO-01-AUDIO-02"
+        ],
+        "estado": "incidencia",
+        "cuadernillo_propuesto": "A2-MODELO-01-CTO"
+      },
+      "solucionario": {
+        "archivo": null,
+        "estado": "clave_embebida_revision_parcial",
+        "tipo": "respuestas_embebidas",
+        "alcance_cotejado": [],
+        "procedencia": "impresa_en_modelo_de_origen_sin_confirmar",
+        "claves_embebidas": [
+          {
+            "archivo": "A2-MODELO-01-CTE",
+            "paginas": [
+              5
+            ]
+          },
+          {
+            "archivo": "A2-MODELO-01-CTO",
+            "paginas": [
+              2
+            ]
+          },
+          {
+            "archivo": "A2-MODELO-01-PCTE",
+            "paginas": [
+              3
+            ]
+          }
+        ],
+        "derivado_privado_en_drive": true,
+        "exclusiones_correccion_automatica": {
+          "archivo": "A2-MODELO-01-CTO",
+          "preguntas": [
+            6,
+            8
+          ]
+        }
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": [
+        "modelo_sin_fecha_ni_organismo_confirmados",
+        "claves_embebidas_en_tres_pdf",
+        "algunas_respuestas_orales_necesitan_cotejo"
+      ]
+    },
+    {
+      "id": "B1-2012-09",
+      "nivel": "B1",
+      "fecha": "2012-09",
+      "fecha_etiqueta_local": "2012-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2012-09-CTE",
+        "B1-2012-09-CTO",
+        "B1-2012-09-PCTE",
+        "B1-2012-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2012-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B1-2012-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2012-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "solucionario_y_pautas",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "B1-2012-09-KEY"
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2013-09",
+      "nivel": "B1",
+      "fecha": "2013-09",
+      "fecha_etiqueta_local": "2013-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2013-09-CTE",
+        "B1-2013-09-CTO",
+        "B1-2013-09-PCTE",
+        "B1-2013-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2013-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B1-2013-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2013-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2014-09",
+      "nivel": "B1",
+      "fecha": "2014-09",
+      "fecha_etiqueta_local": "2014-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2014-09-CTE",
+        "B1-2014-09-CTO",
+        "B1-2014-09-PCTE",
+        "B1-2014-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2014-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2014-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2014-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2015-09",
+      "nivel": "B1",
+      "fecha": "2015-09",
+      "fecha_etiqueta_local": "2015-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2015-09-CTE",
+        "B1-2015-09-CTO",
+        "B1-2015-09-PCTE",
+        "B1-2015-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2015-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2015-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2015-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2016-09",
+      "nivel": "B1",
+      "fecha": "2016-09",
+      "fecha_etiqueta_local": "2016-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2016-09-CTE",
+        "B1-2016-09-CTO",
+        "B1-2016-09-PCTE",
+        "B1-2016-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2016-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2016-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2016-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2017-06",
+      "nivel": "B1",
+      "fecha": "2017-06",
+      "fecha_etiqueta_local": "2017-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2017-06-CTE",
+        "B1-2017-06-CTO",
+        "B1-2017-06-PCTE",
+        "B1-2017-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2017-06-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B1-2017-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2017-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2017-09",
+      "nivel": "B1",
+      "fecha": "2017-09",
+      "fecha_etiqueta_local": "2017-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2017-09-CTE",
+        "B1-2017-09-CTO",
+        "B1-2017-09-PCTE",
+        "B1-2017-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2017-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2017-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2017-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2018-06",
+      "nivel": "B1",
+      "fecha": "2018-06",
+      "fecha_etiqueta_local": "2018-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2018-06-CTE",
+        "B1-2018-06-CTO",
+        "B1-2018-06-PCTE",
+        "B1-2018-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2018-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2018-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2018-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2018-09",
+      "nivel": "B1",
+      "fecha": "2018-09",
+      "fecha_etiqueta_local": "2018-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2018-09-CTE",
+        "B1-2018-09-CTO",
+        "B1-2018-09-PCTE",
+        "B1-2018-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2018-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2018-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2018-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2019-06",
+      "nivel": "B1",
+      "fecha": "2019-06",
+      "fecha_etiqueta_local": "2019-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2019-06-CTE",
+        "B1-2019-06-CTO",
+        "B1-2019-06-PCTE",
+        "B1-2019-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2019-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2019-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2019-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2019-09",
+      "nivel": "B1",
+      "fecha": "2019-09",
+      "fecha_etiqueta_local": "2019-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2019-09-CTE",
+        "B1-2019-09-CTO",
+        "B1-2019-09-PCTE",
+        "B1-2019-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2019-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B1-2019-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2019-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2020-09",
+      "nivel": "B1",
+      "fecha": "2020-09",
+      "fecha_etiqueta_local": "2020-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2020-09-CTE",
+        "B1-2020-09-CTO",
+        "B1-2020-09-ME",
+        "B1-2020-09-PCTE",
+        "B1-2020-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2020-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2020-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2020-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2020-10",
+      "nivel": "B1",
+      "fecha": "2020-10",
+      "fecha_etiqueta_local": "2020-10",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2020-10-CTE",
+        "B1-2020-10-CTO",
+        "B1-2020-10-ME",
+        "B1-2020-10-PCTE",
+        "B1-2020-10-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2020-10-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2020-10-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2020-10-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2021-06",
+      "nivel": "B1",
+      "fecha": "2021-06",
+      "fecha_etiqueta_local": "2021-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2021-06-CTE",
+        "B1-2021-06-CTO",
+        "B1-2021-06-ME",
+        "B1-2021-06-PCTE",
+        "B1-2021-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2021-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2021-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2021-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2021-09",
+      "nivel": "B1",
+      "fecha": "2021-09",
+      "fecha_etiqueta_local": "2021-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2021-09-CTE",
+        "B1-2021-09-CTO",
+        "B1-2021-09-ME",
+        "B1-2021-09-PCTE",
+        "B1-2021-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2021-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B1-2021-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2021-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2022-06",
+      "nivel": "B1",
+      "fecha": "2022-06",
+      "fecha_etiqueta_local": "2022-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2022-06-CTE",
+        "B1-2022-06-CTO",
+        "B1-2022-06-ME",
+        "B1-2022-06-PCTE",
+        "B1-2022-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2022-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2022-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2022-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2022-09",
+      "nivel": "B1",
+      "fecha": "2022-09",
+      "fecha_etiqueta_local": "2022-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2022-09-CTE",
+        "B1-2022-09-CTO",
+        "B1-2022-09-ME",
+        "B1-2022-09-PCTE",
+        "B1-2022-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2022-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2022-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2022-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2023-06",
+      "nivel": "B1",
+      "fecha": "2023-06",
+      "fecha_etiqueta_local": "2023-06",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "mediacion_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2023-06-CTE",
+        "B1-2023-06-CTO",
+        "B1-2023-06-ME",
+        "B1-2023-06-PCTE",
+        "B1-2023-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2023-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2023-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2023-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2023-09",
+      "nivel": "B1",
+      "fecha": "2023-09",
+      "fecha_etiqueta_local": "2023-09",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "mediacion_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B1-2023-09-CTE",
+        "B1-2023-09-CTO",
+        "B1-2023-09-ME",
+        "B1-2023-09-PCTE",
+        "B1-2023-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2023-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B1-2023-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2023-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B1-2024-06",
+      "nivel": "B1",
+      "fecha": "2024-06",
+      "fecha_etiqueta_local": "2024-06",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "portal_certificacion_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas"
+      ],
+      "cuadernillos": [
+        "B1-2024-06-CTE",
+        "B1-2024-06-CTO",
+        "B1-2024-06-PCTE"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2024-06-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B1-2024-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2024-06-KEY",
+        "estado": "cotejo_documental_parcial",
+        "tipo": "guia_de_correccion_con_transcripciones",
+        "alcance_cotejado": [
+          "comprension_oral"
+        ],
+        "nota": "Los tres títulos de tareas, la numeración y la fecha coinciden con el cuadernillo CTO. La sección 3.3 y las transcripciones son material de corrección. Audición pendiente de comprobación.",
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "B1-2024-06-KEY"
+      },
+      "incidencias": [
+        "cuadernillo_de_produccion_oral_no_identificado"
+      ]
+    },
+    {
+      "id": "B1-2024-09",
+      "nivel": "B1",
+      "fecha": "2024-09",
+      "fecha_etiqueta_local": "2024-09",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "portal_certificacion_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas"
+      ],
+      "cuadernillos": [
+        "B1-2024-09-CTE",
+        "B1-2024-09-CTO",
+        "B1-2024-09-PCTE"
+      ],
+      "audio": {
+        "archivos": [
+          "B1-2024-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B1-2024-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B1-2024-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion_con_transcripciones",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "B1-2024-09-KEY"
+      },
+      "incidencias": [
+        "cuadernillo_de_produccion_oral_no_identificado"
+      ]
+    },
+    {
+      "id": "B2-2012-09",
+      "nivel": "B2",
+      "fecha": "2012-09",
+      "fecha_etiqueta_local": "2012-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2012-09-CTE",
+        "B2-2012-09-CTO",
+        "B2-2012-09-PCTE",
+        "B2-2012-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2012-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B2-2012-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2012-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "solucionario_y_pautas",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "B2-2012-09-KEY"
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2013-09",
+      "nivel": "B2",
+      "fecha": "2013-09",
+      "fecha_etiqueta_local": "2013-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2013-09-CTE",
+        "B2-2013-09-CTO",
+        "B2-2013-09-PCTE",
+        "B2-2013-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2013-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B2-2013-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2013-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2014-09",
+      "nivel": "B2",
+      "fecha": "2014-09",
+      "fecha_etiqueta_local": "2014-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2014-09-CTE",
+        "B2-2014-09-CTO",
+        "B2-2014-09-PCTE",
+        "B2-2014-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2014-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2014-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2014-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2015-09",
+      "nivel": "B2",
+      "fecha": "2015-09",
+      "fecha_etiqueta_local": "2015-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2015-09-CTE",
+        "B2-2015-09-CTO",
+        "B2-2015-09-PCTE",
+        "B2-2015-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2015-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2015-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2015-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2017-06",
+      "nivel": "B2",
+      "fecha": "2017-06",
+      "fecha_etiqueta_local": "2017-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2017-06-CTE",
+        "B2-2017-06-CTO",
+        "B2-2017-06-PCTE",
+        "B2-2017-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2017-06-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B2-2017-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2017-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2017-09",
+      "nivel": "B2",
+      "fecha": "2017-09",
+      "fecha_etiqueta_local": "2017-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2017-09-CTE",
+        "B2-2017-09-CTO",
+        "B2-2017-09-PCTE",
+        "B2-2017-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2017-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2017-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2017-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2018-06",
+      "nivel": "B2",
+      "fecha": "2018-06",
+      "fecha_etiqueta_local": "2018-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2018-06-CTE",
+        "B2-2018-06-CTO",
+        "B2-2018-06-PCTE",
+        "B2-2018-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2018-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2018-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2018-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2018-09",
+      "nivel": "B2",
+      "fecha": "2018-09",
+      "fecha_etiqueta_local": "2018-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2018-09-CTE",
+        "B2-2018-09-CTO",
+        "B2-2018-09-PCTE",
+        "B2-2018-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2018-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2018-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2018-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2019-06",
+      "nivel": "B2",
+      "fecha": "2019-06",
+      "fecha_etiqueta_local": "2019-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2019-06-CTE",
+        "B2-2019-06-CTO",
+        "B2-2019-06-PCTE",
+        "B2-2019-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2019-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2019-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2019-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2019-09",
+      "nivel": "B2",
+      "fecha": "2019-09",
+      "fecha_etiqueta_local": "2019-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2019-09-CTE",
+        "B2-2019-09-CTO",
+        "B2-2019-09-PCTE",
+        "B2-2019-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2019-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2019-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2019-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2020-09",
+      "nivel": "B2",
+      "fecha": "2020-09",
+      "fecha_etiqueta_local": "2020-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2020-09-CTE",
+        "B2-2020-09-CTO",
+        "B2-2020-09-ME",
+        "B2-2020-09-PCTE",
+        "B2-2020-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2020-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2020-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2020-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2020-10",
+      "nivel": "B2",
+      "fecha": "2020-10",
+      "fecha_etiqueta_local": "2020-10",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2020-10-CTE",
+        "B2-2020-10-CTO",
+        "B2-2020-10-ME",
+        "B2-2020-10-PCTE",
+        "B2-2020-10-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2020-10-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2020-10-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2020-10-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2021-06",
+      "nivel": "B2",
+      "fecha": "2021-06",
+      "fecha_etiqueta_local": "2021-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2021-06-CTE",
+        "B2-2021-06-CTO",
+        "B2-2021-06-ME",
+        "B2-2021-06-PCTE",
+        "B2-2021-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2021-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2021-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2021-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2021-09",
+      "nivel": "B2",
+      "fecha": "2021-09",
+      "fecha_etiqueta_local": "2021-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2021-09-CTE",
+        "B2-2021-09-CTO",
+        "B2-2021-09-ME",
+        "B2-2021-09-PCTE",
+        "B2-2021-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2021-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2021-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2021-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2022-06",
+      "nivel": "B2",
+      "fecha": "2022-06",
+      "fecha_etiqueta_local": "2022-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2022-06-CTE",
+        "B2-2022-06-CTO",
+        "B2-2022-06-ME",
+        "B2-2022-06-PCTE",
+        "B2-2022-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2022-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2022-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2022-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2022-09",
+      "nivel": "B2",
+      "fecha": "2022-09",
+      "fecha_etiqueta_local": "2022-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2022-09-CTE",
+        "B2-2022-09-CTO",
+        "B2-2022-09-ME",
+        "B2-2022-09-PCTE",
+        "B2-2022-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2022-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2022-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2022-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2023-06",
+      "nivel": "B2",
+      "fecha": "2023-06",
+      "fecha_etiqueta_local": "2023-06",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "mediacion_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2023-06-CTE",
+        "B2-2023-06-CTO",
+        "B2-2023-06-ME",
+        "B2-2023-06-PCTE",
+        "B2-2023-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2023-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2023-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2023-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2023-09",
+      "nivel": "B2",
+      "fecha": "2023-09",
+      "fecha_etiqueta_local": "2023-09",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "mediacion_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "B2-2023-09-CTE",
+        "B2-2023-09-CTO",
+        "B2-2023-09-ME",
+        "B2-2023-09-PCTE",
+        "B2-2023-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2023-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "B2-2023-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2023-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "B2-2024-06",
+      "nivel": "B2",
+      "fecha": "2024-06",
+      "fecha_etiqueta_local": "2024-06",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "portal_certificacion_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas"
+      ],
+      "cuadernillos": [
+        "B2-2024-06-CTE",
+        "B2-2024-06-CTO",
+        "B2-2024-06-PCTE"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2024-06-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B2-2024-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2024-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion_con_transcripciones",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "B2-2024-06-KEY"
+      },
+      "incidencias": [
+        "nombre_pcto_con_contenido_escrito",
+        "cuadernillo_de_produccion_oral_no_identificado"
+      ]
+    },
+    {
+      "id": "B2-2024-09",
+      "nivel": "B2",
+      "fecha": "2024-09",
+      "fecha_etiqueta_local": "2024-09",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "portal_certificacion_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas"
+      ],
+      "cuadernillos": [
+        "B2-2024-09-CTE",
+        "B2-2024-09-CTO",
+        "B2-2024-09-PCTE"
+      ],
+      "audio": {
+        "archivos": [
+          "B2-2024-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "B2-2024-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "B2-2024-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion_con_transcripciones",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "B2-2024-09-KEY"
+      },
+      "incidencias": [
+        "nombre_pcto_con_contenido_escrito",
+        "cuadernillo_de_produccion_oral_no_identificado"
+      ]
+    },
+    {
+      "id": "C1-2014-09",
+      "nivel": "C1",
+      "fecha": "2014-09",
+      "fecha_etiqueta_local": "2014-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2014-09-CTE",
+        "C1-2014-09-CTO",
+        "C1-2014-09-PCTE",
+        "C1-2014-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2014-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2014-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2014-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2015-09",
+      "nivel": "C1",
+      "fecha": "2015-09",
+      "fecha_etiqueta_local": "2015-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2015-09-CTE",
+        "C1-2015-09-CTO",
+        "C1-2015-09-PCTE",
+        "C1-2015-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2015-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2015-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2015-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2016-09",
+      "nivel": "C1",
+      "fecha": "2016-09",
+      "fecha_etiqueta_local": "2016-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2016-09-CTE",
+        "C1-2016-09-CTO",
+        "C1-2016-09-PCTE",
+        "C1-2016-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2016-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2016-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2016-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2017-06",
+      "nivel": "C1",
+      "fecha": "2017-06",
+      "fecha_etiqueta_local": "2017-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2017-06-CTE",
+        "C1-2017-06-CTO",
+        "C1-2017-06-PCTE",
+        "C1-2017-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2017-06-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "C1-2017-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2017-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2017-09",
+      "nivel": "C1",
+      "fecha": "2017-09",
+      "fecha_etiqueta_local": "2017-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2017-09-CTE",
+        "C1-2017-09-CTO",
+        "C1-2017-09-PCTE",
+        "C1-2017-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2017-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2017-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2017-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2018-06",
+      "nivel": "C1",
+      "fecha": "2018-06",
+      "fecha_etiqueta_local": "2018-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2018-06-CTE",
+        "C1-2018-06-CTO",
+        "C1-2018-06-PCTE",
+        "C1-2018-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2018-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2018-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2018-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2018-09",
+      "nivel": "C1",
+      "fecha": "2018-09",
+      "fecha_etiqueta_local": "2018-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2018-09-CTE",
+        "C1-2018-09-CTO",
+        "C1-2018-09-PCTE",
+        "C1-2018-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2018-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2018-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2018-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2019-06",
+      "nivel": "C1",
+      "fecha": "2019-06",
+      "fecha_etiqueta_local": "2019-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2019-06-CTE",
+        "C1-2019-06-CTO",
+        "C1-2019-06-PCTE",
+        "C1-2019-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2019-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2019-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2019-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": [
+        "duplicado_exacto_de_produccion_y_mediacion_escritas"
+      ]
+    },
+    {
+      "id": "C1-2019-09",
+      "nivel": "C1",
+      "fecha": "2019-09",
+      "fecha_etiqueta_local": "2019-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2019-09-CTE",
+        "C1-2019-09-CTO",
+        "C1-2019-09-PCTE",
+        "C1-2019-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2019-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "C1-2019-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2019-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": [
+        "duplicado_exacto_de_produccion_y_mediacion_escritas"
+      ]
+    },
+    {
+      "id": "C1-2020-09",
+      "nivel": "C1",
+      "fecha": "2020-09",
+      "fecha_etiqueta_local": "2020-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2020-09-CTE",
+        "C1-2020-09-CTO",
+        "C1-2020-09-ME",
+        "C1-2020-09-PCTE",
+        "C1-2020-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2020-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2020-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2020-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2020-10",
+      "nivel": "C1",
+      "fecha": "2020-10",
+      "fecha_etiqueta_local": "2020-10",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2020-10-CTE",
+        "C1-2020-10-CTO",
+        "C1-2020-10-ME",
+        "C1-2020-10-PCTE",
+        "C1-2020-10-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2020-10-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2020-10-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2020-10-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2021-06",
+      "nivel": "C1",
+      "fecha": "2021-06",
+      "fecha_etiqueta_local": "2021-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2021-06-CTE",
+        "C1-2021-06-CTO",
+        "C1-2021-06-ME",
+        "C1-2021-06-PCTE",
+        "C1-2021-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2021-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2021-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2021-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2021-09",
+      "nivel": "C1",
+      "fecha": "2021-09",
+      "fecha_etiqueta_local": "2021-09",
+      "estado_fecha": "clave_con_fecha_interna_discrepante",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2021-09-CTE",
+        "C1-2021-09-CTO",
+        "C1-2021-09-ME",
+        "C1-2021-09-PCTE",
+        "C1-2021-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2021-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "C1-2021-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2021-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "archivo_oficial_junta_sha256_coincidente",
+        "fuente_oficial": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/f4223032-8329-496f-ab3c-08221e3bda2f/ING_C1_sep_21"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": [
+        "pie_de_junio_presente_en_clave_original_de_septiembre"
+      ]
+    },
+    {
+      "id": "C1-2022-06",
+      "nivel": "C1",
+      "fecha": "2022-06",
+      "fecha_etiqueta_local": "2022-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2022-06-CTE",
+        "C1-2022-06-CTO",
+        "C1-2022-06-ME",
+        "C1-2022-06-PCTE",
+        "C1-2022-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2022-06-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "C1-2022-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2022-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2022-09",
+      "nivel": "C1",
+      "fecha": "2022-09",
+      "fecha_etiqueta_local": "2022-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2022-09-CTE",
+        "C1-2022-09-CTO",
+        "C1-2022-09-ME",
+        "C1-2022-09-PCTE",
+        "C1-2022-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2022-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2022-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2022-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2023-06",
+      "nivel": "C1",
+      "fecha": "2023-06",
+      "fecha_etiqueta_local": "2023-06",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "mediacion_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2023-06-CTE",
+        "C1-2023-06-CTO",
+        "C1-2023-06-ME",
+        "C1-2023-06-PCTE",
+        "C1-2023-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2023-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2023-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2023-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2023-09",
+      "nivel": "C1",
+      "fecha": "2023-09",
+      "fecha_etiqueta_local": "2023-09",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "mediacion_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C1-2023-09-CTE",
+        "C1-2023-09-CTO",
+        "C1-2023-09-ME",
+        "C1-2023-09-PCTE",
+        "C1-2023-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2023-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C1-2023-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2023-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C1-2024-06",
+      "nivel": "C1",
+      "fecha": "2024-06",
+      "fecha_etiqueta_local": "2024-05",
+      "estado_fecha": "carpeta_discrepa_fecha_impresa_en_pdf",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "portal_certificacion_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas"
+      ],
+      "cuadernillos": [
+        "C1-2024-06-CTE",
+        "C1-2024-06-PCTE"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2024-06-AUDIO-01"
+        ],
+        "estado": "incidencia",
+        "cuadernillo_propuesto": null
+      },
+      "solucionario": {
+        "archivo": "C1-2024-06-KEY",
+        "estado": "dudoso_no_calificar",
+        "tipo": "guia_de_correccion_con_transcripciones",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "C1-2024-06-KEY"
+      },
+      "incidencias": [
+        "cuadernillo_de_produccion_oral_no_identificado",
+        "cuadernillo_de_comprension_oral_no_identificado",
+        "audio_coincide_con_guia_de_junio_sin_cuadernillo_cto"
+      ]
+    },
+    {
+      "id": "C1-2024-09",
+      "nivel": "C1",
+      "fecha": "2024-09",
+      "fecha_etiqueta_local": "2024-09",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "portal_certificacion_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas"
+      ],
+      "cuadernillos": [
+        "C1-2024-09-CTE",
+        "C1-2024-09-CTO",
+        "C1-2024-09-PCTE"
+      ],
+      "audio": {
+        "archivos": [
+          "C1-2024-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "C1-2024-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C1-2024-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion_con_transcripciones",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "C1-2024-09-KEY"
+      },
+      "incidencias": [
+        "cuadernillo_de_produccion_oral_no_identificado"
+      ]
+    },
+    {
+      "id": "C2-2021-06",
+      "nivel": "C2",
+      "fecha": "2021-06",
+      "fecha_etiqueta_local": "2021-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C2-2021-06-CTE",
+        "C2-2021-06-CTO",
+        "C2-2021-06-ME",
+        "C2-2021-06-PCTE",
+        "C2-2021-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C2-2021-06-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "C2-2021-06-CTO"
+      },
+      "solucionario": {
+        "archivo": null,
+        "estado": "no_identificado",
+        "tipo": null,
+        "alcance_cotejado": [],
+        "procedencia": "archivo_oficial_junta_revisado_sin_clave",
+        "fuente_oficial": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/9705b341-d73e-4361-98c7-2d6e5e25d0b6/ING_C2_ord_21"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": [
+        "solucionario_no_identificado",
+        "archivo_oficial_ordinario_2021_sin_clave_independiente"
+      ]
+    },
+    {
+      "id": "C2-2021-09",
+      "nivel": "C2",
+      "fecha": "2021-09",
+      "fecha_etiqueta_local": "2021-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C2-2021-09-CTE",
+        "C2-2021-09-CTO",
+        "C2-2021-09-ME",
+        "C2-2021-09-PCTE",
+        "C2-2021-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C2-2021-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C2-2021-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C2-2021-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C2-2022-06",
+      "nivel": "C2",
+      "fecha": "2022-06",
+      "fecha_etiqueta_local": "2022-06",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C2-2022-06-CTE",
+        "C2-2022-06-CTO",
+        "C2-2022-06-ME",
+        "C2-2022-06-PCTE",
+        "C2-2022-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C2-2022-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C2-2022-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "C2-2022-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C2-2022-09",
+      "nivel": "C2",
+      "fecha": "2022-09",
+      "fecha_etiqueta_local": "2022-09",
+      "estado_fecha": "segun_inventario_local",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C2-2022-09-CTE",
+        "C2-2022-09-CTO",
+        "C2-2022-09-ME",
+        "C2-2022-09-PCTE",
+        "C2-2022-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C2-2022-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C2-2022-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C2-2022-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C2-2023-06",
+      "nivel": "C2",
+      "fecha": "2023-06",
+      "fecha_etiqueta_local": "2023-06",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "mediacion_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C2-2023-06-CTE",
+        "C2-2023-06-CTO",
+        "C2-2023-06-ME",
+        "C2-2023-06-PCTE",
+        "C2-2023-06-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C2-2023-06-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C2-2023-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "C2-2023-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C2-2023-09",
+      "nivel": "C2",
+      "fecha": "2023-09",
+      "fecha_etiqueta_local": "2023-09",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "archivo_historico_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "mediacion_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales"
+      ],
+      "cuadernillos": [
+        "C2-2023-09-CTE",
+        "C2-2023-09-CTO",
+        "C2-2023-09-ME",
+        "C2-2023-09-PCTE",
+        "C2-2023-09-PCTO"
+      ],
+      "audio": {
+        "archivos": [
+          "C2-2023-09-AUDIO-01"
+        ],
+        "estado": "parcialmente_verificado",
+        "cuadernillo_propuesto": "C2-2023-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C2-2023-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "clave_y_baremo_en_imagen",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": null
+      },
+      "incidencias": []
+    },
+    {
+      "id": "C2-2024-06",
+      "nivel": "C2",
+      "fecha": "2024-06",
+      "fecha_etiqueta_local": "2024-06",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "portal_certificacion_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas"
+      ],
+      "cuadernillos": [
+        "C2-2024-06-CTE",
+        "C2-2024-06-CTO",
+        "C2-2024-06-PCTE"
+      ],
+      "audio": {
+        "archivos": [
+          "C2-2024-06-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "C2-2024-06-CTO"
+      },
+      "solucionario": {
+        "archivo": "C2-2024-06-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion_con_transcripciones",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "C2-2024-06-KEY"
+      },
+      "incidencias": [
+        "cuadernillo_de_produccion_oral_no_identificado"
+      ]
+    },
+    {
+      "id": "C2-2024-09",
+      "nivel": "C2",
+      "fecha": "2024-09",
+      "fecha_etiqueta_local": "2024-09",
+      "estado_fecha": "consta_en_portadas",
+      "organismo": "Junta de Andalucía",
+      "tipo": "prueba_historica_atribuida",
+      "referencia_institucional": "portal_certificacion_junta",
+      "destrezas_en_cuadernillos": [
+        "comprension_escrita",
+        "comprension_oral",
+        "mediacion_escrita",
+        "produccion_e_interaccion_escritas"
+      ],
+      "cuadernillos": [
+        "C2-2024-09-CTE",
+        "C2-2024-09-CTO",
+        "C2-2024-09-PCTE"
+      ],
+      "audio": {
+        "archivos": [
+          "C2-2024-09-AUDIO-01"
+        ],
+        "estado": "verificado",
+        "cuadernillo_propuesto": "C2-2024-09-CTO"
+      },
+      "solucionario": {
+        "archivo": "C2-2024-09-KEY",
+        "estado": "presente_cotejo_pendiente",
+        "tipo": "guia_de_correccion_con_transcripciones",
+        "alcance_cotejado": [],
+        "procedencia": "guia_en_inventario_local"
+      },
+      "rubrica": {
+        "archivo": null,
+        "estado": "hoja_oficial_no_identificada",
+        "guia_con_pautas": "C2-2024-09-KEY"
+      },
+      "incidencias": [
+        "cuadernillo_de_produccion_oral_no_identificado"
+      ]
+    }
+  ]
+}

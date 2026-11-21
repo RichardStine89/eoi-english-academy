@@ -1,0 +1,7258 @@
+{
+  "version_esquema": 1,
+  "fecha_inventario": "2026-11-19",
+  "archivos": [
+    {
+      "id": "A1-MODELO-01-AUDIO-01",
+      "convocatoria_id": "A1-MODELO-01",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "incidencia",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "contenido_coincide_con_incidencia"
+    },
+    {
+      "id": "A1-MODELO-01-AUDIO-02",
+      "convocatoria_id": "A1-MODELO-01",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "incidencia",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "contenido_coincide_con_incidencia"
+    },
+    {
+      "id": "A1-MODELO-01-CTE",
+      "convocatoria_id": "A1-MODELO-01",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato_paginas_sin_soluciones",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      },
+      "paginas_candidato": [
+        1,
+        2
+      ],
+      "paginas_clave_embebida": [
+        3
+      ]
+    },
+    {
+      "id": "A1-MODELO-01-CTO",
+      "convocatoria_id": "A1-MODELO-01",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato_paginas_sin_soluciones",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 2,
+        "texto_extraible": true
+      },
+      "paginas_candidato": [
+        1
+      ],
+      "paginas_clave_embebida": [
+        2
+      ]
+    },
+    {
+      "id": "A1-MODELO-01-PCTE",
+      "convocatoria_id": "A1-MODELO-01",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato_paginas_sin_soluciones",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      },
+      "paginas_candidato": [
+        1,
+        2
+      ],
+      "paginas_clave_embebida": [
+        3
+      ]
+    },
+    {
+      "id": "A1-MODELO-01-PCTO",
+      "convocatoria_id": "A1-MODELO-01",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "A2-MODELO-01-AUDIO-01",
+      "convocatoria_id": "A2-MODELO-01",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "incidencia",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "contenido_coincide_con_incidencia"
+    },
+    {
+      "id": "A2-MODELO-01-AUDIO-02",
+      "convocatoria_id": "A2-MODELO-01",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "incidencia",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "contenido_coincide_con_incidencia"
+    },
+    {
+      "id": "A2-MODELO-01-CTE",
+      "convocatoria_id": "A2-MODELO-01",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato_paginas_sin_soluciones",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      },
+      "paginas_candidato": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "paginas_clave_embebida": [
+        5
+      ]
+    },
+    {
+      "id": "A2-MODELO-01-CTO",
+      "convocatoria_id": "A2-MODELO-01",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato_paginas_sin_soluciones",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 2,
+        "texto_extraible": true
+      },
+      "paginas_candidato": [
+        1
+      ],
+      "paginas_clave_embebida": [
+        2
+      ]
+    },
+    {
+      "id": "A2-MODELO-01-PCTE",
+      "convocatoria_id": "A2-MODELO-01",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato_paginas_sin_soluciones",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      },
+      "paginas_candidato": [
+        1,
+        2
+      ],
+      "paginas_clave_embebida": [
+        3
+      ]
+    },
+    {
+      "id": "A2-MODELO-01-PCTO",
+      "convocatoria_id": "A2-MODELO-01",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2012-09-AUDIO-01",
+      "convocatoria_id": "B1-2012-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "cuadernillo_audio_guia_y_repeticiones_cotejados"
+    },
+    {
+      "id": "B1-2012-09-CTE",
+      "convocatoria_id": "B1-2012-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2012-09-CTO",
+      "convocatoria_id": "B1-2012-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2012-09-KEY",
+      "convocatoria_id": "B1-2012-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2012-09-PCTE",
+      "convocatoria_id": "B1-2012-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2012-09-PCTO",
+      "convocatoria_id": "B1-2012-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 24,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2013-09-AUDIO-01",
+      "convocatoria_id": "B1-2013-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
+    },
+    {
+      "id": "B1-2013-09-CTE",
+      "convocatoria_id": "B1-2013-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2013-09-CTO",
+      "convocatoria_id": "B1-2013-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2013-09-KEY",
+      "convocatoria_id": "B1-2013-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2013-09-PCTE",
+      "convocatoria_id": "B1-2013-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2013-09-PCTO",
+      "convocatoria_id": "B1-2013-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2014-09-AUDIO-01",
+      "convocatoria_id": "B1-2014-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2014-09-CTE",
+      "convocatoria_id": "B1-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2014-09-CTO",
+      "convocatoria_id": "B1-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2014-09-KEY",
+      "convocatoria_id": "B1-2014-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2014-09-PCTE",
+      "convocatoria_id": "B1-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2014-09-PCTO",
+      "convocatoria_id": "B1-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2015-09-AUDIO-01",
+      "convocatoria_id": "B1-2015-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2015-09-CTE",
+      "convocatoria_id": "B1-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2015-09-CTO",
+      "convocatoria_id": "B1-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2015-09-KEY",
+      "convocatoria_id": "B1-2015-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2015-09-PCTE",
+      "convocatoria_id": "B1-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2015-09-PCTO",
+      "convocatoria_id": "B1-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 23,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2016-09-AUDIO-01",
+      "convocatoria_id": "B1-2016-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2016-09-CTE",
+      "convocatoria_id": "B1-2016-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2016-09-CTO",
+      "convocatoria_id": "B1-2016-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2016-09-KEY",
+      "convocatoria_id": "B1-2016-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2016-09-PCTE",
+      "convocatoria_id": "B1-2016-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2016-09-PCTO",
+      "convocatoria_id": "B1-2016-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-06-AUDIO-01",
+      "convocatoria_id": "B1-2017-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
+    },
+    {
+      "id": "B1-2017-06-CTE",
+      "convocatoria_id": "B1-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-06-CTO",
+      "convocatoria_id": "B1-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-06-KEY",
+      "convocatoria_id": "B1-2017-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-06-PCTE",
+      "convocatoria_id": "B1-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-06-PCTO",
+      "convocatoria_id": "B1-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-09-AUDIO-01",
+      "convocatoria_id": "B1-2017-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2017-09-CTE",
+      "convocatoria_id": "B1-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-09-CTO",
+      "convocatoria_id": "B1-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-09-KEY",
+      "convocatoria_id": "B1-2017-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-09-PCTE",
+      "convocatoria_id": "B1-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2017-09-PCTO",
+      "convocatoria_id": "B1-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-06-AUDIO-01",
+      "convocatoria_id": "B1-2018-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2018-06-CTE",
+      "convocatoria_id": "B1-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-06-CTO",
+      "convocatoria_id": "B1-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-06-KEY",
+      "convocatoria_id": "B1-2018-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-06-PCTE",
+      "convocatoria_id": "B1-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-06-PCTO",
+      "convocatoria_id": "B1-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-09-AUDIO-01",
+      "convocatoria_id": "B1-2018-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2018-09-CTE",
+      "convocatoria_id": "B1-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-09-CTO",
+      "convocatoria_id": "B1-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-09-KEY",
+      "convocatoria_id": "B1-2018-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-09-PCTE",
+      "convocatoria_id": "B1-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2018-09-PCTO",
+      "convocatoria_id": "B1-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-06-AUDIO-01",
+      "convocatoria_id": "B1-2019-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2019-06-CTE",
+      "convocatoria_id": "B1-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-06-CTO",
+      "convocatoria_id": "B1-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-06-KEY",
+      "convocatoria_id": "B1-2019-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-06-PCTE",
+      "convocatoria_id": "B1-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-06-PCTO",
+      "convocatoria_id": "B1-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-09-AUDIO-01",
+      "convocatoria_id": "B1-2019-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
+    },
+    {
+      "id": "B1-2019-09-CTE",
+      "convocatoria_id": "B1-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-09-CTO",
+      "convocatoria_id": "B1-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-09-KEY",
+      "convocatoria_id": "B1-2019-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-09-PCTE",
+      "convocatoria_id": "B1-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2019-09-PCTO",
+      "convocatoria_id": "B1-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-09-AUDIO-01",
+      "convocatoria_id": "B1-2020-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2020-09-CTE",
+      "convocatoria_id": "B1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 8,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-09-CTO",
+      "convocatoria_id": "B1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-09-KEY",
+      "convocatoria_id": "B1-2020-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-09-ME",
+      "convocatoria_id": "B1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-09-PCTE",
+      "convocatoria_id": "B1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-09-PCTO",
+      "convocatoria_id": "B1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-10-AUDIO-01",
+      "convocatoria_id": "B1-2020-10",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2020-10-CTE",
+      "convocatoria_id": "B1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 8,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-10-CTO",
+      "convocatoria_id": "B1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-10-KEY",
+      "convocatoria_id": "B1-2020-10",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-10-ME",
+      "convocatoria_id": "B1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-10-PCTE",
+      "convocatoria_id": "B1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2020-10-PCTO",
+      "convocatoria_id": "B1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-06-AUDIO-01",
+      "convocatoria_id": "B1-2021-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2021-06-CTE",
+      "convocatoria_id": "B1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 8,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-06-CTO",
+      "convocatoria_id": "B1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-06-KEY",
+      "convocatoria_id": "B1-2021-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 2,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B1-2021-06-ME",
+      "convocatoria_id": "B1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-06-PCTE",
+      "convocatoria_id": "B1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-06-PCTO",
+      "convocatoria_id": "B1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-09-AUDIO-01",
+      "convocatoria_id": "B1-2021-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
+    },
+    {
+      "id": "B1-2021-09-CTE",
+      "convocatoria_id": "B1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 7,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-09-CTO",
+      "convocatoria_id": "B1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-09-KEY",
+      "convocatoria_id": "B1-2021-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 2,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B1-2021-09-ME",
+      "convocatoria_id": "B1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-09-PCTE",
+      "convocatoria_id": "B1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2021-09-PCTO",
+      "convocatoria_id": "B1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-06-AUDIO-01",
+      "convocatoria_id": "B1-2022-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2022-06-CTE",
+      "convocatoria_id": "B1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-06-CTO",
+      "convocatoria_id": "B1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-06-KEY",
+      "convocatoria_id": "B1-2022-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B1-2022-06-ME",
+      "convocatoria_id": "B1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-06-PCTE",
+      "convocatoria_id": "B1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-06-PCTO",
+      "convocatoria_id": "B1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-09-AUDIO-01",
+      "convocatoria_id": "B1-2022-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2022-09-CTE",
+      "convocatoria_id": "B1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-09-CTO",
+      "convocatoria_id": "B1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-09-KEY",
+      "convocatoria_id": "B1-2022-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B1-2022-09-ME",
+      "convocatoria_id": "B1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-09-PCTE",
+      "convocatoria_id": "B1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2022-09-PCTO",
+      "convocatoria_id": "B1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-06-AUDIO-01",
+      "convocatoria_id": "B1-2023-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2023-06-CTE",
+      "convocatoria_id": "B1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-06-CTO",
+      "convocatoria_id": "B1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-06-KEY",
+      "convocatoria_id": "B1-2023-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B1-2023-06-ME",
+      "convocatoria_id": "B1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 17,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-06-PCTE",
+      "convocatoria_id": "B1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-06-PCTO",
+      "convocatoria_id": "B1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-09-AUDIO-01",
+      "convocatoria_id": "B1-2023-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B1-2023-09-CTE",
+      "convocatoria_id": "B1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-09-CTO",
+      "convocatoria_id": "B1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-09-KEY",
+      "convocatoria_id": "B1-2023-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B1-2023-09-ME",
+      "convocatoria_id": "B1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-09-PCTE",
+      "convocatoria_id": "B1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2023-09-PCTO",
+      "convocatoria_id": "B1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2024-06-AUDIO-01",
+      "convocatoria_id": "B1-2024-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "cuadernillo_audio_guia_y_repeticiones_cotejados"
+    },
+    {
+      "id": "B1-2024-06-CTE",
+      "convocatoria_id": "B1-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2024-06-CTO",
+      "convocatoria_id": "B1-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2024-06-KEY",
+      "convocatoria_id": "B1-2024-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales",
+        "mediacion_escrita",
+        "mediacion_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "cotejo_documental_parcial",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 29,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2024-06-PCTE",
+      "convocatoria_id": "B1-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2024-09-AUDIO-01",
+      "convocatoria_id": "B1-2024-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "cuadernillo_audio_guia_y_repeticiones_cotejados"
+    },
+    {
+      "id": "B1-2024-09-CTE",
+      "convocatoria_id": "B1-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 8,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2024-09-CTO",
+      "convocatoria_id": "B1-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2024-09-KEY",
+      "convocatoria_id": "B1-2024-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales",
+        "mediacion_escrita",
+        "mediacion_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 19,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B1-2024-09-PCTE",
+      "convocatoria_id": "B1-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2012-09-AUDIO-01",
+      "convocatoria_id": "B2-2012-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "cuadernillo_audio_guia_y_repeticiones_cotejados"
+    },
+    {
+      "id": "B2-2012-09-CTE",
+      "convocatoria_id": "B2-2012-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2012-09-CTO",
+      "convocatoria_id": "B2-2012-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2012-09-KEY",
+      "convocatoria_id": "B2-2012-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2012-09-PCTE",
+      "convocatoria_id": "B2-2012-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2012-09-PCTO",
+      "convocatoria_id": "B2-2012-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 20,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2013-09-AUDIO-01",
+      "convocatoria_id": "B2-2013-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
+    },
+    {
+      "id": "B2-2013-09-CTE",
+      "convocatoria_id": "B2-2013-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2013-09-CTO",
+      "convocatoria_id": "B2-2013-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2013-09-KEY",
+      "convocatoria_id": "B2-2013-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2013-09-PCTE",
+      "convocatoria_id": "B2-2013-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2013-09-PCTO",
+      "convocatoria_id": "B2-2013-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2014-09-AUDIO-01",
+      "convocatoria_id": "B2-2014-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2014-09-CTE",
+      "convocatoria_id": "B2-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2014-09-CTO",
+      "convocatoria_id": "B2-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2014-09-KEY",
+      "convocatoria_id": "B2-2014-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2014-09-PCTE",
+      "convocatoria_id": "B2-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2014-09-PCTO",
+      "convocatoria_id": "B2-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2015-09-AUDIO-01",
+      "convocatoria_id": "B2-2015-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2015-09-CTE",
+      "convocatoria_id": "B2-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2015-09-CTO",
+      "convocatoria_id": "B2-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2015-09-KEY",
+      "convocatoria_id": "B2-2015-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2015-09-PCTE",
+      "convocatoria_id": "B2-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2015-09-PCTO",
+      "convocatoria_id": "B2-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 23,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-06-AUDIO-01",
+      "convocatoria_id": "B2-2017-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
+    },
+    {
+      "id": "B2-2017-06-CTE",
+      "convocatoria_id": "B2-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-06-CTO",
+      "convocatoria_id": "B2-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-06-KEY",
+      "convocatoria_id": "B2-2017-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-06-PCTE",
+      "convocatoria_id": "B2-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-06-PCTO",
+      "convocatoria_id": "B2-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-09-AUDIO-01",
+      "convocatoria_id": "B2-2017-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2017-09-CTE",
+      "convocatoria_id": "B2-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-09-CTO",
+      "convocatoria_id": "B2-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-09-KEY",
+      "convocatoria_id": "B2-2017-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-09-PCTE",
+      "convocatoria_id": "B2-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2017-09-PCTO",
+      "convocatoria_id": "B2-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-06-AUDIO-01",
+      "convocatoria_id": "B2-2018-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2018-06-CTE",
+      "convocatoria_id": "B2-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-06-CTO",
+      "convocatoria_id": "B2-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-06-KEY",
+      "convocatoria_id": "B2-2018-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-06-PCTE",
+      "convocatoria_id": "B2-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-06-PCTO",
+      "convocatoria_id": "B2-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-09-AUDIO-01",
+      "convocatoria_id": "B2-2018-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2018-09-CTE",
+      "convocatoria_id": "B2-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-09-CTO",
+      "convocatoria_id": "B2-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-09-KEY",
+      "convocatoria_id": "B2-2018-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-09-PCTE",
+      "convocatoria_id": "B2-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2018-09-PCTO",
+      "convocatoria_id": "B2-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-06-AUDIO-01",
+      "convocatoria_id": "B2-2019-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2019-06-CTE",
+      "convocatoria_id": "B2-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-06-CTO",
+      "convocatoria_id": "B2-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-06-KEY",
+      "convocatoria_id": "B2-2019-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-06-PCTE",
+      "convocatoria_id": "B2-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-06-PCTO",
+      "convocatoria_id": "B2-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-09-AUDIO-01",
+      "convocatoria_id": "B2-2019-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2019-09-CTE",
+      "convocatoria_id": "B2-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-09-CTO",
+      "convocatoria_id": "B2-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-09-KEY",
+      "convocatoria_id": "B2-2019-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-09-PCTE",
+      "convocatoria_id": "B2-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2019-09-PCTO",
+      "convocatoria_id": "B2-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-09-AUDIO-01",
+      "convocatoria_id": "B2-2020-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2020-09-CTE",
+      "convocatoria_id": "B2-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-09-CTO",
+      "convocatoria_id": "B2-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-09-KEY",
+      "convocatoria_id": "B2-2020-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-09-ME",
+      "convocatoria_id": "B2-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-09-PCTE",
+      "convocatoria_id": "B2-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-09-PCTO",
+      "convocatoria_id": "B2-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-10-AUDIO-01",
+      "convocatoria_id": "B2-2020-10",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2020-10-CTE",
+      "convocatoria_id": "B2-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-10-CTO",
+      "convocatoria_id": "B2-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-10-KEY",
+      "convocatoria_id": "B2-2020-10",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-10-ME",
+      "convocatoria_id": "B2-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-10-PCTE",
+      "convocatoria_id": "B2-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2020-10-PCTO",
+      "convocatoria_id": "B2-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-06-AUDIO-01",
+      "convocatoria_id": "B2-2021-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2021-06-CTE",
+      "convocatoria_id": "B2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-06-CTO",
+      "convocatoria_id": "B2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-06-KEY",
+      "convocatoria_id": "B2-2021-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 2,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B2-2021-06-ME",
+      "convocatoria_id": "B2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-06-PCTE",
+      "convocatoria_id": "B2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-06-PCTO",
+      "convocatoria_id": "B2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-09-AUDIO-01",
+      "convocatoria_id": "B2-2021-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2021-09-CTE",
+      "convocatoria_id": "B2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-09-CTO",
+      "convocatoria_id": "B2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-09-KEY",
+      "convocatoria_id": "B2-2021-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 2,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B2-2021-09-ME",
+      "convocatoria_id": "B2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-09-PCTE",
+      "convocatoria_id": "B2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2021-09-PCTO",
+      "convocatoria_id": "B2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-06-AUDIO-01",
+      "convocatoria_id": "B2-2022-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2022-06-CTE",
+      "convocatoria_id": "B2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-06-CTO",
+      "convocatoria_id": "B2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-06-KEY",
+      "convocatoria_id": "B2-2022-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B2-2022-06-ME",
+      "convocatoria_id": "B2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-06-PCTE",
+      "convocatoria_id": "B2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-06-PCTO",
+      "convocatoria_id": "B2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-09-AUDIO-01",
+      "convocatoria_id": "B2-2022-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2022-09-CTE",
+      "convocatoria_id": "B2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-09-CTO",
+      "convocatoria_id": "B2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-09-KEY",
+      "convocatoria_id": "B2-2022-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B2-2022-09-ME",
+      "convocatoria_id": "B2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-09-PCTE",
+      "convocatoria_id": "B2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2022-09-PCTO",
+      "convocatoria_id": "B2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-06-AUDIO-01",
+      "convocatoria_id": "B2-2023-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2023-06-CTE",
+      "convocatoria_id": "B2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 11,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-06-CTO",
+      "convocatoria_id": "B2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-06-KEY",
+      "convocatoria_id": "B2-2023-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B2-2023-06-ME",
+      "convocatoria_id": "B2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 17,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-06-PCTE",
+      "convocatoria_id": "B2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-06-PCTO",
+      "convocatoria_id": "B2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-09-AUDIO-01",
+      "convocatoria_id": "B2-2023-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "B2-2023-09-CTE",
+      "convocatoria_id": "B2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-09-CTO",
+      "convocatoria_id": "B2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-09-KEY",
+      "convocatoria_id": "B2-2023-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "B2-2023-09-ME",
+      "convocatoria_id": "B2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-09-PCTE",
+      "convocatoria_id": "B2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2023-09-PCTO",
+      "convocatoria_id": "B2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2024-06-AUDIO-01",
+      "convocatoria_id": "B2-2024-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "cuadernillo_audio_guia_y_repeticiones_cotejados"
+    },
+    {
+      "id": "B2-2024-06-CTE",
+      "convocatoria_id": "B2-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 11,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2024-06-CTO",
+      "convocatoria_id": "B2-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2024-06-KEY",
+      "convocatoria_id": "B2-2024-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales",
+        "mediacion_escrita",
+        "mediacion_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 27,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2024-06-PCTE",
+      "convocatoria_id": "B2-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2024-09-AUDIO-01",
+      "convocatoria_id": "B2-2024-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "cuadernillo_audio_guia_y_repeticiones_cotejados"
+    },
+    {
+      "id": "B2-2024-09-CTE",
+      "convocatoria_id": "B2-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 11,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2024-09-CTO",
+      "convocatoria_id": "B2-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2024-09-KEY",
+      "convocatoria_id": "B2-2024-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales",
+        "mediacion_escrita",
+        "mediacion_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 14,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "B2-2024-09-PCTE",
+      "convocatoria_id": "B2-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2014-09-AUDIO-01",
+      "convocatoria_id": "C1-2014-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2014-09-CTE",
+      "convocatoria_id": "C1-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2014-09-CTO",
+      "convocatoria_id": "C1-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2014-09-KEY",
+      "convocatoria_id": "C1-2014-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2014-09-PCTE",
+      "convocatoria_id": "C1-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2014-09-PCTO",
+      "convocatoria_id": "C1-2014-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2015-09-AUDIO-01",
+      "convocatoria_id": "C1-2015-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2015-09-CTE",
+      "convocatoria_id": "C1-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2015-09-CTO",
+      "convocatoria_id": "C1-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2015-09-KEY",
+      "convocatoria_id": "C1-2015-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2015-09-PCTE",
+      "convocatoria_id": "C1-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2015-09-PCTO",
+      "convocatoria_id": "C1-2015-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 23,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2016-09-AUDIO-01",
+      "convocatoria_id": "C1-2016-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2016-09-CTE",
+      "convocatoria_id": "C1-2016-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2016-09-CTO",
+      "convocatoria_id": "C1-2016-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2016-09-KEY",
+      "convocatoria_id": "C1-2016-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2016-09-PCTE",
+      "convocatoria_id": "C1-2016-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2016-09-PCTO",
+      "convocatoria_id": "C1-2016-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-06-AUDIO-01",
+      "convocatoria_id": "C1-2017-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
+    },
+    {
+      "id": "C1-2017-06-CTE",
+      "convocatoria_id": "C1-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-06-CTO",
+      "convocatoria_id": "C1-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-06-KEY",
+      "convocatoria_id": "C1-2017-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-06-PCTE",
+      "convocatoria_id": "C1-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-06-PCTO",
+      "convocatoria_id": "C1-2017-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-09-AUDIO-01",
+      "convocatoria_id": "C1-2017-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2017-09-CTE",
+      "convocatoria_id": "C1-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-09-CTO",
+      "convocatoria_id": "C1-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-09-KEY",
+      "convocatoria_id": "C1-2017-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-09-PCTE",
+      "convocatoria_id": "C1-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2017-09-PCTO",
+      "convocatoria_id": "C1-2017-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-06-AUDIO-01",
+      "convocatoria_id": "C1-2018-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2018-06-CTE",
+      "convocatoria_id": "C1-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-06-CTO",
+      "convocatoria_id": "C1-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-06-KEY",
+      "convocatoria_id": "C1-2018-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-06-PCTE",
+      "convocatoria_id": "C1-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-06-PCTO",
+      "convocatoria_id": "C1-2018-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-09-AUDIO-01",
+      "convocatoria_id": "C1-2018-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2018-09-CTE",
+      "convocatoria_id": "C1-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-09-CTO",
+      "convocatoria_id": "C1-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-09-KEY",
+      "convocatoria_id": "C1-2018-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-09-PCTE",
+      "convocatoria_id": "C1-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2018-09-PCTO",
+      "convocatoria_id": "C1-2018-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-06-AUDIO-01",
+      "convocatoria_id": "C1-2019-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2019-06-CTE",
+      "convocatoria_id": "C1-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-06-CTO",
+      "convocatoria_id": "C1-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-06-KEY",
+      "convocatoria_id": "C1-2019-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-06-ME",
+      "convocatoria_id": "C1-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "alias_no_seleccionar",
+      "estado": "duplicado_exacto",
+      "duplicado_de": "C1-2019-06-PCTE",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-06-PCTE",
+      "convocatoria_id": "C1-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-06-PCTO",
+      "convocatoria_id": "C1-2019-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-09-AUDIO-01",
+      "convocatoria_id": "C1-2019-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
+    },
+    {
+      "id": "C1-2019-09-CTE",
+      "convocatoria_id": "C1-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 7,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-09-CTO",
+      "convocatoria_id": "C1-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 3,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-09-KEY",
+      "convocatoria_id": "C1-2019-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-09-ME",
+      "convocatoria_id": "C1-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "alias_no_seleccionar",
+      "estado": "duplicado_exacto",
+      "duplicado_de": "C1-2019-09-PCTE",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-09-PCTE",
+      "convocatoria_id": "C1-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2019-09-PCTO",
+      "convocatoria_id": "C1-2019-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-09-AUDIO-01",
+      "convocatoria_id": "C1-2020-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2020-09-CTE",
+      "convocatoria_id": "C1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-09-CTO",
+      "convocatoria_id": "C1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-09-KEY",
+      "convocatoria_id": "C1-2020-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-09-ME",
+      "convocatoria_id": "C1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-09-PCTE",
+      "convocatoria_id": "C1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-09-PCTO",
+      "convocatoria_id": "C1-2020-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-10-AUDIO-01",
+      "convocatoria_id": "C1-2020-10",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2020-10-CTE",
+      "convocatoria_id": "C1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-10-CTO",
+      "convocatoria_id": "C1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-10-KEY",
+      "convocatoria_id": "C1-2020-10",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-10-ME",
+      "convocatoria_id": "C1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-10-PCTE",
+      "convocatoria_id": "C1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2020-10-PCTO",
+      "convocatoria_id": "C1-2020-10",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-06-AUDIO-01",
+      "convocatoria_id": "C1-2021-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2021-06-CTE",
+      "convocatoria_id": "C1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-06-CTO",
+      "convocatoria_id": "C1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-06-KEY",
+      "convocatoria_id": "C1-2021-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 2,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C1-2021-06-ME",
+      "convocatoria_id": "C1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-06-PCTE",
+      "convocatoria_id": "C1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-06-PCTO",
+      "convocatoria_id": "C1-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-09-AUDIO-01",
+      "convocatoria_id": "C1-2021-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "coincide_con_paquete_oficial"
+    },
+    {
+      "id": "C1-2021-09-CTE",
+      "convocatoria_id": "C1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-09-CTO",
+      "convocatoria_id": "C1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-09-KEY",
+      "convocatoria_id": "C1-2021-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 2,
+        "texto_extraible": false
+      },
+      "procedencia": "archivo_oficial_junta_sha256_coincidente"
+    },
+    {
+      "id": "C1-2021-09-ME",
+      "convocatoria_id": "C1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-09-PCTE",
+      "convocatoria_id": "C1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2021-09-PCTO",
+      "convocatoria_id": "C1-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-06-AUDIO-01",
+      "convocatoria_id": "C1-2022-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
+    },
+    {
+      "id": "C1-2022-06-CTE",
+      "convocatoria_id": "C1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-06-CTO",
+      "convocatoria_id": "C1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-06-KEY",
+      "convocatoria_id": "C1-2022-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C1-2022-06-ME",
+      "convocatoria_id": "C1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-06-PCTE",
+      "convocatoria_id": "C1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-06-PCTO",
+      "convocatoria_id": "C1-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-09-AUDIO-01",
+      "convocatoria_id": "C1-2022-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2022-09-CTE",
+      "convocatoria_id": "C1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-09-CTO",
+      "convocatoria_id": "C1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-09-KEY",
+      "convocatoria_id": "C1-2022-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C1-2022-09-ME",
+      "convocatoria_id": "C1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-09-PCTE",
+      "convocatoria_id": "C1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2022-09-PCTO",
+      "convocatoria_id": "C1-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-06-AUDIO-01",
+      "convocatoria_id": "C1-2023-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2023-06-CTE",
+      "convocatoria_id": "C1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 11,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-06-CTO",
+      "convocatoria_id": "C1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-06-KEY",
+      "convocatoria_id": "C1-2023-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C1-2023-06-ME",
+      "convocatoria_id": "C1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 17,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-06-PCTE",
+      "convocatoria_id": "C1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-06-PCTO",
+      "convocatoria_id": "C1-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-09-AUDIO-01",
+      "convocatoria_id": "C1-2023-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C1-2023-09-CTE",
+      "convocatoria_id": "C1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 13,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-09-CTO",
+      "convocatoria_id": "C1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-09-KEY",
+      "convocatoria_id": "C1-2023-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C1-2023-09-ME",
+      "convocatoria_id": "C1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-09-PCTE",
+      "convocatoria_id": "C1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2023-09-PCTO",
+      "convocatoria_id": "C1-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2024-06-AUDIO-01",
+      "convocatoria_id": "C1-2024-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "incidencia",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "guia_concuerda_falta_cto"
+    },
+    {
+      "id": "C1-2024-06-CTE",
+      "convocatoria_id": "C1-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 11,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2024-06-KEY",
+      "convocatoria_id": "C1-2024-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales",
+        "mediacion_escrita",
+        "mediacion_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "dudoso_no_calificar",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 15,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2024-06-PCTE",
+      "convocatoria_id": "C1-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2024-09-AUDIO-01",
+      "convocatoria_id": "C1-2024-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "cuadernillo_audio_guia_y_repeticiones_cotejados"
+    },
+    {
+      "id": "C1-2024-09-CTE",
+      "convocatoria_id": "C1-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2024-09-CTO",
+      "convocatoria_id": "C1-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2024-09-KEY",
+      "convocatoria_id": "C1-2024-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales",
+        "mediacion_escrita",
+        "mediacion_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 13,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C1-2024-09-PCTE",
+      "convocatoria_id": "C1-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-06-AUDIO-01",
+      "convocatoria_id": "C2-2021-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "coincide_con_paquete_oficial"
+    },
+    {
+      "id": "C2-2021-06-CTE",
+      "convocatoria_id": "C2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-06-CTO",
+      "convocatoria_id": "C2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-06-ME",
+      "convocatoria_id": "C2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-06-PCTE",
+      "convocatoria_id": "C2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-06-PCTO",
+      "convocatoria_id": "C2-2021-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-09-AUDIO-01",
+      "convocatoria_id": "C2-2021-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C2-2021-09-CTE",
+      "convocatoria_id": "C2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-09-CTO",
+      "convocatoria_id": "C2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-09-KEY",
+      "convocatoria_id": "C2-2021-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 2,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C2-2021-09-ME",
+      "convocatoria_id": "C2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-09-PCTE",
+      "convocatoria_id": "C2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2021-09-PCTO",
+      "convocatoria_id": "C2-2021-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-06-AUDIO-01",
+      "convocatoria_id": "C2-2022-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C2-2022-06-CTE",
+      "convocatoria_id": "C2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 11,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-06-CTO",
+      "convocatoria_id": "C2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-06-KEY",
+      "convocatoria_id": "C2-2022-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C2-2022-06-ME",
+      "convocatoria_id": "C2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-06-PCTE",
+      "convocatoria_id": "C2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-06-PCTO",
+      "convocatoria_id": "C2-2022-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-09-AUDIO-01",
+      "convocatoria_id": "C2-2022-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C2-2022-09-CTE",
+      "convocatoria_id": "C2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 10,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-09-CTO",
+      "convocatoria_id": "C2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-09-KEY",
+      "convocatoria_id": "C2-2022-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C2-2022-09-ME",
+      "convocatoria_id": "C2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-09-PCTE",
+      "convocatoria_id": "C2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2022-09-PCTO",
+      "convocatoria_id": "C2-2022-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-06-AUDIO-01",
+      "convocatoria_id": "C2-2023-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C2-2023-06-CTE",
+      "convocatoria_id": "C2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-06-CTO",
+      "convocatoria_id": "C2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-06-KEY",
+      "convocatoria_id": "C2-2023-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C2-2023-06-ME",
+      "convocatoria_id": "C2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 17,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-06-PCTE",
+      "convocatoria_id": "C2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-06-PCTO",
+      "convocatoria_id": "C2-2023-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 26,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-09-AUDIO-01",
+      "convocatoria_id": "C2-2023-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "parcialmente_verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+    },
+    {
+      "id": "C2-2023-09-CTE",
+      "convocatoria_id": "C2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-09-CTO",
+      "convocatoria_id": "C2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-09-KEY",
+      "convocatoria_id": "C2-2023-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 1,
+        "texto_extraible": false
+      }
+    },
+    {
+      "id": "C2-2023-09-ME",
+      "convocatoria_id": "C2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_mediacion",
+      "destrezas": [
+        "mediacion_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 9,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-09-PCTE",
+      "convocatoria_id": "C2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2023-09-PCTO",
+      "convocatoria_id": "C2-2023-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_oral",
+      "destrezas": [
+        "produccion_e_interaccion_orales"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 18,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2024-06-AUDIO-01",
+      "convocatoria_id": "C2-2024-06",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "cuadernillo_audio_guia_y_repeticiones_cotejados"
+    },
+    {
+      "id": "C2-2024-06-CTE",
+      "convocatoria_id": "C2-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 12,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2024-06-CTO",
+      "convocatoria_id": "C2-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 4,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2024-06-KEY",
+      "convocatoria_id": "C2-2024-06",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales",
+        "mediacion_escrita",
+        "mediacion_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 16,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2024-06-PCTE",
+      "convocatoria_id": "C2-2024-06",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2024-09-AUDIO-01",
+      "convocatoria_id": "C2-2024-09",
+      "formato": "MP3",
+      "rol": "audio_de_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "verificado",
+      "integridad_local": {
+        "estado": "decodificacion_completa",
+        "contenido_sonoro": true
+      },
+      "correspondencia": "cuadernillo_audio_guia_y_repeticiones_cotejados"
+    },
+    {
+      "id": "C2-2024-09-CTE",
+      "convocatoria_id": "C2-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_escrita",
+      "destrezas": [
+        "comprension_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 13,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2024-09-CTO",
+      "convocatoria_id": "C2-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_comprension_oral",
+      "destrezas": [
+        "comprension_oral"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 5,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2024-09-KEY",
+      "convocatoria_id": "C2-2024-09",
+      "formato": "PDF",
+      "rol": "clave_o_guia_de_correccion",
+      "destrezas": [
+        "comprension_escrita",
+        "comprension_oral",
+        "produccion_e_interaccion_escritas",
+        "produccion_e_interaccion_orales",
+        "mediacion_escrita",
+        "mediacion_oral"
+      ],
+      "uso": "despues_del_examen",
+      "estado": "presente_cotejo_pendiente",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 22,
+        "texto_extraible": true
+      }
+    },
+    {
+      "id": "C2-2024-09-PCTE",
+      "convocatoria_id": "C2-2024-09",
+      "formato": "PDF",
+      "rol": "cuadernillo_produccion_escrita",
+      "destrezas": [
+        "produccion_e_interaccion_escritas",
+        "mediacion_escrita"
+      ],
+      "uso": "candidato",
+      "estado": "identificado",
+      "integridad_local": {
+        "estado": "legible",
+        "paginas": 6,
+        "texto_extraible": true
+      }
+    }
+  ],
+  "auditoria_local": {
+    "fecha": "2026-11-19",
+    "algoritmo_integridad": "SHA-256",
+    "pdf_paginas_renderizadas": 2980,
+    "fecha_cierre_audio": "2026-11-21",
+    "estados_audio": {
+      "verificado": 20,
+      "parcialmente_verificado": 47,
+      "incidencia": 5,
+      "pendiente": 0
+    }
+  }
+}

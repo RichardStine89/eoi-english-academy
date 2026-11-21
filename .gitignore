@@ -2,3 +2,54 @@ student/
 .claude/settings.local.json
 .DS_Store
 __pycache__/
+
+# EOI English Academy: registros locales y material descargado
+ExpEDIENTES EOI English Academy/
+Exámenes EOI descargados/
+expedientes/
+examenes-locales/
+datos-personales/
+datos-sensibles/
+evidencias/
+solucionarios/
+alumno-*/
+alumno-*.json
+alumno-*.csv
+inventario-privado.*
+expediente.json
+expediente.propuesta.json
+expediente-r*.json
+expediente-respaldo-*.json
+auditoria-*/
+manifiesto-442.csv
+integridad-local.json
+comparacion-drive.json
+!docs/academia/plantillas/expediente.json
+
+# Exámenes, conversiones de claves y archivos de audio
+*.[pP][dD][fF]
+*.[mM][pP]3
+*.[wW][aA][vV]
+*.[mM]4[aA]
+*.[oO][gG][gG]
+*.[oO][gG][aA]
+*.[oO][pP][uU][sS]
+*.[fF][lL][aA][cC]
+*.[aA][aA][cC]
+*.[wW][mM][aA]
+*.[aA][iI][fF]
+*.[aA][iI][fF][fF]
+*.[wW][eE][bB][mM]
+[kK][eE][yY].*
+[kK][eE][yY][-_]*
+*[sS][oO][lL][uU][cC][iI][oO][nN][aA][rR][iI][oO]*
+*[aA][nN][sS][wW][eE][rR][-_][kK][eE][yY]*
+
+# Secretos locales y material de autenticación
+.env
+.env.*
+!.env.example
+*.[pP][eE][mM]
+*.[kK][eE][yY]
+*.[pP]12
+*.[pP][fF][xX]

@@ -1,0 +1,21 @@
+{
+  "version_esquema": 1,
+  "alumno_id": null,
+  "revision": 0,
+  "perfil": {
+    "lengua_materna": null,
+    "minutos_por_sesion": null,
+    "canal_voz": null
+  },
+  "diagnostico": null,
+  "sesiones": [],
+  "actividades": [],
+  "unidades": [],
+  "evaluaciones": [],
+  "evidencias": [],
+  "errores": [],
+  "vocabulario": [],
+  "examenes": [],
+  "repasos": [],
+  "objetivos": []
+}
