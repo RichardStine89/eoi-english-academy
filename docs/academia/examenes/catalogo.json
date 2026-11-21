@@ -16,7 +16,8 @@
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "contenido_coincide_con_incidencia"
+      "correspondencia": "coincide_con_modelo_eoi_estepa_con_incidencias_de_correccion",
+      "fuente_cotejo": "https://www.eoiestepa.es/?page_id=358"
     },
     {
       "id": "A1-MODELO-01-AUDIO-02",
@@ -32,7 +33,8 @@
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "contenido_coincide_con_incidencia"
+      "correspondencia": "coincide_con_modelo_eoi_estepa_con_incidencias_de_correccion",
+      "fuente_cotejo": "https://www.eoiestepa.es/?page_id=358"
     },
     {
       "id": "A1-MODELO-01-CTE",
@@ -55,7 +57,8 @@
       ],
       "paginas_clave_embebida": [
         3
-      ]
+      ],
+      "revision_copia_candidato": "comprobada_sin_paginas_de_correccion"
     },
     {
       "id": "A1-MODELO-01-CTO",
@@ -77,7 +80,8 @@
       ],
       "paginas_clave_embebida": [
         2
-      ]
+      ],
+      "revision_copia_candidato": "comprobada_sin_paginas_de_correccion"
     },
     {
       "id": "A1-MODELO-01-PCTE",
@@ -100,7 +104,8 @@
       ],
       "paginas_clave_embebida": [
         3
-      ]
+      ],
+      "revision_copia_candidato": "comprobada_sin_paginas_de_correccion"
     },
     {
       "id": "A1-MODELO-01-PCTO",
@@ -132,7 +137,8 @@
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "contenido_coincide_con_incidencia"
+      "correspondencia": "coincide_con_modelo_eoi_estepa_con_incidencias_de_correccion",
+      "fuente_cotejo": "https://www.eoiestepa.es/?page_id=358"
     },
     {
       "id": "A2-MODELO-01-AUDIO-02",
@@ -148,7 +154,8 @@
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "contenido_coincide_con_incidencia"
+      "correspondencia": "coincide_con_modelo_eoi_estepa_con_incidencias_de_correccion",
+      "fuente_cotejo": "https://www.eoiestepa.es/?page_id=358"
     },
     {
       "id": "A2-MODELO-01-CTE",
@@ -173,7 +180,8 @@
       ],
       "paginas_clave_embebida": [
         5
-      ]
+      ],
+      "revision_copia_candidato": "comprobada_sin_paginas_de_correccion"
     },
     {
       "id": "A2-MODELO-01-CTO",
@@ -195,7 +203,8 @@
       ],
       "paginas_clave_embebida": [
         2
-      ]
+      ],
+      "revision_copia_candidato": "comprobada_sin_paginas_de_correccion"
     },
     {
       "id": "A2-MODELO-01-PCTE",
@@ -218,7 +227,8 @@
       ],
       "paginas_clave_embebida": [
         3
-      ]
+      ],
+      "revision_copia_candidato": "comprobada_sin_paginas_de_correccion"
     },
     {
       "id": "A2-MODELO-01-PCTO",
@@ -294,7 +304,7 @@
         "comprension_oral"
       ],
       "uso": "despues_del_examen",
-      "estado": "presente_cotejo_pendiente",
+      "estado": "cotejo_documental_parcial",
       "integridad_local": {
         "estado": "legible",
         "paginas": 9,
@@ -439,12 +449,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/063f876f-c909-4ad7-b22d-7e4f02ace8fc"
     },
     {
       "id": "B1-2014-09-CTE",
@@ -536,12 +547,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/5814e4d9-1a48-4c23-8d8e-41f82565eb93"
     },
     {
       "id": "B1-2015-09-CTE",
@@ -633,12 +645,12 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
     },
     {
       "id": "B1-2016-09-CTE",
@@ -827,12 +839,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/15fa1511-9ed9-4564-af03-0347143b7c00"
     },
     {
       "id": "B1-2017-09-CTE",
@@ -924,12 +937,12 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
     },
     {
       "id": "B1-2018-06-CTE",
@@ -1021,12 +1034,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/55f8d24d-bfd8-4be0-bad8-9474aedefc10?a=true"
     },
     {
       "id": "B1-2018-09-CTE",
@@ -1118,12 +1132,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/cf1b3c6d-d3fe-4194-9f21-9c3329ca2284?a=true"
     },
     {
       "id": "B1-2019-06-CTE",
@@ -1314,12 +1329,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/b41d6414-b80b-4c4f-9203-1b7532dca436"
     },
     {
       "id": "B1-2020-09-CTE",
@@ -1427,12 +1443,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/5dde14ac-1a01-44ff-986f-09f2c1e9ea45"
     },
     {
       "id": "B1-2020-10-CTE",
@@ -1540,12 +1557,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/98026553-22b3-4ab9-a49c-5fda8a80f67c"
     },
     {
       "id": "B1-2021-06-CTE",
@@ -1766,12 +1784,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/f839ac4d-3528-4695-9884-cc1ef004c0c8"
     },
     {
       "id": "B1-2022-06-CTE",
@@ -1879,12 +1898,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/c37cb184-53de-42e3-a3e9-fd2ae16a3d1b"
     },
     {
       "id": "B1-2022-09-CTE",
@@ -1992,12 +2012,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/b58db4e4-1416-4dae-8c09-e86f2c54e105"
     },
     {
       "id": "B1-2023-06-CTE",
@@ -2106,12 +2127,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/778356f7-a459-49fd-9105-4cd49a32ca86"
     },
     {
       "id": "B1-2023-09-CTE",
@@ -2359,7 +2381,7 @@
         "mediacion_oral"
       ],
       "uso": "despues_del_examen",
-      "estado": "presente_cotejo_pendiente",
+      "estado": "cotejo_por_tareas",
       "integridad_local": {
         "estado": "legible",
         "paginas": 19,
@@ -2441,7 +2463,7 @@
         "comprension_oral"
       ],
       "uso": "despues_del_examen",
-      "estado": "presente_cotejo_pendiente",
+      "estado": "cotejo_documental_parcial",
       "integridad_local": {
         "estado": "legible",
         "paginas": 10,
@@ -2586,12 +2608,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/a3100beb-cd34-4dd5-a2ea-f270257a8a02"
     },
     {
       "id": "B2-2014-09-CTE",
@@ -2683,12 +2706,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/64a2a738-09ae-4052-9d1f-57119705f248"
     },
     {
       "id": "B2-2015-09-CTE",
@@ -2877,12 +2901,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/ef641765-595d-4e85-a3ab-2dae4def16ba"
     },
     {
       "id": "B2-2017-09-CTE",
@@ -2974,12 +2999,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/b1bb3a33-3f11-4e04-8051-36b6c2dd937f?a=true"
     },
     {
       "id": "B2-2018-06-CTE",
@@ -3071,12 +3097,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/4c1a5e9f-925f-4b3b-8756-eccbac282da5?a=true"
     },
     {
       "id": "B2-2018-09-CTE",
@@ -3168,12 +3195,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/57b834b6-fc34-4710-a19f-cf7603715d4b?a=true"
     },
     {
       "id": "B2-2019-06-CTE",
@@ -3266,12 +3294,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/b87f09da-0d5a-4399-a9ef-bdfd53b5858d?a=true"
     },
     {
       "id": "B2-2019-09-CTE",
@@ -3364,12 +3393,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/1ea51ccb-2125-4853-8558-ff9fba151a9b"
     },
     {
       "id": "B2-2020-09-CTE",
@@ -3477,12 +3507,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/aec7c9d3-92dd-4092-86be-0f7daab43eb4"
     },
     {
       "id": "B2-2020-10-CTE",
@@ -3590,12 +3621,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/c64ccbe8-3cfd-4f65-a7d0-fbe4fa5548cb"
     },
     {
       "id": "B2-2021-06-CTE",
@@ -3703,12 +3735,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/c550ad60-900e-4de4-8fba-2138640ad93a"
     },
     {
       "id": "B2-2021-09-CTE",
@@ -3816,12 +3849,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/2731fcfe-439b-4112-b06d-a42631559605"
     },
     {
       "id": "B2-2022-06-CTE",
@@ -3929,12 +3963,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/532de5b9-9acd-4c33-b6cb-dcfdd32e5ae5"
     },
     {
       "id": "B2-2022-09-CTE",
@@ -4042,12 +4077,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/5067c2cc-b101-4871-83d3-bd924d5a2072"
     },
     {
       "id": "B2-2023-06-CTE",
@@ -4156,12 +4192,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/287cacab-4327-4eaa-ba6c-556909f9b054"
     },
     {
       "id": "B2-2023-09-CTE",
@@ -4323,7 +4360,7 @@
         "mediacion_oral"
       ],
       "uso": "despues_del_examen",
-      "estado": "presente_cotejo_pendiente",
+      "estado": "cotejo_documental_parcial",
       "integridad_local": {
         "estado": "legible",
         "paginas": 27,
@@ -4409,7 +4446,7 @@
         "mediacion_oral"
       ],
       "uso": "despues_del_examen",
-      "estado": "presente_cotejo_pendiente",
+      "estado": "cotejo_documental_parcial",
       "integridad_local": {
         "estado": "legible",
         "paginas": 14,
@@ -4442,12 +4479,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/641e4dac-0f80-42e5-b84e-3cd6bfaf20a9?a=true"
     },
     {
       "id": "C1-2014-09-CTE",
@@ -4539,12 +4577,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/745b6e45-51c6-45ad-8a42-0ffd14676280?a=true"
     },
     {
       "id": "C1-2015-09-CTE",
@@ -4636,12 +4675,12 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "tareas_del_cto_y_repeticiones_cotejadas"
     },
     {
       "id": "C1-2016-09-CTE",
@@ -4830,12 +4869,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/52ee5d1e-53cf-4538-b918-eb5969a62bc2?a=true"
     },
     {
       "id": "C1-2017-09-CTE",
@@ -4927,12 +4967,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/32644512-e603-416e-ae8d-90c297c204c6?a=true"
     },
     {
       "id": "C1-2018-06-CTE",
@@ -5024,12 +5065,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/a23a2b1c-d837-465e-b251-110fa2bb1d16?a=true"
     },
     {
       "id": "C1-2018-09-CTE",
@@ -5121,12 +5163,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/9c2a8dc7-31fc-4897-868f-67c44dd6de8c?a=true"
     },
     {
       "id": "C1-2019-06-CTE",
@@ -5353,12 +5396,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/22af8cc7-778c-4211-969c-f92248eff41f?a=true"
     },
     {
       "id": "C1-2020-09-CTE",
@@ -5466,12 +5510,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/49837da0-e3a3-4059-be8e-14727a628c0f?a=true"
     },
     {
       "id": "C1-2020-10-CTE",
@@ -5579,12 +5624,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/60023344-2d66-480d-adc2-7cc54f530e75?a=true"
     },
     {
       "id": "C1-2021-06-CTE",
@@ -5741,7 +5787,7 @@
         "comprension_oral"
       ],
       "uso": "despues_del_examen",
-      "estado": "presente_cotejo_pendiente",
+      "estado": "cotejo_documental_parcial",
       "integridad_local": {
         "estado": "legible",
         "paginas": 2,
@@ -5919,12 +5965,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/1a7d39a8-9403-486b-94a0-0e667d62960c?a=true"
     },
     {
       "id": "C1-2022-09-CTE",
@@ -6032,12 +6079,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/3af5acf3-c4b9-4c71-9998-2e133285c311?a=true"
     },
     {
       "id": "C1-2023-06-CTE",
@@ -6146,12 +6194,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/3965fe43-ebdd-4a8f-b05e-5dd2f23cd082?a=true"
     },
     {
       "id": "C1-2023-09-CTE",
@@ -6383,7 +6432,7 @@
         "mediacion_oral"
       ],
       "uso": "despues_del_examen",
-      "estado": "presente_cotejo_pendiente",
+      "estado": "cotejo_documental_parcial",
       "integridad_local": {
         "estado": "legible",
         "paginas": 13,
@@ -6512,12 +6561,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/431bc7b7-5099-46dd-87e8-09504fbd4f4a?a=true"
     },
     {
       "id": "C2-2021-09-CTE",
@@ -6625,12 +6675,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/74cdacbc-2a8e-4e15-bb32-30b8c856471b?a=true"
     },
     {
       "id": "C2-2022-06-CTE",
@@ -6738,12 +6789,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/c807fc6f-c1d6-4177-9ed6-f5c4990c629b?a=true"
     },
     {
       "id": "C2-2022-09-CTE",
@@ -6851,12 +6903,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/70db7bc9-cb47-44c7-b0b3-758d4d0e8e0a?a=true"
     },
     {
       "id": "C2-2023-06-CTE",
@@ -6965,12 +7018,13 @@
         "comprension_oral"
       ],
       "uso": "candidato",
-      "estado": "parcialmente_verificado",
+      "estado": "verificado",
       "integridad_local": {
         "estado": "decodificacion_completa",
         "contenido_sonoro": true
       },
-      "correspondencia": "indicios_de_concordancia_cotejo_completo_pendiente"
+      "correspondencia": "coincide_con_paquete_oficial",
+      "fuente_cotejo": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/a3ba881d-718e-486b-8d62-fa33de05d908?a=true"
     },
     {
       "id": "C2-2023-09-CTE",
@@ -7132,7 +7186,7 @@
         "mediacion_oral"
       ],
       "uso": "despues_del_examen",
-      "estado": "presente_cotejo_pendiente",
+      "estado": "cotejo_documental_parcial",
       "integridad_local": {
         "estado": "legible",
         "paginas": 16,
@@ -7218,7 +7272,7 @@
         "mediacion_oral"
       ],
       "uso": "despues_del_examen",
-      "estado": "presente_cotejo_pendiente",
+      "estado": "cotejo_por_tareas",
       "integridad_local": {
         "estado": "legible",
         "paginas": 22,
@@ -7249,10 +7303,11 @@
     "pdf_paginas_renderizadas": 2980,
     "fecha_cierre_audio": "2026-11-21",
     "estados_audio": {
-      "verificado": 20,
-      "parcialmente_verificado": 47,
+      "verificado": 67,
+      "parcialmente_verificado": 0,
       "incidencia": 5,
       "pendiente": 0
-    }
+    },
+    "fecha_revision_correspondencia": "2026-11-21"
   }
 }

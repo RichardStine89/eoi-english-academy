@@ -12,9 +12,9 @@
       "fecha": null,
       "fecha_etiqueta_local": null,
       "estado_fecha": "sin_fecha_confirmada",
-      "organismo": null,
-      "tipo": "modelo_origen_sin_confirmar",
-      "referencia_institucional": null,
+      "organismo": "Escuela Oficial de Idiomas de Estepa (centro publicador)",
+      "tipo": "modelo_publicado_por_centro",
+      "referencia_institucional": "https://www.eoiestepa.es/?page_id=358",
       "destrezas_en_cuadernillos": [
         "comprension_escrita",
         "comprension_oral",
@@ -40,7 +40,7 @@
         "estado": "clave_embebida_revision_parcial",
         "tipo": "respuestas_embebidas",
         "alcance_cotejado": [],
-        "procedencia": "impresa_en_modelo_de_origen_sin_confirmar",
+        "procedencia": "impresa_en_modelo_publicado_por_eoi_estepa",
         "claves_embebidas": [
           {
             "archivo": "A1-MODELO-01-CTE",
@@ -69,6 +69,13 @@
             13,
             15
           ]
+        },
+        "evaluacion_comto": {
+          "estado": "clave_impresa_con_incidencias",
+          "tareas_aptas": [],
+          "notas": {
+            "correccion": "Conservar las exclusiones. La ficha privada distingue las interpretaciones académicas de la clave impresa. Una interpretación no se convierte en clave oficial."
+          }
         }
       },
       "rubrica": {
@@ -77,9 +84,9 @@
         "guia_con_pautas": null
       },
       "incidencias": [
-        "modelo_sin_fecha_ni_organismo_confirmados",
         "claves_embebidas_en_tres_pdf",
-        "algunas_respuestas_orales_necesitan_cotejo"
+        "algunas_respuestas_orales_necesitan_cotejo",
+        "año_del_modelo_sin_confirmar"
       ]
     },
     {
@@ -88,9 +95,9 @@
       "fecha": null,
       "fecha_etiqueta_local": null,
       "estado_fecha": "sin_fecha_confirmada",
-      "organismo": null,
-      "tipo": "modelo_origen_sin_confirmar",
-      "referencia_institucional": null,
+      "organismo": "Escuela Oficial de Idiomas de Estepa (centro publicador)",
+      "tipo": "modelo_publicado_por_centro",
+      "referencia_institucional": "https://www.eoiestepa.es/?page_id=358",
       "destrezas_en_cuadernillos": [
         "comprension_escrita",
         "comprension_oral",
@@ -116,7 +123,7 @@
         "estado": "clave_embebida_revision_parcial",
         "tipo": "respuestas_embebidas",
         "alcance_cotejado": [],
-        "procedencia": "impresa_en_modelo_de_origen_sin_confirmar",
+        "procedencia": "impresa_en_modelo_publicado_por_eoi_estepa",
         "claves_embebidas": [
           {
             "archivo": "A2-MODELO-01-CTE",
@@ -144,6 +151,13 @@
             6,
             8
           ]
+        },
+        "evaluacion_comto": {
+          "estado": "clave_impresa_con_incidencias",
+          "tareas_aptas": [],
+          "notas": {
+            "correccion": "Conservar las exclusiones. La ficha privada distingue las interpretaciones académicas de la clave impresa. Una interpretación no se convierte en clave oficial."
+          }
         }
       },
       "rubrica": {
@@ -152,9 +166,9 @@
         "guia_con_pautas": null
       },
       "incidencias": [
-        "modelo_sin_fecha_ni_organismo_confirmados",
         "claves_embebidas_en_tres_pdf",
-        "algunas_respuestas_orales_necesitan_cotejo"
+        "algunas_respuestas_orales_necesitan_cotejo",
+        "año_del_modelo_sin_confirmar"
       ]
     },
     {
@@ -187,10 +201,26 @@
       },
       "solucionario": {
         "archivo": "B1-2012-09-KEY",
-        "estado": "presente_cotejo_pendiente",
+        "estado": "cotejo_documental_parcial",
         "tipo": "solucionario_y_pautas",
-        "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "alcance_cotejado": [
+          "comprension_oral"
+        ],
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "apta",
+          "tareas_aptas": [
+            1,
+            2
+          ],
+          "maximo_por_tarea": [
+            20,
+            20
+          ],
+          "notas": {
+            "baremo": "Tarea 1: +2 por acierto, -1 por error y 0 en blanco. Tarea 2: +2 por acierto, 0 si falla o queda en blanco. Máximo 40."
+          }
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -266,7 +296,7 @@
         "archivos": [
           "B1-2014-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2014-09-CTO"
       },
       "solucionario": {
@@ -308,7 +338,7 @@
         "archivos": [
           "B1-2015-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2015-09-CTO"
       },
       "solucionario": {
@@ -350,7 +380,7 @@
         "archivos": [
           "B1-2016-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2016-09-CTO"
       },
       "solucionario": {
@@ -434,7 +464,7 @@
         "archivos": [
           "B1-2017-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2017-09-CTO"
       },
       "solucionario": {
@@ -476,7 +506,7 @@
         "archivos": [
           "B1-2018-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2018-06-CTO"
       },
       "solucionario": {
@@ -518,7 +548,7 @@
         "archivos": [
           "B1-2018-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2018-09-CTO"
       },
       "solucionario": {
@@ -561,7 +591,7 @@
         "archivos": [
           "B1-2019-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2019-06-CTO"
       },
       "solucionario": {
@@ -648,7 +678,7 @@
         "archivos": [
           "B1-2020-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2020-09-CTO"
       },
       "solucionario": {
@@ -692,7 +722,7 @@
         "archivos": [
           "B1-2020-10-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2020-10-CTO"
       },
       "solucionario": {
@@ -736,7 +766,7 @@
         "archivos": [
           "B1-2021-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2021-06-CTO"
       },
       "solucionario": {
@@ -824,7 +854,7 @@
         "archivos": [
           "B1-2022-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2022-06-CTO"
       },
       "solucionario": {
@@ -868,7 +898,7 @@
         "archivos": [
           "B1-2022-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2022-09-CTO"
       },
       "solucionario": {
@@ -913,7 +943,7 @@
         "archivos": [
           "B1-2023-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2023-06-CTO"
       },
       "solucionario": {
@@ -958,7 +988,7 @@
         "archivos": [
           "B1-2023-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B1-2023-09-CTO"
       },
       "solucionario": {
@@ -1010,7 +1040,21 @@
           "comprension_oral"
         ],
         "nota": "Los tres títulos de tareas, la numeración y la fecha coinciden con el cuadernillo CTO. La sección 3.3 y las transcripciones son material de corrección. Audición pendiente de comprobación.",
-        "procedencia": "guia_en_inventario_local"
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "apta",
+          "tareas_aptas": [
+            1,
+            2,
+            3
+          ],
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "notas": {}
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -1050,10 +1094,24 @@
       },
       "solucionario": {
         "archivo": "B1-2024-09-KEY",
-        "estado": "presente_cotejo_pendiente",
+        "estado": "cotejo_por_tareas",
         "tipo": "guia_de_correccion_con_transcripciones",
         "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "parcial",
+          "tareas_aptas": [
+            3
+          ],
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "notas": {
+            "baremo": "La consigna particular de las tareas 1 y 2 descuenta por distractores utilizados. La guía da la regla general de 0 para error. Se bloquea el cálculo automático de ambas hasta aclarar su aplicación."
+          }
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -1061,7 +1119,8 @@
         "guia_con_pautas": "B1-2024-09-KEY"
       },
       "incidencias": [
-        "cuadernillo_de_produccion_oral_no_identificado"
+        "cuadernillo_de_produccion_oral_no_identificado",
+        "baremo_en_conflicto_comto_tareas_1_y_2"
       ]
     },
     {
@@ -1094,10 +1153,27 @@
       },
       "solucionario": {
         "archivo": "B2-2012-09-KEY",
-        "estado": "presente_cotejo_pendiente",
+        "estado": "cotejo_documental_parcial",
         "tipo": "solucionario_y_pautas",
-        "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "alcance_cotejado": [
+          "comprension_oral"
+        ],
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "apta",
+          "tareas_aptas": [
+            1,
+            2
+          ],
+          "maximo_por_tarea": [
+            10,
+            10
+          ],
+          "notas": {
+            "baremo": "1 punto por acierto, 0 si falla o queda en blanco. Máximo 20.",
+            "variante_respuesta": "La tarea 2 admite variantes contextuales según la guía. Las variantes no previstas requieren juicio humano y respeto por las excepciones expresas."
+          }
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -1173,7 +1249,7 @@
         "archivos": [
           "B2-2014-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2014-09-CTO"
       },
       "solucionario": {
@@ -1215,7 +1291,7 @@
         "archivos": [
           "B2-2015-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2015-09-CTO"
       },
       "solucionario": {
@@ -1299,7 +1375,7 @@
         "archivos": [
           "B2-2017-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2017-09-CTO"
       },
       "solucionario": {
@@ -1341,7 +1417,7 @@
         "archivos": [
           "B2-2018-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2018-06-CTO"
       },
       "solucionario": {
@@ -1383,7 +1459,7 @@
         "archivos": [
           "B2-2018-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2018-09-CTO"
       },
       "solucionario": {
@@ -1426,7 +1502,7 @@
         "archivos": [
           "B2-2019-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2019-06-CTO"
       },
       "solucionario": {
@@ -1469,7 +1545,7 @@
         "archivos": [
           "B2-2019-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2019-09-CTO"
       },
       "solucionario": {
@@ -1513,7 +1589,7 @@
         "archivos": [
           "B2-2020-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2020-09-CTO"
       },
       "solucionario": {
@@ -1557,7 +1633,7 @@
         "archivos": [
           "B2-2020-10-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2020-10-CTO"
       },
       "solucionario": {
@@ -1601,7 +1677,7 @@
         "archivos": [
           "B2-2021-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2021-06-CTO"
       },
       "solucionario": {
@@ -1645,7 +1721,7 @@
         "archivos": [
           "B2-2021-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2021-09-CTO"
       },
       "solucionario": {
@@ -1689,7 +1765,7 @@
         "archivos": [
           "B2-2022-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2022-06-CTO"
       },
       "solucionario": {
@@ -1733,7 +1809,7 @@
         "archivos": [
           "B2-2022-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2022-09-CTO"
       },
       "solucionario": {
@@ -1778,7 +1854,7 @@
         "archivos": [
           "B2-2023-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2023-06-CTO"
       },
       "solucionario": {
@@ -1823,7 +1899,7 @@
         "archivos": [
           "B2-2023-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "B2-2023-09-CTO"
       },
       "solucionario": {
@@ -1869,10 +1945,26 @@
       },
       "solucionario": {
         "archivo": "B2-2024-06-KEY",
-        "estado": "presente_cotejo_pendiente",
+        "estado": "cotejo_documental_parcial",
         "tipo": "guia_de_correccion_con_transcripciones",
-        "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "alcance_cotejado": [
+          "comprension_oral"
+        ],
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "apta",
+          "tareas_aptas": [
+            1,
+            2,
+            3
+          ],
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "notas": {}
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -1913,10 +2005,28 @@
       },
       "solucionario": {
         "archivo": "B2-2024-09-KEY",
-        "estado": "presente_cotejo_pendiente",
+        "estado": "cotejo_documental_parcial",
         "tipo": "guia_de_correccion_con_transcripciones",
-        "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "alcance_cotejado": [
+          "comprension_oral"
+        ],
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "apta",
+          "tareas_aptas": [
+            1,
+            2,
+            3
+          ],
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "notas": {
+            "consigna_tarea_2": "La consigna dice A–J. La cuadrícula y la clave incluyen A–K. Indicar el rango impreso antes de la tarea, sin revelar el ejemplo adicional ni anticipar respuestas."
+          }
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -1925,7 +2035,8 @@
       },
       "incidencias": [
         "nombre_pcto_con_contenido_escrito",
-        "cuadernillo_de_produccion_oral_no_identificado"
+        "cuadernillo_de_produccion_oral_no_identificado",
+        "rango_de_consigna_distinto_de_cuadricula_comto_tarea_2"
       ]
     },
     {
@@ -1953,7 +2064,7 @@
         "archivos": [
           "C1-2014-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2014-09-CTO"
       },
       "solucionario": {
@@ -1995,7 +2106,7 @@
         "archivos": [
           "C1-2015-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2015-09-CTO"
       },
       "solucionario": {
@@ -2037,7 +2148,7 @@
         "archivos": [
           "C1-2016-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2016-09-CTO"
       },
       "solucionario": {
@@ -2121,7 +2232,7 @@
         "archivos": [
           "C1-2017-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2017-09-CTO"
       },
       "solucionario": {
@@ -2163,7 +2274,7 @@
         "archivos": [
           "C1-2018-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2018-06-CTO"
       },
       "solucionario": {
@@ -2205,7 +2316,7 @@
         "archivos": [
           "C1-2018-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2018-09-CTO"
       },
       "solucionario": {
@@ -2248,7 +2359,7 @@
         "archivos": [
           "C1-2019-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2019-06-CTO"
       },
       "solucionario": {
@@ -2339,7 +2450,7 @@
         "archivos": [
           "C1-2020-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2020-09-CTO"
       },
       "solucionario": {
@@ -2383,7 +2494,7 @@
         "archivos": [
           "C1-2020-10-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2020-10-CTO"
       },
       "solucionario": {
@@ -2427,7 +2538,7 @@
         "archivos": [
           "C1-2021-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2021-06-CTO"
       },
       "solucionario": {
@@ -2476,11 +2587,29 @@
       },
       "solucionario": {
         "archivo": "C1-2021-09-KEY",
-        "estado": "presente_cotejo_pendiente",
+        "estado": "cotejo_documental_parcial",
         "tipo": "clave_y_baremo_en_imagen",
-        "alcance_cotejado": [],
+        "alcance_cotejado": [
+          "comprension_oral"
+        ],
         "procedencia": "archivo_oficial_junta_sha256_coincidente",
-        "fuente_oficial": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/f4223032-8329-496f-ab3c-08221e3bda2f/ING_C1_sep_21"
+        "fuente_oficial": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/f4223032-8329-496f-ab3c-08221e3bda2f/ING_C1_sep_21",
+        "evaluacion_comto": {
+          "estado": "apta",
+          "tareas_aptas": [
+            1,
+            2,
+            3
+          ],
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "notas": {
+            "clave_lectura": "COMTE queda fuera del alcance cotejado: la clave del ítem 8 de la tarea 3 contradice el pasaje impreso. Se mantiene bloqueada su corrección automática hasta obtener una aclaración autorizada."
+          }
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -2488,7 +2617,9 @@
         "guia_con_pautas": null
       },
       "incidencias": [
-        "pie_de_junio_presente_en_clave_original_de_septiembre"
+        "pie_de_junio_presente_en_clave_original_de_septiembre",
+        "preambulo_nivel_incorrecto_de_guia_original",
+        "conflicto_clave_comte_tarea_3_item_8"
       ]
     },
     {
@@ -2562,7 +2693,7 @@
         "archivos": [
           "C1-2022-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2022-09-CTO"
       },
       "solucionario": {
@@ -2607,7 +2738,7 @@
         "archivos": [
           "C1-2023-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2023-06-CTO"
       },
       "solucionario": {
@@ -2652,7 +2783,7 @@
         "archivos": [
           "C1-2023-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C1-2023-09-CTO"
       },
       "solucionario": {
@@ -2699,7 +2830,11 @@
         "estado": "dudoso_no_calificar",
         "tipo": "guia_de_correccion_con_transcripciones",
         "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "cuadernillo_ausente",
+          "tareas_aptas": []
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -2741,10 +2876,28 @@
       },
       "solucionario": {
         "archivo": "C1-2024-09-KEY",
-        "estado": "presente_cotejo_pendiente",
+        "estado": "cotejo_documental_parcial",
         "tipo": "guia_de_correccion_con_transcripciones",
-        "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "alcance_cotejado": [
+          "comprension_oral"
+        ],
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "apta",
+          "tareas_aptas": [
+            1,
+            2,
+            3
+          ],
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "notas": {
+            "consigna_tarea_2": "La consigna dice B–M. La cuadrícula y la clave incluyen B–K y el ejemplo A. No se crean ni puntúan L o M."
+          }
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -2752,7 +2905,8 @@
         "guia_con_pautas": "C1-2024-09-KEY"
       },
       "incidencias": [
-        "cuadernillo_de_produccion_oral_no_identificado"
+        "cuadernillo_de_produccion_oral_no_identificado",
+        "rango_de_consigna_distinto_de_cuadricula_comto_tarea_2"
       ]
     },
     {
@@ -2791,7 +2945,11 @@
         "tipo": null,
         "alcance_cotejado": [],
         "procedencia": "archivo_oficial_junta_revisado_sin_clave",
-        "fuente_oficial": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/9705b341-d73e-4361-98c7-2d6e5e25d0b6/ING_C2_ord_21"
+        "fuente_oficial": "https://www.juntadeandalucia.es/educacion/portals/delegate/content/9705b341-d73e-4361-98c7-2d6e5e25d0b6/ING_C2_ord_21",
+        "evaluacion_comto": {
+          "estado": "clave_ausente",
+          "tareas_aptas": []
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -2830,7 +2988,7 @@
         "archivos": [
           "C2-2021-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C2-2021-09-CTO"
       },
       "solucionario": {
@@ -2874,7 +3032,7 @@
         "archivos": [
           "C2-2022-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C2-2022-06-CTO"
       },
       "solucionario": {
@@ -2882,14 +3040,23 @@
         "estado": "presente_cotejo_pendiente",
         "tipo": "clave_y_baremo_en_imagen",
         "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "pendiente_cotejo_con_bloqueo_de_tarea",
+          "tareas_aptas": [],
+          "tareas_bloqueadas": [
+            2
+          ]
+        }
       },
       "rubrica": {
         "archivo": null,
         "estado": "hoja_oficial_no_identificada",
         "guia_con_pautas": null
       },
-      "incidencias": []
+      "incidencias": [
+        "numeracion_incongruente_comto_tarea_2"
+      ]
     },
     {
       "id": "C2-2022-09",
@@ -2918,7 +3085,7 @@
         "archivos": [
           "C2-2022-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C2-2022-09-CTO"
       },
       "solucionario": {
@@ -2963,7 +3130,7 @@
         "archivos": [
           "C2-2023-06-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C2-2023-06-CTO"
       },
       "solucionario": {
@@ -3008,7 +3175,7 @@
         "archivos": [
           "C2-2023-09-AUDIO-01"
         ],
-        "estado": "parcialmente_verificado",
+        "estado": "verificado",
         "cuadernillo_propuesto": "C2-2023-09-CTO"
       },
       "solucionario": {
@@ -3054,10 +3221,26 @@
       },
       "solucionario": {
         "archivo": "C2-2024-06-KEY",
-        "estado": "presente_cotejo_pendiente",
+        "estado": "cotejo_documental_parcial",
         "tipo": "guia_de_correccion_con_transcripciones",
-        "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "alcance_cotejado": [
+          "comprension_oral"
+        ],
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "apta",
+          "tareas_aptas": [
+            1,
+            2,
+            3
+          ],
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "notas": {}
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -3097,10 +3280,26 @@
       },
       "solucionario": {
         "archivo": "C2-2024-09-KEY",
-        "estado": "presente_cotejo_pendiente",
+        "estado": "cotejo_por_tareas",
         "tipo": "guia_de_correccion_con_transcripciones",
         "alcance_cotejado": [],
-        "procedencia": "guia_en_inventario_local"
+        "procedencia": "guia_en_inventario_local",
+        "evaluacion_comto": {
+          "estado": "parcial",
+          "tareas_aptas": [
+            2,
+            3
+          ],
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "notas": {
+            "consigna_tarea_1": "La consigna dice A–J. La cuadrícula y la clave usan A–I.",
+            "baremo": "La consigna particular de la tarea 1 descuenta por distractores utilizados. La guía da la regla general de 0 para error. Se bloquea su cálculo automático hasta aclarar su aplicación."
+          }
+        }
       },
       "rubrica": {
         "archivo": null,
@@ -3108,7 +3307,9 @@
         "guia_con_pautas": "C2-2024-09-KEY"
       },
       "incidencias": [
-        "cuadernillo_de_produccion_oral_no_identificado"
+        "cuadernillo_de_produccion_oral_no_identificado",
+        "baremo_en_conflicto_comto_tarea_1",
+        "rango_de_consigna_distinto_de_cuadricula_comto_tarea_1"
       ]
     }
   ]

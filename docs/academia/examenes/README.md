@@ -29,7 +29,7 @@ Los **442 archivos** son 370 PDF más 72 MP3. Las **67 claves o guías** forman 
 
 La auditoría local volvió a calcular los 442 SHA-256, abrió los 370 PDF y renderizó sus 2.980 páginas sin incidencias de apertura. Los 23 PDF sin capa de texto son legibles por imagen. Para cada archivo, el catálogo distingue la integridad local de la correspondencia con otros materiales.
 
-A1 y A2 constan como modelos de origen sin confirmar y tienen cuatro destrezas y dos pistas cada uno. Los conjuntos fechados B1–C2 se atribuyen a la Junta de Andalucía por la documentación de las pruebas y el archivo histórico institucional. Los enlaces institucionales sirven para localizar las convocatorias y sus instrucciones. La identidad con el original descargado se comprueba por archivo cuando se va a utilizar. Para las hojas de observación, consulte la publicación aplicable a la convocatoria. [Archivo histórico de modelos](https://www.juntadeandalucia.es/educacion/portals/es/web/ced/idiomas/pruebas-de-certificacion/modelos-convocatoria-anterior) · [Portal de certificación y hojas de observación](https://www.juntadeandalucia.es/educacion/portals/es/web/educacion/alumnado/idiomas/pruebas-certificacion) · [Convocatoria 2023/2024 en el BOJA](https://www.juntadeandalucia.es/boja/2024/46/17)
+La EOI de Estepa publicó los modelos A1 y A2. Las 20 páginas de los ocho PDF locales coinciden con los modelos completos del centro. Las cuatro pistas coinciden por cotejo de señal. El año del modelo sigue sin confirmar. Los conjuntos fechados B1–C2 se atribuyen a la Junta de Andalucía por la documentación de las pruebas y su archivo histórico. Para las hojas de observación, consulte la publicación aplicable a la convocatoria. [Modelos de la EOI de Estepa](https://www.eoiestepa.es/?page_id=358) · [Archivo histórico de la Junta](https://www.juntadeandalucia.es/educacion/portals/es/web/ced/idiomas/pruebas-de-certificacion/modelos-convocatoria-anterior) · [Portal de certificación y hojas de observación](https://www.juntadeandalucia.es/educacion/portales/es/web/educacion/alumnado/idiomas/pruebas-certificacion)
 
 La mediación escrita aparece integrada en los cuadernillos de producción escrita de B1–C1 de 2019 y de B1–C2 de 2023 y 2024. Los `ME` de 2020 a 2022 son cuadernillos de mediación escrita. Los `ME` de 2023 son fichas de mediación oral. El catálogo indica las destrezas de cada cuadernillo y las distingue de las pautas que puedan aparecer en una guía. En el fondo local no se identificaron hojas oficiales de observación completas. C2 se conserva como material de consulta para la academia A1–C1.
 
@@ -37,26 +37,42 @@ La mediación escrita aparece integrada en los cuadernillos de producción escri
 
 | Conjunto | Hallazgo y tratamiento |
 |---|---|
-| `A1-MODELO-01`, `A2-MODELO-01` | Año y organismo sin confirmar. Hay soluciones impresas en las páginas finales de CTE, CTO y PCTE. Los dos solucionarios derivados en Drive son privados y conservan esas respuestas con anotaciones de revisión. Use las páginas de candidato señaladas en el catálogo. Excluya los ítems orales 3, 13 y 15 de A1 y 6 y 8 de A2 de la corrección automática. |
+| `A1-MODELO-01`, `A2-MODELO-01` | Las seis copias privadas de candidato se comprobaron página por página. Los solucionarios derivados conservan la clave impresa y sus anotaciones. A1 oral 3 y 13 y A2 oral 6 y 8 tienen interpretaciones académicas respaldadas por el audio. A1 oral 15 permanece ambiguo. Los cinco ítems están excluidos de la corrección automática. |
+| `B1-2018-06` | El cuadernillo coincide con el archivo oficial. La verificación del audio se basa en las dos tareas y sus tres escuchas. La comparación de señal con la pista publicada no dio una coincidencia concluyente. |
 | `C1-2019-06`, `C1-2019-09` | Cada `ME` es idéntico a su `PCTE` de la misma convocatoria. `duplicado_de` conserva la relación y `alias_no_seleccionar` evita contar dos veces el mismo ejercicio. |
 | `C2-2021-06` | El archivo oficial de la convocatoria ordinaria contiene seis materiales y carece de clave independiente. Queda pendiente una clave para corregir la comprensión. [Archivo oficial de la Junta](https://www.juntadeandalucia.es/educacion/portals/delegate/content/9705b341-d73e-4361-98c7-2d6e5e25d0b6/ING_C2_ord_21) |
-| `C1-2021-09` | La guía local y la distribuida en el archivo oficial de septiembre tienen el mismo SHA-256. Ambas contienen un pie con la fecha de junio. Procedencia confirmada y respuestas pendientes de cotejo por ítem. [Archivo oficial de la Junta](https://www.juntadeandalucia.es/educacion/portals/delegate/content/f4223032-8329-496f-ab3c-08221e3bda2f/ING_C1_sep_21) |
+| `C2-2022-06` | El audio corresponde al cuadernillo. En la tarea 2 la consigna numera hasta 10 y ambas escuchas terminan en el extracto 8 tras el ejemplo 0. La corrección automática de esa tarea queda bloqueada. |
+| `C1-2021-09` | La guía local coincide con la del paquete oficial de septiembre. La guía dice junio en el pie y B1 en un preámbulo. Se cotejaron las 26 respuestas de comprensión oral. La corrección automática de comprensión escrita queda bloqueada por una discrepancia entre el texto y la clave de la tarea 3, ítem 8. [Archivo oficial de la Junta](https://www.juntadeandalucia.es/educacion/portals/delegate/content/f4223032-8329-496f-ab3c-08221e3bda2f/ING_C1_sep_21) |
 | `C1-2024-06` | Los tres PDF dicen junio y la carpeta original está etiquetada mayo. El MP3 coincide en contenido y orden con las tres tareas de la guía de junio. Falta el cuadernillo CTO para el candidato. El uso de la clave queda bloqueado hasta completar el conjunto. |
 | `B2-2024-06`, `B2-2024-09` | Los originales llamados `PCTO.pdf` son cuadernillos de producción y mediación escritas. Sus identificadores terminan en `PCTE`. |
 | Los ocho conjuntos de 2024 | Sin cuadernillos independientes identificados de producción oral para el candidato. Las guías contienen pautas de mediación oral y remiten a las hojas de observación. |
 
-Los **72 MP3** se decodificaron de principio a fin y contienen señal sonora. El cotejo da **20 verificados**, **47 parcialmente verificados** y **5 con incidencias**. La comprobación combinó documentos, reconocimiento de voz local y análisis de señal. En dos convocatorias se comparó también con el audio del archivo oficial. El informe privado conserva las marcas temporales y la evidencia por pista. Una correspondencia parcial requiere cotejar las tareas pendientes antes de calificar. El audio de [B1 junio de 2024](../acceso-chatgpt.md#prueba-de-aceptacion-b1-junio-2024) está verificado frente al cuadernillo y la guía para el ensayo en el chat del alumno.
+Los **72 MP3** se decodificaron de principio a fin y contienen señal sonora. El cotejo del conjunto da **67 verificados**, **0 parcialmente verificados** y **5 con incidencias**. La revisión utilizó cuadernillos, transcripciones, comparación de señal y, cuando estuvo disponible, el paquete institucional. Cuatro pistas con incidencias de A1/A2 sí coinciden con el modelo publicado. Su clave o consigna siguen requiriendo las precauciones indicadas. La incidencia restante es C1 junio de 2024, cuya guía coincide con el audio y cuyo cuadernillo sigue ausente. Una correspondencia parcial se excluye de la calificación automática. El audio de [B1 junio de 2024](../acceso-chatgpt.md#prueba-de-aceptacion-b1-junio-2024) está verificado frente al cuadernillo y la guía.
 
-Las **claves oficiales** se identifican por su procedencia institucional. Las **respuestas extraídas** conservan lo impreso en los modelos de origen sin confirmar. Las **propuestas orientativas** de la academia se identifican como no oficiales, se apoyan en evidencia y no sustituyen una clave cuando quedan discrepancias.
+Las **claves oficiales** se identifican por su procedencia institucional. Las **respuestas extraídas** conservan lo impreso en los modelos de práctica publicados por la EOI de Estepa. Las **propuestas orientativas** de la academia se identifican como no oficiales. Cuando queda una discrepancia, el ítem se excluye de la corrección automática.
+
+## Comprensión oral utilizable para evaluación
+
+Hay ocho conjuntos con audio, cuadernillo y clave cotejados para puntuar toda la comprensión oral con finalidad pedagógica.
+
+| Nivel | Conjuntos aptos |
+|---|---|
+| B1 | Septiembre de 2012 y junio de 2024 |
+| B2 | Septiembre de 2012, junio de 2024 y septiembre de 2024 |
+| C1 | Septiembre de 2021 y septiembre de 2024 |
+| C2 | Junio de 2024 |
+
+En B1 septiembre de 2024 se puede puntuar la tarea 3. En C2 septiembre de 2024 se pueden puntuar las tareas 2 y 3. Las demás tareas de esos dos conjuntos presentan un conflicto entre la consigna particular y el baremo general de la guía. El catálogo documenta también los rangos de respuesta que difieren entre la consigna y la cuadrícula, y las variantes que requieren juicio humano. Consulte `evaluacion_comto` antes de puntuar. El alcance aquí indicado cubre comprensión oral.
 
 ## Estados de la clave
 
 | Estado | Uso |
 |---|---|
 | `no_identificado` | Registrar la práctica y dejar la calificación por clave vacía |
-| `clave_embebida_revision_parcial` | Consultar las páginas indicadas en `claves_embebidas` tras la entrega. Usar solo los ítems que el paquete privado coteja con evidencia. La procedencia oficial del modelo sigue sin confirmar. |
+| `clave_embebida_revision_parcial` | Consultar las páginas indicadas en `claves_embebidas` tras la entrega. Usar solo los ítems que el paquete privado coteja con evidencia y respetar las exclusiones de corrección automática |
 | `presente_cotejo_pendiente` | Cotejar nivel, fecha, modalidad, tareas y numeración antes de autorizar la corrección |
-| `cotejo_documental_parcial` | Usar exclusivamente para las destrezas que figuran en `alcance_cotejado`, con el audio comprobado si corresponde |
+| `cotejo_documental_parcial` | Usar exclusivamente las destrezas que figuran en `alcance_cotejado`. Para comprensión oral, comprobar también `evaluacion_comto` |
+| `cotejo_por_tareas` | Puntuar únicamente las tareas de `evaluacion_comto.tareas_aptas`. Dejar las demás y el total sin calificación |
 | `dudoso_no_calificar` | Excluir de la calificación mientras la correspondencia siga en duda |
 
 Para un simulacro, la clave, las transcripciones y las explicaciones de respuestas se mantienen fuera del chat y de las fuentes del proyecto hasta que el alumno entregue y cierre todas sus respuestas. Si se confirma un emparejamiento o se incorpora una fuente de rúbrica, registre la fecha, los identificadores y el alcance comprobado en el inventario de trabajo antes de actualizar el estado público. Las observaciones de un intento pertenecen al expediente privado del alumno.
