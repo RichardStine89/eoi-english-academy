@@ -21,6 +21,12 @@ expediente.propuesta.json
 expediente-r*.json
 expediente-respaldo-*.json
 auditoria-*/
+cierre-tecnico-*/
+revision-a1-a2/
+transcripciones-audio/
+revision-incidencias-*.json
+revision-incidencias-*.md
+03-cotejo-audios.json
 manifiesto-442.csv
 integridad-local.json
 comparacion-drive.json
