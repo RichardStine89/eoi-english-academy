@@ -32,6 +32,13 @@ integridad-local.json
 comparacion-drive.json
 !docs/academia/plantillas/expediente.json
 
+# Pronunciation Lab: dependencias instaladas y datos locales
+modules/pronunciation-lab/.venv/
+modules/pronunciation-lab/.cache/
+modules/pronunciation-lab/models/
+Pronunciation Lab/
+pronunciation-attempt-*.json
+
 # Exámenes, conversiones de claves y archivos de audio
 *.[pP][dD][fF]
 *.[mM][pP]3

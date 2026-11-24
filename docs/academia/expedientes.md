@@ -47,6 +47,22 @@ Para preparar la propuesta, puede usarse esta instrucción en el chat privado.
 
 Si solo tienes una copia, úsala como contexto fechado. El responsable leerá el libro vigente antes de registrar cualquier cambio. Los archivos privados de Windows requieren acceso explícito. ChatGPT puede dar una propuesta o un archivo para descargar, y el responsable guarda la copia en la ubicación privada.
 
+## Incorporar evidencia de EOI Pronunciation Lab
+
+El [laboratorio](pronunciacion.md) entrega un informe técnico por intento. El profesor comprueba que concuerda con el alumno activo, la unidad, la actividad, el intento y la fecha. El audio y el informe JSON íntegro se quedan en almacenamiento privado por alumno. Para el libro usa un identificador o una referencia privada y un resumen breve. El informe puede orientar la práctica. Su calidad de señal y sus métricas se registran como evidencia, sin convertirlas en nota.
+
+| Pestaña existente | Cómo aprovechar la evidencia |
+|---|---|
+| Sesiones | Registra la destreza trabajada, modo, ID de actividad, intentos completados, tiempo real si se conoce y próxima acción. Una clase puede incluir speaking y pronunciación. |
+| Evaluaciones | Usa filas distintas con destrezas `speaking` y `pronunciacion`. Consigna criterios, tipo pedagógico y referencia privada. Anota una nota de 0 a 10 solo si la evidencia y los criterios la sustentan. Una observación no evaluable lleva nota vacía. |
+| Errores | Registra patrones respaldados por una muestra audible. Identifica la palabra o el tramo, la corrección y la evidencia. Una limitación de señal, una diferencia de F0 o una sospecha se conserva como observación técnica. |
+| Repasos | Programa percepción, lectura o repetición de un objetivo concreto. Conserva el objetivo y la fecha. Registra el resultado del nuevo intento cuando exista. |
+| Objetivos | Acuerda una acción observable por destreza y un criterio para revisar el avance. En pronunciación prioriza inteligibilidad y objetivos acordados del modelo británico. |
+| Historial | Añade el ID de la operación autorizada y el resumen de lo incorporado. Comprueba la revisión y el estado con lectura posterior. |
+| Resumen | Actualiza la última sesión y el próximo objetivo cuando forme parte de la operación autorizada. Conserva las fórmulas y gráficos del libro. |
+
+Sigue el [protocolo de escritura](#aplicar-un-cambio-en-google-sheets) para la propuesta, la autorización y la lectura posterior. Para el panel, comprueba en lectura si los indicadores por destreza reconocen `pronunciacion` como categoría propia, separada de `speaking`, y si sus fórmulas excluyen notas vacías. Si falta esa categoría, documenta la ampliación de los rangos, el criterio de agrupación o las etiquetas de origen como cambio de mantenimiento por separado. Comprueba las fórmulas con los datos reales ya existentes o con una copia de prueba ajena a los libros activos. Durante las pruebas técnicas, conserva el informe fuera de ambos expedientes.
+
 ## Respaldo periódico en JSON
 
 Haz una exportación privada al final del mes en que haya cambios y antes de modificaciones grandes del libro. El JSON es una copia de los datos en un momento determinado. La [plantilla JSON académica](plantillas/expediente.json) y el [resumen base](plantillas/resumen.md) siguen disponibles como formatos opcionales para notas y respaldos estructurados. Sus campos no reemplazan las pestañas ni la revisión en Google Sheets.
