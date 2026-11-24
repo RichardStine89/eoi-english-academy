@@ -68,3 +68,8 @@ Lee el libro privado del alumno activo o su respaldo validado. Trabaja con los r
 | Calificación por destreza | Última evaluación comparable por destreza, con fecha y escala |
 | Unidades completadas | Recuento de códigos curriculares distintos con estado completado, por nivel y por fecha de cierre |
 | Actividades realizadas | Recuento por semana y tipo a partir de las sesiones y actividades registradas, con una sola aportación de minutos por sesión |
+
+
+## Indicadores automáticos del expediente
+
+Conserva las pestañas, formatos, gráficos y registros existentes. Calcula la media pedagógica sobre notas numéricas de 0 a 10 de Evaluaciones, excluyendo vacíos y estados sin nota; no mezcles baremos oficiales sin normalización explícita. Cuenta unidades completadas desde Unidades y divide por el total curricular, global y por nivel. Calcula el rendimiento medio por destreza desde Evaluaciones, conciliando etiquetas históricas y códigos canónicos (por ejemplo Grammar/gramatica). Mantén los gráficos vinculados a los indicadores calculados y amplía sus fuentes cuando proceda. En configuración regional es_ES verifica separadores de argumentos con punto y coma y comprueba los valores efectivos mediante lectura posterior. No introduzcas notas ficticias para probar fórmulas. Las notas de speaking y pronunciación se registran por separado, con evidencia y criterios observables. No sobrescribas fórmulas del panel con valores estáticos durante las actualizaciones de clase.
