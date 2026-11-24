@@ -47,6 +47,8 @@ Para preparar la propuesta, puede usarse esta instrucción en el chat privado.
 
 Si solo tienes una copia, úsala como contexto fechado. El responsable leerá el libro vigente antes de registrar cualquier cambio. Los archivos privados de Windows requieren acceso explícito. ChatGPT puede dar una propuesta o un archivo para descargar, y el responsable guarda la copia en la ubicación privada.
 
+Para el [writing obligatorio de cada clase](docencia.md#writing-obligatorio-en-cada-clase), incluye la actividad realizada en **Sesiones** y la nota pedagógica sobre 10, la versión valorada y la referencia privada al texto en **Evaluaciones**, bajo la destreza principal `writing` o `mediacion` según la consigna. Deja vacía la nota pendiente. Lleva los patrones recurrentes observados a **Errores** y la práctica acordada a **Repasos** u **Objetivos**. Incluye solo datos autorizados y conserva el texto completo en privado.
+
 ## Incorporar evidencia de EOI Pronunciation Lab
 
 El [laboratorio](pronunciacion.md) entrega un informe técnico por intento. El profesor comprueba que concuerda con el alumno activo, la unidad, la actividad, el intento y la fecha. El audio y el informe JSON íntegro se quedan en almacenamiento privado por alumno. Para el libro usa un identificador o una referencia privada y un resumen breve. El informe puede orientar la práctica. Su calidad de señal y sus métricas se registran como evidencia, sin convertirlas en nota.
@@ -55,7 +57,7 @@ El [laboratorio](pronunciacion.md) entrega un informe técnico por intento. El p
 |---|---|
 | Sesiones | Registra la destreza trabajada, modo, ID de actividad, intentos completados, tiempo real si se conoce y próxima acción. Una clase puede incluir speaking y pronunciación. |
 | Evaluaciones | Usa filas distintas con destrezas `speaking` y `pronunciacion`. Consigna criterios, tipo pedagógico y referencia privada. Anota una nota de 0 a 10 solo si la evidencia y los criterios la sustentan. Una observación no evaluable lleva nota vacía. |
-| Errores | Registra patrones respaldados por una muestra audible. Identifica la palabra o el tramo, la corrección y la evidencia. Una limitación de señal, una diferencia de F0 o una sospecha se conserva como observación técnica. |
+| Errores | Registra patrones respaldados por una muestra audible. Identifica la palabra o el tramo, la corrección y la evidencia. Conserva una limitación de señal, una diferencia de F0 o una hipótesis fonética sin confirmar como observación técnica. |
 | Repasos | Programa percepción, lectura o repetición de un objetivo concreto. Conserva el objetivo y la fecha. Registra el resultado del nuevo intento cuando exista. |
 | Objetivos | Acuerda una acción observable por destreza y un criterio para revisar el avance. En pronunciación prioriza inteligibilidad y objetivos acordados del modelo británico. |
 | Historial | Añade el ID de la operación autorizada y el resumen de lo incorporado. Comprueba la revisión y el estado con lectura posterior. |

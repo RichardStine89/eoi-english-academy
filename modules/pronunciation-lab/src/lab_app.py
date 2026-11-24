@@ -37,6 +37,18 @@ MODES = {
 }
 AUDIO_TYPES = (("Audio WAV, MP3 o M4A", "*.wav *.mp3 *.m4a"),)
 NO_COMPARISON = "Sin comparación"
+PHONETIC_STATES = {
+    "analyzed": "Evidencia técnica disponible",
+    "no_deviation_detected": "Sin desviación detectada",
+    "possible_deviation": "Posible desviación",
+    "insufficient_evidence": "Evidencia insuficiente",
+    "not_evaluated": "No evaluado",
+}
+FINDING_LABELS = {
+    "substitution": "Posible sustitución",
+    "possible_omission": "Posible omisión",
+    "insertion": "Posible inserción",
+}
 
 
 class Recorder:
@@ -191,7 +203,11 @@ class LabApp:
         output.grid(row=4, column=0, sticky="nsew")
         output.columnconfigure(0, weight=1)
         output.rowconfigure(1, weight=1)
-        ttk.Label(output, text="Informe para ChatGPT", style="Section.TLabel").grid(sticky="w", pady=(4, 2))
+        output_header = ttk.Frame(output)
+        output_header.grid(row=0, column=0, columnspan=2, sticky="ew", pady=(4, 2))
+        ttk.Label(output_header, text="Informe para ChatGPT", style="Section.TLabel").pack(side="left")
+        self.evidence_button = ttk.Button(output_header, text="Ver evidencia fonética…", command=self._open_evidence)
+        self.evidence_button.pack(side="right")
         self.output = tk.Text(output, height=5, wrap="word", font=("Segoe UI", 10), padx=7, pady=5,
                               borderwidth=1, relief="solid", foreground="#21343c", state="disabled")
         self.output.grid(row=1, column=0, sticky="nsew")
@@ -259,6 +275,7 @@ class LabApp:
             self.stop_playback_button: idle,
             self.copy_button: idle and self.report is not None,
             self.export_button: idle and self.report is not None,
+            self.evidence_button: idle and self.report is not None,
             self.delete_button: idle and self.audio is not None,
             self.history_button: idle and self.student.get() in STUDENTS,
         }
@@ -495,19 +512,175 @@ class LabApp:
         self.output.insert("1.0", self._report_text())
         self.output.configure(state="disabled")
 
+    @staticmethod
+    def _word_interval(word: dict) -> tuple[float, float] | None:
+        start, end = word.get("start_seconds"), word.get("end_seconds")
+        if type(start) in (int, float) and type(end) in (int, float) and 0 <= start < end < float("inf"):
+            return start, end
+        return None
+
+    def _word_audio(self, word: dict) -> tuple[np.ndarray, int] | None:
+        interval = self._word_interval(word)
+        if self.audio is None or interval is None or word.get("status") not in {
+            "no_deviation_detected", "possible_deviation",
+        }:
+            return None
+        samples, rate = self.audio
+        if interval[1] > len(samples) / rate:
+            return None
+        first, last = (round(bound * rate) for bound in interval)
+        if first < last:
+            return samples[first:last], rate
+        return None
+
+    @staticmethod
+    def _word_details(word: dict) -> str:
+        lines = [f"{word.get('expected', '—')} · {PHONETIC_STATES.get(word.get('status'), 'No evaluado')}"]
+        if word.get("recognized"):
+            lines.append(f"Palabra reconocida · {word['recognized']}")
+        if word.get("expected_ipa"):
+            lines.append(f"IPA británica de referencia · {word['expected_ipa']}")
+        elif word.get("reference_phones"):
+            lines.append("Secuencia de referencia del modelo · " + " ".join(word["reference_phones"]))
+        if word.get("observed_phones"):
+            lines.append("Hipótesis fonética · " + " ".join(word["observed_phones"]))
+        if word.get("reason"):
+            lines.append(word["reason"])
+        for finding in word.get("findings", []):
+            label = FINDING_LABELS.get(finding.get("kind"), "Indicio fonético")
+            expected, observed = finding.get("expected") or "—", finding.get("observed") or "—"
+            confidence = finding.get("confidence")
+            signal = f" · confianza técnica {confidence:.2f}" if confidence is not None else ""
+            lines.append(f"{label} · esperado {expected} → hipótesis {observed}{signal}")
+            if finding.get("recommendation"):
+                lines.append(finding["recommendation"])
+        return "\n".join(lines)
+
+    def _open_evidence(self) -> None:
+        report = self.report
+        if report is None:
+            return
+        phonetics = report.get("phonetics") or {}
+        words = phonetics.get("words") or []
+        window = tk.Toplevel(self.root)
+        window.title("Evidencia fonética del intento")
+        window.transient(self.root)
+        window.columnconfigure(0, weight=1)
+        window.rowconfigure(0, weight=1)
+        content = ttk.Frame(window, padding=12)
+        content.grid(sticky="nsew")
+        content.columnconfigure(0, weight=1)
+        content.rowconfigure(2, weight=1)
+
+        heading = f"{report['student_id']} · {report['unit_id']} · {report['activity_id']}"
+        ttk.Label(content, text=heading, style="Section.TLabel").grid(row=0, column=0, sticky="w")
+        labels = [PHONETIC_STATES.get(phonetics.get("status"), "No evaluado")]
+        if phonetics.get("model"):
+            labels.append(f"Modelo · {phonetics['model']}")
+        if phonetics.get("reason"):
+            labels.append(phonetics["reason"])
+        if words:
+            labels.append("La confianza técnica usa una escala sin calibrar. «Sin desviación detectada» se limita "
+                          "a la evidencia observada por el motor.")
+        elif not phonetics:
+            labels.append("Este informe se generó antes de incorporar el análisis fonético.")
+        labels.extend(phonetics.get("limitations") or [])
+        summary = ttk.Label(content, text="\n".join(labels), style="Hint.TLabel", wraplength=720, justify="left")
+        summary.grid(row=1, column=0, sticky="w", pady=(4, 7))
+
+        actions = ttk.Frame(content)
+        actions.grid(row=4, column=0, sticky="w", pady=(7, 0))
+        fragment_started = False
+
+        def close() -> None:
+            if fragment_started:
+                self._stop_playback()
+            window.destroy()
+
+        if words:
+            table = ttk.Frame(content)
+            table.grid(row=2, column=0, sticky="nsew")
+            table.columnconfigure(0, weight=1)
+            table.rowconfigure(0, weight=1)
+            columns = (
+                ("word", "Palabra", 105), ("status", "Estado", 160), ("ipa", "Referencia", 118),
+                ("hypothesis", "Hipótesis", 118), ("confidence", "Confianza", 80), ("time", "Intervalo (s)", 100),
+            )
+            tree = ttk.Treeview(table, columns=[key for key, _, _ in columns], show="headings",
+                                height=min(9, len(words)), selectmode="browse")
+            tree.grid(row=0, column=0, sticky="nsew")
+            scrollbar = ttk.Scrollbar(table, orient="vertical", command=tree.yview)
+            scrollbar.grid(row=0, column=1, sticky="ns")
+            tree.configure(yscrollcommand=scrollbar.set)
+            for key, label, width in columns:
+                tree.heading(key, text=label)
+                tree.column(key, width=width, minwidth=50, anchor="w")
+            for number, word in enumerate(words):
+                interval = self._word_interval(word)
+                time_text = f"{interval[0]:.2f}–{interval[1]:.2f}" if interval else "—"
+                confidence = word.get("confidence")
+                reference = word.get("expected_ipa") or " ".join(word.get("reference_phones") or []) or "—"
+                tree.insert("", "end", iid=str(number), values=(
+                    word.get("expected", "—"), PHONETIC_STATES.get(word.get("status"), "No evaluado"),
+                    reference, " ".join(word.get("observed_phones") or []) or "—",
+                    f"{confidence:.2f}" if confidence is not None else "—", time_text,
+                ))
+
+            detail = tk.Text(content, height=6, wrap="word", font=("Segoe UI", 10), padx=6, pady=4,
+                             relief="solid", borderwidth=1, state="disabled")
+            detail.grid(row=3, column=0, sticky="ew", pady=(7, 0))
+
+            def selected_word() -> dict | None:
+                selection = tree.selection()
+                return words[int(selection[0])] if selection else None
+
+            def play_word() -> None:
+                nonlocal fragment_started
+                word = selected_word()
+                audio = self._word_audio(word) if word and self.report is report else None
+                if audio is not None:
+                    fragment_started = True
+                    self._play(audio, f"Reproduciendo el fragmento de «{word['expected']}».", parent=window)
+
+            play_button = self._button(actions, "Oír fragmento", play_word)
+
+            def show_word(_event=None) -> None:
+                word = selected_word()
+                audio = self._word_audio(word) if word and self.report is report else None
+                play_button.configure(state="normal" if audio is not None else "disabled")
+                if word:
+                    description = self._word_details(word)
+                    if audio is None:
+                        description += "\nEl fragmento requiere audio local y un intervalo utilizable."
+                    detail.configure(state="normal")
+                    detail.delete("1.0", "end")
+                    detail.insert("1.0", description)
+                    detail.configure(state="disabled")
+
+            tree.bind("<<TreeviewSelect>>", show_word)
+            tree.selection_set("0")
+            tree.focus("0")
+            tree.focus_set()
+            show_word()
+
+        self._button(actions, "Cerrar", close)
+        window.protocol("WM_DELETE_WINDOW", close)
+        window.bind("<Escape>", lambda _event: close())
+        window.grab_set()
+
     def _play_attempt(self) -> None:
         self._play(self.audio, "Reproduciendo tu grabación.")
 
     def _play_reference(self) -> None:
         self._play(self.reference, "Reproduciendo el modelo de audio.")
 
-    def _play(self, audio: tuple[np.ndarray, int] | None, status: str) -> None:
+    def _play(self, audio: tuple[np.ndarray, int] | None, status: str, *, parent: tk.Misc | None = None) -> None:
         if audio is None:
             return
         try:
             sd.play(*audio, blocking=False)
         except (sd.PortAudioError, ValueError) as exc:
-            self._error("No se pudo reproducir el audio", exc)
+            self._error("No se pudo reproducir el audio", exc, parent=parent)
         else:
             self.status.set(status)
 
@@ -636,9 +809,9 @@ class LabApp:
         entries.focus_set()
         window.grab_set()
 
-    def _error(self, title: str, error: object) -> None:
+    def _error(self, title: str, error: object, *, parent: tk.Misc | None = None) -> None:
         self.status.set(title)
-        messagebox.showerror(title, str(error), parent=self.root)
+        messagebox.showerror(title, str(error), parent=parent or self.root)
 
     def _close(self) -> None:
         if self.busy:

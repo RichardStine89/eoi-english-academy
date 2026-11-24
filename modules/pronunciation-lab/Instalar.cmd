@@ -36,9 +36,10 @@ goto install
 "%LAB_BUNDLED_PYTHON%" -m venv .venv || goto failed
 
 :install
-".venv\Scripts\python.exe" -m pip --isolated install --index-url https://pypi.org/simple --only-binary=:all: --disable-pip-version-check -r requirements.txt || goto failed
+".venv\Scripts\python.exe" -m pip --isolated install --index-url https://pypi.org/simple --only-binary=:all: --disable-pip-version-check -r requirements.txt -r requirements-phonetics.txt || goto failed
 ".venv\Scripts\python.exe" -m pip check || goto failed
-".venv\Scripts\python.exe" -c "import av, numpy, parselmouth, sounddevice, tkinter; root = tkinter.Tk(); root.withdraw(); root.destroy()" || goto failed
+".venv\Scripts\python.exe" -c "import av, numpy, parselmouth, sounddevice, tkinter, onnxruntime, pronunciada; root = tkinter.Tk(); root.withdraw(); root.destroy()" || goto failed
+".venv\Scripts\python.exe" src\phonetic_model.py || goto failed
 echo Instalacion completa. Para iniciar el laboratorio abre Abrir.cmd.
 if /i not "%~1"=="--no-pause" pause
 exit /b 0

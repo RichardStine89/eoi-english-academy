@@ -15,6 +15,7 @@ import numpy as np
 import parselmouth
 
 from acoustics import analyze
+from phonetics import analyze_phonetics
 
 
 SAMPLE_RATE = 16_000
@@ -125,6 +126,7 @@ def analyze_attempt(samples: np.ndarray, rate: int, metadata: dict) -> dict:
             samples = np.clip(samples, -1, 1, out=samples)
         analysis_rate = SAMPLE_RATE
     acoustics = analyze(samples, analysis_rate)
+    phonetics = analyze_phonetics(samples, analysis_rate, context["expected_text"], acoustics)
     practice = [
         "El profesor puede elegir un objetivo de práctica tras escuchar evidencia suficiente."
     ]
@@ -142,15 +144,17 @@ def analyze_attempt(samples: np.ndarray, rate: int, metadata: dict) -> dict:
         "engine": {"name": "Praat / Parselmouth", "version": parselmouth.VERSION,
                    "praat_version": parselmouth.PRAAT_VERSION, "acoustic_model": None},
         "reference": {"pedagogical_model": "Inglés británico estándar contemporáneo",
-                      "acoustic_comparison_performed": False},
+                      "acoustic_comparison_performed": False, "script_alignment_performed": bool(phonetics["words"])},
         "sample_rate_hz": rate,
         "analysis_sample_rate_hz": analysis_rate,
         "acoustics": acoustics,
+        "phonetics": phonetics,
         "transcript": None,
-        "phonetic_findings": None,
+        "phonetic_findings": [{"word": word["expected"], **finding}
+                             for word in phonetics["words"] for finding in word["findings"]] or None,
         "confidence": {"signal_quality": acoustics["quality"]["status"],
                        "phonetic_confidence": None},
-        "not_evaluated": ["fonemas y errores por palabra", "acentuación léxica y de frase",
+        "not_evaluated": ["reconocimiento independiente de palabras", "inserciones", "corrección de acentuación léxica y de frase",
                           "ritmo lingüístico y entonación", "palabras por minuto y fluidez",
                           "inteligibilidad y enlace entre palabras", "acento y nota académica"],
         "practice": practice,
@@ -298,12 +302,53 @@ def brief_report(report: dict, previous: dict | None = None) -> str:
         lines.append(f"Frecuencia fundamental mediana: {metrics['pitch_median_hz']:.0f} Hz.")
     if acoustic["quality"].get("warnings"):
         lines.append("Señal: " + " ".join(acoustic["quality"]["warnings"]))
-    if previous is not None and all(report.get(key) == previous.get(key) for key in _COMPARISON_FIELDS):
+    comparable = previous is not None and all(report.get(key) == previous.get(key) for key in _COMPARISON_FIELDS)
+    if comparable:
         older = previous["acoustics"]["metrics"]
         if metrics.get("active_seconds") is not None and older.get("active_seconds") is not None:
             lines.append(f"Actividad sonora en el intento {previous['attempt_number']}: "
                          f"{older['active_seconds']:.2f} s (comparación descriptiva).")
-    lines.append("Pendiente de valoración humana: fonemas, acentuación, ritmo lingüístico, entonación, "
-                 "fluidez, inteligibilidad y nota. El texto de referencia no se ha alineado.")
+    phonetics = report.get("phonetics")
+    if phonetics:
+        lines.extend(_phonetic_summary(report, phonetics, previous if comparable else None))
+    else:
+        lines.append("Informe anterior: el intento conserva únicamente mediciones acústicas.")
+    lines.append("Pendiente de valoración humana: acentuación, ritmo, entonación, fluidez, inteligibilidad y nota.")
     lines.append("Práctica: " + " ".join(report["practice"]))
     return "\n".join(lines)
+
+
+def _phonetic_summary(report: dict, evidence: dict, previous: dict | None) -> list[str]:
+    if evidence["status"] != "analyzed":
+        return ["Cotejo fonético: " + (evidence["reason"] or "sin evidencia interpretable.")]
+    text = " ".join((report.get("expected_text") or "").split())
+    if len(text) > 300:
+        text = text[:297] + "…"
+    words = evidence["words"]
+    reviewed = [word for word in words if word["status"] in {"possible_deviation", "no_deviation_detected"}]
+    lines = [f"Guion esperado: {text}",
+             f"Cotejo: {evidence['engine']} / {evidence['model']}. {len(reviewed)}/{len(words)} palabras con evidencia.",
+             "IPA didáctica británica cuando consta. El cotejo usa CMUdict estadounidense, sin transcripción independiente."]
+    possible = [(word, finding) for word in reviewed for finding in word["findings"]]
+    if not possible:
+        lines.append("Sin desviación detectada dentro del alcance en las palabras con evidencia.")
+        examples = ", ".join(word["expected"] for word in reviewed[:8])
+        if examples:
+            lines.append(f"Palabras con evidencia: {examples}.")
+    for word, finding in possible[:5]:
+        start = finding["start_seconds"] if finding["start_seconds"] is not None else word["start_seconds"]
+        end = finding["end_seconds"] if finding["end_seconds"] is not None else word["end_seconds"]
+        ipa = f" /{word['expected_ipa']}/" if word["expected_ipa"] else ""
+        hypothesis = (f"/{finding['expected']}/ → /{finding['observed']}/" if finding["observed"]
+                      else f"posible omisión de /{finding['expected']}/")
+        lines.append(f"Revisar {word['expected']}{ipa} ({start:.2f}–{end:.2f} s): {hypothesis}. "
+                     f"Confianza técnica {finding['confidence']:.2f}. {finding['recommendation']}")
+    if len(possible) > 5:
+        lines.append(f"Otros {len(possible) - 5} indicios en el JSON privado.")
+    older = previous.get("phonetics") if previous is not None else None
+    if older and older["status"] == "analyzed" and older["model_revision"] == evidence["model_revision"]:
+        old_words = older["words"]
+        old_flags = sum(len(word["findings"]) for word in old_words)
+        lines.append(f"Intento {previous['attempt_number']}: {old_flags} indicios en {len(old_words)} palabras alineadas. "
+                     f"Intento actual: {len(possible)} en {len(words)}. Escucha los tramos antes de valorar la evolución.")
+    return lines
