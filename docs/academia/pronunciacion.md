@@ -60,6 +60,8 @@ Elige uno según la unidad y la evidencia del alumno. Presenta primero un modelo
 
 Para la percepción, usa modelos del [British Council](https://learnenglish.britishcouncil.org/apps/learnenglish-sounds-right) o de [The Sounds of English de BBC Learning English](https://feeds.bbci.co.uk/learningenglish/english/features/pronunciation/). Compara intentos de la misma consigna. Describe únicamente los cambios que puedas fundamentar.
 
+En una revisión, confirma primero qué palabra se leyó y si la toma permite oírla bien. Escucha el fragmento y compara con las variantes válidas de esa palabra. Distingue un contraste del ejercicio de un problema de inteligibilidad en contexto. Si falta el audio o persiste la duda, deja la observación pendiente y propone una repetición breve. El ensayo IF‑MDD se conserva como evidencia técnica y las hipótesis del laboratorio siguen destinadas a la revisión por escucha. [Evaluación y límites](operacion-fonetica-v1.2.md)
+
 ## Primera actividad A1-01 · Presentarse
 
 **Objetivo.** Saludar, dar el nombre, el trabajo y la procedencia con palabras clave inteligibles. Usa los datos que el estudiante quiera decir en privado y deja los marcadores en cualquier material que se vaya a compartir. La práctica pertenece a [A1-01 · Hello & introductions](../../languages/english/curriculum/a1/unit-01.md).
