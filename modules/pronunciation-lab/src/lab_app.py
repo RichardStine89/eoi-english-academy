@@ -22,6 +22,7 @@ from lab import (
     delete_recording,
     export_report,
     list_attempts,
+    listening_evidence,
     load_audio,
     save_attempt,
     validate_metadata,
@@ -41,16 +42,10 @@ MODES = {
 AUDIO_TYPES = (("Audio WAV, MP3 o M4A", "*.wav *.mp3 *.m4a"),)
 NO_COMPARISON = "Sin comparación"
 PHONETIC_STATES = {
-    "analyzed": "Evidencia técnica disponible",
-    "no_deviation_detected": "Sin desviación detectada",
-    "possible_deviation": "Posible desviación",
-    "insufficient_evidence": "Evidencia insuficiente",
-    "not_evaluated": "No evaluado",
-}
-FINDING_LABELS = {
-    "substitution": "Posible sustitución",
-    "possible_omission": "Posible omisión",
-    "insertion": "Posible inserción",
+    "analyzed": "Tramos del guion disponibles",
+    "aligned_for_listening": "Tramo utilizable",
+    "insufficient_evidence": "Intervalo incierto",
+    "not_evaluated": "Sin intervalos",
 }
 READING_SIZES = (12, 14, 16, 18, 20, 22, 24, 28)
 FRAGMENT_WORDS = min(45, MAX_WORDS)
@@ -317,7 +312,7 @@ class LabApp:
         actions.grid(row=0, column=0, columnspan=2, sticky="ew", pady=(0, 4))
         self.copy_button = self._button(actions, "Copiar informe", self._copy, primary=True)
         self.export_button = self._button(actions, "Exportar JSON privado", self._export)
-        self.evidence_button = self._button(actions, "Ver evidencia fonética…", self._open_evidence)
+        self.evidence_button = self._button(actions, "Ver tramos del guion…", self._open_evidence)
 
         self.output = tk.Text(self.results_tab, height=5, width=1, wrap="word", font=("Segoe UI", 11), padx=9, pady=6,
                               borderwidth=1, relief="solid", foreground="#142b45", state="disabled")
@@ -762,10 +757,7 @@ class LabApp:
 
     def _word_audio(self, word: dict) -> tuple[np.ndarray, int] | None:
         interval = self._word_interval(word)
-        supported = word.get("alignment_supported")
-        if supported is None:
-            supported = word.get("status") in {"no_deviation_detected", "possible_deviation"}
-        if self.audio is None or interval is None or not supported:
+        if self.audio is None or interval is None or not word.get("alignment_supported"):
             return None
         samples, rate = self.audio
         if interval[1] > len(samples) / rate + 0.0005:
@@ -778,45 +770,25 @@ class LabApp:
 
     @staticmethod
     def _word_details(word: dict) -> str:
-        lines = [f"{word.get('expected', '—')} · {PHONETIC_STATES.get(word.get('status'), 'No evaluado')}"]
-        if word.get("recognized"):
-            lines.append(f"Palabra reconocida · {word['recognized']}")
+        lines = [f"{word.get('expected', '—')} · {PHONETIC_STATES.get(word.get('status'), 'Sin tramo')}"]
         if word.get("expected_ipa"):
             lines.append(f"IPA británica de referencia · {word['expected_ipa']}")
         elif word.get("reference_phones"):
             lines.append("Secuencia de referencia del modelo · " + " ".join(word["reference_phones"]))
         if word.get("reference_ipa_variants"):
             lines.append("Variantes británicas · " + ", ".join(word["reference_ipa_variants"]))
-        if word.get("observed_phones"):
-            lines.append("Hipótesis fonética · " + " ".join(word["observed_phones"]))
         if word.get("reason"):
             lines.append(word["reason"])
-        for finding in word.get("findings", []):
-            label = FINDING_LABELS.get(finding.get("kind"), "Indicio fonético")
-            expected, observed = finding.get("expected") or "—", finding.get("observed") or "—"
-            confidence = finding.get("confidence")
-            signal = f" · confianza técnica {confidence:.2f}" if confidence is not None else ""
-            lines.append(f"{label} · esperado {expected} → hipótesis {observed}{signal}")
-            if finding.get("recommendation"):
-                lines.append(finding["recommendation"])
-        if free := word.get("free_ctc"):
-            phones = " ".join(item["phone"] for item in free["phones"])
-            lines.append(f"CTC libre, exploratorio (sin confianza calibrada) · {phones}")
-            if candidate := free.get("review_candidate"):
-                expected = candidate.get("expected") or "—"
-                observed = candidate.get("observed") or "—"
-                label = FINDING_LABELS.get(candidate.get("kind"), "Indicio fonético")
-                lines.append(f"Pista para revisar por escucha · {label.lower()} · {expected} → {observed}")
         return "\n".join(lines)
 
     def _open_evidence(self) -> None:
         report = self.report
         if report is None:
             return
-        phonetics = report.get("phonetics") or {}
+        phonetics = listening_evidence(report.get("phonetics")) or {}
         words = phonetics.get("words") or []
         window = tk.Toplevel(self.root)
-        window.title("Evidencia fonética del intento")
+        window.title("Tramos del guion para escuchar")
         window.transient(self.root)
         scale = float(window.tk.call("tk", "scaling")) / (96 / 72)
         width = min(round(810 * scale), window.winfo_screenwidth() - 70)
@@ -830,16 +802,15 @@ class LabApp:
 
         heading = f"{report['student_id']} · {report['unit_id']} · {report['activity_id']}"
         ttk.Label(content, text=heading, style="Section.TLabel").grid(row=0, column=0, sticky="w")
-        labels = [PHONETIC_STATES.get(phonetics.get("status"), "No evaluado")]
+        labels = [PHONETIC_STATES.get(phonetics.get("status"), "Sin intervalos")]
         if phonetics.get("model"):
             labels.append(f"Modelo · {phonetics['model']}")
         if phonetics.get("reason"):
             labels.append(phonetics["reason"])
         if words:
-            labels.append("La confianza técnica usa una escala sin calibrar. «Sin desviación detectada» se limita "
-                          "a la evidencia observada por el motor.")
+            labels.append("Los intervalos aproximados siguen las palabras del guion. Valora la toma por escucha.")
         elif not phonetics:
-            labels.append("Este informe se generó antes de incorporar el análisis fonético.")
+            labels.append("Este informe anterior conserva las mediciones acústicas.")
         limits = phonetics.get("limitations") or []
         summary = ttk.Label(content, text="\n".join(labels), style="Hint.TLabel", wraplength=width - 35, justify="left")
         summary.grid(row=1, column=0, sticky="w", pady=(4, 7))
@@ -859,8 +830,8 @@ class LabApp:
             table.columnconfigure(0, weight=1)
             table.rowconfigure(0, weight=1)
             columns = (
-                ("word", "Palabra", 105), ("status", "Estado", 160), ("ipa", "Referencia", 118),
-                ("hypothesis", "Hipótesis", 118), ("confidence", "Confianza", 80), ("time", "Intervalo (s)", 100),
+                ("word", "Palabra del guion", 145), ("status", "Estado", 160), ("ipa", "Referencia", 118),
+                ("time", "Intervalo (s)", 100),
             )
             tree = ttk.Treeview(table, columns=[key for key, _, _ in columns], show="headings",
                                 height=min(9, len(words)), selectmode="browse")
@@ -877,12 +848,9 @@ class LabApp:
             for number, word in enumerate(words):
                 interval = self._word_interval(word)
                 time_text = f"{interval[0]:.2f}–{interval[1]:.2f}" if interval else "—"
-                confidence = word.get("confidence")
                 reference = word.get("expected_ipa") or " ".join(word.get("reference_phones") or []) or "—"
                 tree.insert("", "end", iid=str(number), values=(
-                    word.get("expected", "—"), PHONETIC_STATES.get(word.get("status"), "No evaluado"),
-                    reference, " ".join(word.get("observed_phones") or []) or "—",
-                    f"{confidence:.2f}" if confidence is not None else "—", time_text,
+                    word.get("expected", "—"), PHONETIC_STATES.get(word.get("status"), "Sin tramo"), reference, time_text,
                 ))
 
             panel = ttk.Frame(content)
@@ -930,7 +898,7 @@ class LabApp:
 
         if limits:
             self._button(actions, "Alcance y límites…", lambda: messagebox.showinfo(
-                "Alcance de la evidencia fonética", "\n\n".join(limits), parent=window))
+                "Alcance de los tramos del guion", "\n\n".join(limits), parent=window))
         self._button(actions, "Cerrar", close)
         window.protocol("WM_DELETE_WINDOW", close)
         window.bind("<Escape>", lambda _event: close())

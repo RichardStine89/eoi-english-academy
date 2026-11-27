@@ -34,6 +34,11 @@ _UNIT = re.compile(r"(A1|A2|B1|B2|C1)-(?:0[1-9]|1[0-2])")
 _ACTIVITY = re.compile(r"[a-zA-Z0-9][a-zA-Z0-9_-]{0,63}")
 _ATTEMPT = re.compile(r"[0-9a-f]{32}")
 _COMPARISON_FIELDS = ("student_id", "unit_id", "cefr", "activity_id", "mode", "expected_text")
+_LISTENING_LIMITS = (
+    "La alineación sigue el guion y ofrece intervalos aproximados para escuchar.",
+    "El léxico de alineación es estadounidense. La IPA británica, cuando consta, orienta la práctica.",
+    "Los juicios de pronunciación y las notas corresponden a la revisión humana.",
+)
 
 
 def load_audio(path: str | Path) -> tuple[np.ndarray, int]:
@@ -107,6 +112,35 @@ def validate_metadata(metadata: dict) -> dict:
     }
 
 
+def listening_evidence(evidence: dict | None) -> dict | None:
+    """Retain alignment and measurements for listening, including in historical reports."""
+    if not evidence:
+        return None
+    words = []
+    for word in evidence.get("words", []):
+        supported = word.get("alignment_supported")
+        if supported is None:
+            supported = word.get("status") in {"possible_deviation", "no_deviation_detected"}
+        start, end = word.get("start_seconds"), word.get("end_seconds")
+        supported = bool(supported and evidence.get("status") == "analyzed"
+                         and type(start) in (int, float) and type(end) in (int, float)
+                         and 0 <= start < end < float("inf"))
+        words.append({
+            **word,
+            "recognized": None,
+            "observed_phones": None,
+            "status": "aligned_for_listening" if supported else "insufficient_evidence",
+            "confidence": None,
+            "model_presence": None,
+            "findings": [],
+            "alignment_supported": supported,
+            "free_ctc": None,
+            "syllables": [{**syllable, "model_stress_support": None} for syllable in word.get("syllables", [])],
+            "aligned_phones": [{**phone, "model_support": None} for phone in word.get("aligned_phones", [])],
+        })
+    return {**evidence, "words": words, "limitations": list(_LISTENING_LIMITS)}
+
+
 def analyze_attempt(samples: np.ndarray, rate: int, metadata: dict) -> dict:
     context = validate_metadata(metadata)
     if isinstance(rate, bool) or not isinstance(rate, (int, np.integer)) or not 8_000 <= rate <= 192_000:
@@ -126,7 +160,7 @@ def analyze_attempt(samples: np.ndarray, rate: int, metadata: dict) -> dict:
             samples = np.clip(samples, -1, 1, out=samples)
         analysis_rate = SAMPLE_RATE
     acoustics = analyze(samples, analysis_rate)
-    phonetics = analyze_phonetics(samples, analysis_rate, context["expected_text"], acoustics)
+    phonetics = listening_evidence(analyze_phonetics(samples, analysis_rate, context["expected_text"], acoustics))
     practice = [
         "El profesor puede elegir un objetivo de práctica tras escuchar evidencia suficiente."
     ]
@@ -144,19 +178,20 @@ def analyze_attempt(samples: np.ndarray, rate: int, metadata: dict) -> dict:
         "engine": {"name": "Praat / Parselmouth", "version": parselmouth.VERSION,
                    "praat_version": parselmouth.PRAAT_VERSION, "acoustic_model": None},
         "reference": {"pedagogical_model": "Inglés británico estándar contemporáneo",
-                      "acoustic_comparison_performed": False, "script_alignment_performed": bool(phonetics["words"])},
+                      "acoustic_comparison_performed": False,
+                      "script_alignment_performed": bool(phonetics and phonetics["words"])},
         "sample_rate_hz": rate,
         "analysis_sample_rate_hz": analysis_rate,
         "acoustics": acoustics,
         "phonetics": phonetics,
         "transcript": None,
-        "phonetic_findings": [{"word": word["expected"], **finding}
-                             for word in phonetics["words"] for finding in word["findings"]] or None,
+        "phonetic_findings": None,
         "confidence": {"signal_quality": acoustics["quality"]["status"],
                        "phonetic_confidence": None},
         "not_evaluated": ["reconocimiento independiente de palabras", "inserciones", "corrección de acentuación léxica y de frase",
                           "ritmo lingüístico y entonación", "palabras por minuto y fluidez",
-                          "inteligibilidad y enlace entre palabras", "acento y nota académica"],
+                          "inteligibilidad y enlace entre palabras", "acento y nota académica",
+                          "detección y corrección automática por contraste"],
         "practice": practice,
     }
 
@@ -280,7 +315,15 @@ def export_report(report: dict) -> Path:
     path = _inside(directory, f"pronunciation-attempt-{attempt.name}.json")
     with tempfile.TemporaryDirectory(prefix=".exporting-", dir=directory) as temporary:
         prepared = Path(temporary) / "report.json"
-        _write_json(prepared, report)
+        exported = dict(report)
+        for field in ("transcript", "phonetic_findings"):
+            if field in report:
+                exported[field] = None
+        if isinstance(report.get("confidence"), dict):
+            exported["confidence"] = {**report["confidence"], "phonetic_confidence": None}
+        if "phonetics" in report:
+            exported["phonetics"] = listening_evidence(report["phonetics"])
+        _write_json(prepared, exported)
         prepared.replace(path)
     return path
 
@@ -310,52 +353,22 @@ def brief_report(report: dict, previous: dict | None = None) -> str:
                          f"{older['active_seconds']:.2f} s (comparación descriptiva).")
     phonetics = report.get("phonetics")
     if phonetics:
-        lines.extend(_phonetic_summary(report, phonetics, previous if comparable else None))
+        lines.extend(_listening_summary(report, phonetics))
     else:
         lines.append("Informe anterior: el intento conserva únicamente mediciones acústicas.")
-    lines.append("Pendiente de valoración humana: acentuación, ritmo, entonación, fluidez, inteligibilidad y nota.")
+    lines.append("Valoración humana: sonidos, acentuación, ritmo, entonación, fluidez, inteligibilidad y nota.")
     lines.append("Práctica: " + " ".join(report["practice"]))
     return "\n".join(lines)
 
 
-def _phonetic_summary(report: dict, evidence: dict, previous: dict | None) -> list[str]:
+def _listening_summary(report: dict, evidence: dict) -> list[str]:
     if evidence["status"] != "analyzed":
-        return ["Cotejo fonético: " + (evidence["reason"] or "sin evidencia interpretable.")]
+        return ["Localización por guion: " + (evidence["reason"] or "sin intervalos disponibles.")]
     text = " ".join((report.get("expected_text") or "").split())
     if len(text) > 300:
         text = text[:297] + "…"
-    words = evidence["words"]
-    reviewed = [word for word in words if word["status"] in {"possible_deviation", "no_deviation_detected"}]
-    lines = [f"Guion esperado: {text}",
-             f"Cotejo: {evidence['engine']} / {evidence['model']}. {len(reviewed)}/{len(words)} palabras con evidencia.",
-             "IPA didáctica británica cuando consta. El cotejo usa CMUdict estadounidense, sin transcripción independiente."]
-    possible = [(word, finding) for word in reviewed for finding in word["findings"]]
-    if not possible:
-        lines.append("Sin desviación detectada dentro del alcance en las palabras con evidencia.")
-        examples = ", ".join(word["expected"] for word in reviewed[:8])
-        if examples:
-            lines.append(f"Palabras con evidencia: {examples}.")
-    for word, finding in possible[:5]:
-        start = finding["start_seconds"] if finding["start_seconds"] is not None else word["start_seconds"]
-        end = finding["end_seconds"] if finding["end_seconds"] is not None else word["end_seconds"]
-        ipa = f" /{word['expected_ipa']}/" if word["expected_ipa"] else ""
-        hypothesis = (f"/{finding['expected']}/ → /{finding['observed']}/" if finding["observed"]
-                      else f"posible omisión de /{finding['expected']}/")
-        lines.append(f"Revisar {word['expected']}{ipa} ({start:.2f}–{end:.2f} s): {hypothesis}. "
-                     f"Confianza técnica {finding['confidence']:.2f}. {finding['recommendation']}")
-    exploratory = [(word, word["free_ctc"]["review_candidate"]) for word in words
-                   if word.get("free_ctc") and word["free_ctc"].get("review_candidate") and not word["findings"]]
-    for word, change in exploratory[:2]:
-        canonical = f"/{change['expected']}/" if change["expected"] else "sin fonema previsto"
-        decoded = f"/{change['observed']}/" if change["observed"] else "sin token observado"
-        lines.append(f"Escucha exploratoria (sin confianza calibrada): {word['expected']} "
-                     f"{word['start_seconds']:.2f}–{word['end_seconds']:.2f} s, {canonical} → {decoded}.")
-    if len(possible) > 5:
-        lines.append(f"Otros {len(possible) - 5} indicios en el JSON privado.")
-    older = previous.get("phonetics") if previous is not None else None
-    if older and older["status"] == "analyzed" and older["model_revision"] == evidence["model_revision"]:
-        old_words = older["words"]
-        old_flags = sum(len(word["findings"]) for word in old_words)
-        lines.append(f"Intento {previous['attempt_number']}: {old_flags} indicios en {len(old_words)} palabras alineadas. "
-                     f"Intento actual: {len(possible)} en {len(words)}. Escucha los tramos antes de valorar la evolución.")
-    return lines
+    words = listening_evidence(evidence)["words"]
+    count = sum(word["alignment_supported"] for word in words)
+    return [f"Guion esperado: {text}",
+            f"Escucha: {count}/{len(words)} palabras del guion con tramo utilizable.",
+            "Los intervalos aproximados sirven para localizar fragmentos."]

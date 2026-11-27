@@ -1,6 +1,6 @@
 # Validación fonética v1.2 · Adjudicación y reserva final
 
-Dirección Académica exige por contraste **80 % de sensibilidad efectiva, 95 % de precisión y 90 % de cobertura**, con voces y guiones independientes. Se conserva el mínimo de 20 errores, 20 controles legítimos y cuatro voces con casos confirmados. Se incluyen controles británicos y se revisan por separado los avisos sobre variantes válidas. La investigación sigue abierta. [Evidencia de la fase 2](investigacion-fonetica-v1.2-fase-2.md)
+El evaluador de esta fase comprueba el objetivo avanzado por contraste de **80 % de sensibilidad efectiva, 95 % de precisión y 90 % de cobertura**. El cierre experimental añade el mínimo para avisos orientativos de **60 %, 90 % y 80 %**, también con voces y guiones independientes. Se conserva el mínimo de 20 errores, 20 controles legítimos y cuatro voces con casos confirmados. Se incluyen controles británicos y se revisan por separado los avisos sobre variantes válidas. [Cierre y niveles](cierre-hibrido-fonetico-v1.2.md) · [Evidencia de la fase 2](investigacion-fonetica-v1.2-fase-2.md)
 
 ## Adjudicación del piloto externo
 

@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import sys
 import tempfile
+from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
@@ -15,8 +16,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from acoustics import analyze
 from lab import (
     SAMPLE_RATE, analyze_attempt, brief_report, delete_recording, export_report,
-    list_attempts, load_audio, private_root, save_attempt, validate_metadata,
+    list_attempts, listening_evidence, load_audio, private_root, save_attempt, validate_metadata,
 )
+from lab_app import LabApp
 
 
 METADATA = {
@@ -46,6 +48,22 @@ def encode(path, format_name, codec):
             output.mux(packet)
         for packet in stream.encode(None):
             output.mux(packet)
+
+
+def old_phonetic_evidence():
+    return {
+        "status": "analyzed", "reason": None,
+        "words": [{
+            "expected": "Hello", "recognized": "Etiqueta de prueba", "expected_ipa": "həˈləʊ",
+            "start_seconds": 0.2, "end_seconds": 0.6, "status": "possible_deviation",
+            "confidence": 0.87, "model_presence": 0.91, "observed_phones": ["x"],
+            "findings": [{"kind": "substitution", "recommendation": "Corrección de prueba"}],
+            "free_ctc": {"phones": [{"phone": "x"}], "review_candidate": {"kind": "substitution"}},
+            "syllables": [{"start_seconds": 0.3, "end_seconds": 0.5, "model_stress_support": 0.73}],
+            "aligned_phones": [{"start_seconds": 0.4, "end_seconds": 0.5, "model_support": 0.82}],
+        }],
+        "temporal": {"aligned_words": 1},
+    }
 
 
 class LabTests(unittest.TestCase):
@@ -112,6 +130,56 @@ class LabTests(unittest.TestCase):
         self.assertEqual(report["sample_rate_hz"], 96_000)
         self.assertEqual(report["analysis_sample_rate_hz"], SAMPLE_RATE)
         self.assertEqual(report["acoustics"]["status"], "measured")
+
+    def test_class_report_keeps_playable_alignment_and_hides_research_predictions(self):
+        original = old_phonetic_evidence()
+        samples = synthetic_signal()
+        with patch("lab.analyze_phonetics", return_value=original):
+            report = analyze_attempt(samples, SAMPLE_RATE, METADATA)
+        word, = report["phonetics"]["words"]
+        self.assertEqual(word["status"], "aligned_for_listening")
+        self.assertEqual(word["expected_ipa"], "həˈləʊ")
+        self.assertEqual(word["aligned_phones"][0]["start_seconds"], 0.4)
+        self.assertEqual(word["findings"], [])
+        self.assertTrue(all(word[key] is None for key in (
+            "recognized", "observed_phones", "confidence", "model_presence", "free_ctc",
+        )))
+        self.assertIsNone(word["syllables"][0]["model_stress_support"])
+        self.assertIsNone(word["aligned_phones"][0]["model_support"])
+        self.assertIsNone(report["phonetic_findings"])
+        self.assertIsNone(report["confidence"]["phonetic_confidence"])
+        self.assertEqual(original["words"][0]["confidence"], 0.87)
+        app = SimpleNamespace(audio=(samples, SAMPLE_RATE), _word_interval=LabApp._word_interval)
+        segment, rate = LabApp._word_audio(app, word)
+        self.assertEqual(rate, SAMPLE_RATE)
+        np.testing.assert_array_equal(segment, samples[3200:9600])
+        self.assertIsNone(LabApp._word_audio(app, {**word, "alignment_supported": False}))
+        self.assertIn("Tramo utilizable", LabApp._word_details(word))
+
+    def test_archived_predictions_remain_private_and_exports_are_descriptive(self):
+        signal = synthetic_signal()
+        report = analyze_attempt(signal, SAMPLE_RATE, METADATA)
+        save_attempt(report, signal, SAMPLE_RATE)
+        report["phonetics"] = old_phonetic_evidence()
+        report["phonetic_findings"] = [{"kind": "substitution", "confidence": 0.87}]
+        report["confidence"]["phonetic_confidence"] = 0.87
+        archived = private_root() / report["student_id"] / report["attempt_id"] / "report.json"
+        archived.write_text(json.dumps(report), encoding="utf-8")
+        original_bytes = archived.read_bytes()
+
+        stored, = list_attempts(report["student_id"])
+        text = brief_report(stored, stored)
+        self.assertIn("comparación descriptiva", text)
+        self.assertIn("1/1 palabras del guion con tramo utilizable", text)
+        self.assertNotIn("Corrección de prueba", text)
+        self.assertNotIn("desviación", text)
+        self.assertNotIn("0.87", text)
+        exported = json.loads(export_report(stored).read_text(encoding="utf-8"))
+        self.assertEqual(exported["phonetics"], listening_evidence(stored["phonetics"]))
+        self.assertIsNone(exported["phonetic_findings"])
+        self.assertIsNone(exported["confidence"]["phonetic_confidence"])
+        self.assertEqual(exported["acoustics"], stored["acoustics"])
+        self.assertEqual(archived.read_bytes(), original_bytes)
 
     def test_separate_histories_export_idempotence_and_recording_deletion(self):
         signal = synthetic_signal()

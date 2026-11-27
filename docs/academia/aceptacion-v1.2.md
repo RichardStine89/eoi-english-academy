@@ -12,7 +12,7 @@ Se conserva como evidencia previa comunicada la captura y transferencia del labo
 | Listening | Idea general y detalles obtenidos de una pista reproducida. Transcripción cerrada hasta la entrega | Recurso cotejado de la unidad y pista oficial de un conjunto habilitado |
 | Writing | Consigna, borrador, rúbrica pedagógica sobre 10, corrección razonada y reescritura | Actividad de la unidad en cada clase, incluida una respuesta a otro interlocutor cuando proceda |
 | Speaking | Monólogo breve, intercambio real, gestión de turnos y seguimiento | Voz en el chat existente; registra los criterios observados y deja sin nota los que carezcan de evidencia |
-| Pronunciación | Toma propia, intervalo verificable, escucha, repetición y comparación de la misma frase | Laboratorio local con guion breve. Las hipótesis se afirman solo tras escucha suficiente |
+| Pronunciación | Toma propia, intervalo verificable, escucha, repetición y comparación de la misma frase | Laboratorio local con guion breve. Los juicios de pronunciación requieren escucha humana suficiente |
 | Mediación escrita | Selección fiel, adaptación y claridad para un destinatario concreto | Caso A de abajo, sin traducción literal exigida |
 | Mediación oral | Explicación breve por voz y reformulación a partir de una pregunta real | Caso B de abajo. Los criterios que exigen voz quedan pendientes si el canal falla |
 | Gramática y vocabulario | Uso correcto en contexto, transferencia y recuperación posterior | Corrige dos patrones de una producción y vuelve a comprobarlos con una consigna nueva |
