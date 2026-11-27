@@ -3,7 +3,7 @@
 **Can-do:** I can say what I enjoy and want to do in my free time and connect ideas in the right order.
 
 ## Grammar focus
-Verb + gerund / infinitive patterns (introduction) and connectors *so / then / before / after*. Some verbs are followed by the *-ing* form (enjoy, like, love, hate, finish, mind), and others by the *to* infinitive (want, hope, decide, need, would like). A few common verbs allow both with little change of meaning (start, begin, like). Use *so* to show a result, *then* for the next event, and *before / after* to order two events in time.
+Verb + gerund / infinitive patterns (introduction) and connectors *so / then / before / after*. Some verbs are followed by the *-ing* form (enjoy, like, love, hate, finish, mind), and others by the *to* infinitive (want, hope, decide, need, would like). Some verbs allow both forms (*start, begin, like*). Both *I like walking* and *I like to walk* are possible. For this unit, use the *-ing* form to talk about enjoyment. Use *so* to show a result, *then* for the next event, and *before / after* to order two events in time.
 
 - I **enjoy watching** documentaries.
 - She **wants to see** the new comedy.
@@ -19,7 +19,7 @@ comedy — a film or show that makes you laugh
 documentary — a film or programme about real facts
 audience — the people who watch or listen to a show
 channel — a television or radio station
-series — a set of programmes with the same characters
+series — a set of related programmes or episodes
 actor — a person who performs in films or plays
 scene — one separate part of a film or play
 review — a written opinion about a film, book or show

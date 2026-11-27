@@ -25,6 +25,8 @@ BRITISH_IPA = {
     "guide": "ɡaɪd", "spain": "speɪn", "spanish": "ˈspænɪʃ",
     "meet": "miːt", "nice": "naɪs",
 }
+BRITISH_VARIANTS = {"with": ["wɪθ", "wɪð"], "either": ["ˈaɪðə", "ˈiːðə"],
+                    "neither": ["ˈnaɪðə", "ˈniːðə"], "route": ["ruːt"]}
 CONTRASTS = (
     ({"ɪ", "i"}, "ship/sheep o live/leave con live como verbo"),
     ({"ʊ", "u"}, "full/fool"),
@@ -40,6 +42,7 @@ LIMITATIONS = [
     "Alineación con el guion y alternativas del modelo CTC; no hay ASR ni confirmación independiente de palabras.",
     "CMUdict es estadounidense. Se filtran contrastes sensibles al dialecto; no hay calibración británica local.",
     "Las probabilidades son indicadores del motor. Una hipótesis requiere escucha y no es una calificación.",
+    "La secuencia libre de CTC se observa en la ventana alineada. Sus indicios de revisión son exploratorios y no se puntúan.",
     "Inserciones, inteligibilidad, enlace y corrección de acento, ritmo y entonación no se evalúan automáticamente.",
 ]
 
@@ -127,9 +130,11 @@ def _word_evidence(word, items: list[dict], duration: float) -> dict:
     return {
         "expected": word.text, "recognized": None, "start_seconds": start, "end_seconds": end,
         "expected_ipa": BRITISH_IPA.get(word.text.casefold()),
+        "reference_ipa_variants": BRITISH_VARIANTS.get(word.text.casefold()),
         "reference_phones": [p.ipa for p in word.phones],
         "observed_phones": [finding["observed"] for finding in findings if finding["observed"]] or None,
         "status": status, "confidence": confidence, "model_presence": presence, "findings": findings,
+        "alignment_supported": sufficient, "free_ctc": None,
         "syllables": [{"start_seconds": bounds[0], "end_seconds": bounds[1],
                        "expected_model_stress": sy.stress_expected,
                        "model_stress_support": _probability(sy.stress_prob)}
@@ -140,6 +145,51 @@ def _word_evidence(word, items: list[dict], duration: float) -> dict:
             for phone in word.phones if (bounds := _interval(phone.start, phone.end, duration))[0] is not None
         ],
     }
+
+
+def _unique_edit(expected: list[str], decoded: list[str], word: str = "") -> dict | None:
+    """Surface one unambiguous edit for listening, without treating it as an error."""
+    if min(len(expected), len(decoded)) < 2 or max(len(expected), len(decoded)) < 3:
+        return None
+    canon = [*map(_symbol, expected)]
+    heard = [*map(_symbol, decoded)]
+    if "".join(heard) in {_symbol(variant.replace("ˈ", "")) for variant in BRITISH_VARIANTS.get(word, [])}:
+        return None
+    if len(canon) == len(heard):
+        edits = [(a, b) for a, b in zip(canon, heard) if a != b]
+        if len(edits) == 1 and any(set(edits[0]) == pair for pair, _ in CONTRASTS):
+            return {"kind": "substitution", "expected": edits[0][0], "observed": edits[0][1]}
+    elif len(heard) + 1 == len(canon):
+        edits = [x for i, x in enumerate(canon) if canon[:i] + canon[i + 1:] == heard]
+        if len(edits) == 1 and edits[0] in {"h", "l", "f", "m", "p", "k", "s", "z"}:
+            if word not in {"he", "his", "him", "her", "have", "has", "had"}:
+                return {"kind": "possible_omission", "expected": edits[0], "observed": None}
+    elif len(canon) + 1 == len(heard):
+        edits = [x for i, x in enumerate(heard) if heard[:i] + heard[i + 1:] == canon]
+        if len(edits) == 1 and edits[0] in {"ə", "ɪ", "ɛ"}:
+            return {"kind": "insertion", "expected": None, "observed": edits[0]}
+    return None
+
+
+def _add_free_ctc(words: list[dict], result, duration: float) -> None:
+    # Pronunciada 1.1.0 stores its free greedy CTC path with the forced-alignment evidence.
+    cache = getattr(result, "_pronunciada", {}) or {}
+    alignment = cache.get("ev")
+    if alignment is None or not alignment.free_tokens:
+        return
+    # ZIPA has a 20 ms output step and 30 ms initial offset for segment starts.
+    tokens = [(symbol, *_interval(a * 0.02 + 0.03, b * 0.02 + 0.03, duration))
+              for symbol, a, b in alignment.free_tokens]
+    for word in words:
+        if not word["alignment_supported"]:
+            continue
+        start, end = word["start_seconds"], word["end_seconds"]
+        within = [{"phone": phone, "start_seconds": a, "end_seconds": b}
+                  for phone, a, b in tokens if a is not None and start <= (a + b) / 2 < end]
+        if not within:
+            continue
+        hit = _unique_edit(word["reference_phones"], [p["phone"] for p in within], word["expected"].casefold())
+        word["free_ctc"] = {"phones": within, "review_candidate": hit, "confidence": None}
 
 
 def _temporal(words: list[dict], samples: np.ndarray, rate: int) -> dict | None:
@@ -203,4 +253,6 @@ def analyze_phonetics(samples: np.ndarray, rate: int, text: str | None, quality:
     if evidence["temporal"] is None:
         evidence["status"] = "insufficient_evidence"
         evidence["reason"] = "Ninguna palabra obtuvo evidencia suficiente para interpretar el cotejo."
+    else:
+        _add_free_ctc(evidence["words"], result, duration)
     return evidence

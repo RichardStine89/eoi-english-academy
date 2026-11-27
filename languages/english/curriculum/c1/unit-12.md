@@ -3,19 +3,19 @@
 **Can-do:** I can integrate the full range of C1 grammar, vocabulary and discourse skills across complex spoken and written tasks at CAE level.
 
 ## Grammar focus
-This unit consolidates Units 1–11: hedging and advanced modality, emphatic inversion, cleft and fronting, ellipsis and substitution, nominalization and complex passives, the subjunctive, participle and reduced clauses, cohesive devices, nuanced aspect, idiom and register, and the machinery of argument. At C1 these no longer operate in isolation — a single well-crafted paragraph might front an idea, hedge a claim, invert for emphasis and close on a cleft. Review, then, is not re-learning each rule but orchestrating them: choosing the right device for the register and the effect, and knowing when a marked structure would sound stilted rather than powerful.
+This unit consolidates Units 1–11: hedging and advanced modality, emphatic inversion, cleft and fronting, ellipsis and substitution, nominalisation and complex passives, the subjunctive, participle and reduced clauses, cohesive devices, nuanced aspect, idiom and register, and the machinery of argument. At C1 these no longer operate in isolation — a single well-crafted paragraph might front an idea, hedge a claim, invert for emphasis and close on a cleft. Review, then, is not re-learning each rule but orchestrating them: choosing the right device for the register and the effect, and knowing when a marked structure would sound stilted rather than powerful.
 
 - What the data would seem to suggest, tentatively, is a structural shift. *(cleft + hedging)*
 - Not only was the study underpowered, but its conclusions were, arguably, overstated. *(inversion + hedge)*
 - Having weighed the evidence, the committee recommended that the trial be halted. *(participle + subjunctive)*
 - It could be argued that, far from resolving the crisis, the intervention deepened it. *(hedge + fronting)*
 - Rarely has a policy been so widely praised and so quietly abandoned. *(inversion + irony)*
-- The former approach is elegant; the latter, more robust — and it is the latter we'll adopt. *(substitution + cleft)*
+- The former approach is elegant; the latter, more robust — and it is the latter we'll adopt. *(reference + ellipsis + cleft)*
 - Were the funding to be restored, much of the damage could still be reversed. *(subjunctive conditional)*
 - Admittedly the sample is small; nevertheless, the trend is compelling. *(concession + cohesion)*
 
 ## Target vocabulary (10–12 items)
-synthesize — to combine separate elements into a coherent whole
+synthesise — to combine separate elements into a coherent whole
 articulate — to express an idea clearly and effectively
 discern — to perceive or recognise something clearly
 holistic — considering the whole rather than the parts

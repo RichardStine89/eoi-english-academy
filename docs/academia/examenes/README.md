@@ -1,6 +1,6 @@
 # Biblioteca de exámenes EOI
 
-Inventario del 19 de noviembre de 2026. Este catálogo guarda metadatos e identificadores de selección. Los originales y el paquete de auditoría se guardan en ubicaciones privadas. La [guía de acceso](../acceso-chatgpt.md) describe cómo consultar una copia autorizada de Drive o un archivo local.
+Inventario del 19 de noviembre de 2026, con revisión diferencial v1.2 del 24 al 27 de noviembre. Este catálogo guarda metadatos e identificadores de selección. Los originales y el paquete de auditoría se guardan en ubicaciones privadas. La [guía de acceso](../acceso-chatgpt.md) describe cómo consultar una copia autorizada de Drive o un archivo local.
 
 ## Índices
 
@@ -9,6 +9,8 @@ Inventario del 19 de noviembre de 2026. Este catálogo guarda metadatos e identi
 | [Convocatorias y modelos](convocatorias.json) | 70 conjuntos con nivel, fecha, organismo, destrezas, lista de cuadernillos, audios, claves, estado de rúbrica e incidencias |
 | [Catálogo de archivos](catalogo.json) | 442 registros. Cada uno identifica un archivo físico, su convocatoria, formato, función, destrezas y estado |
 | [Manifiesto para ChatGPT](manifiesto-chatgpt.md) | Cómo elegir el material, preparar una sesión y reservar la clave hasta el cierre |
+| [Auditoría diferencial v1.2](auditoria-diferencial-v1.2.md) | Cobertura del cotejo, páginas, tareas y condiciones de uso |
+| [Fuentes de evaluación](fuentes-evaluacion.md) | Normativa, guías y hojas de observación por edición |
 | `biblioteca/inventario-privado.json` | En la carpeta hermana privada `ExpEDIENTES EOI English Academy`. Vincula los 442 identificadores con nombres y rutas locales exactas, tamaño en bytes y huellas SHA-256 |
 
 El campo `convocatoria_id` del catálogo enlaza con `id` en el índice de convocatorias. El `id` de archivo enlaza con el inventario privado. Los sufijos `CTE` y `CTO` identifican los cuadernillos de comprensión, `PCTE` y `PCTO` los de producción escrita y oral, `ME` los archivos de mediación, `AUDIO-01` y `AUDIO-02` las pistas y `KEY` las claves o guías. Los sufijos reflejan el contenido catalogado, que puede diferir del nombre local.
@@ -43,7 +45,7 @@ La mediación escrita aparece integrada en los cuadernillos de producción escri
 | `C2-2021-06` | El archivo oficial de la convocatoria ordinaria contiene seis materiales y carece de clave independiente. Queda pendiente una clave para corregir la comprensión. [Archivo oficial de la Junta](https://www.juntadeandalucia.es/educacion/portals/delegate/content/9705b341-d73e-4361-98c7-2d6e5e25d0b6/ING_C2_ord_21) |
 | `C2-2022-06` | El audio corresponde al cuadernillo. En la tarea 2 la consigna numera hasta 10 y ambas escuchas terminan en el extracto 8 tras el ejemplo 0. La corrección automática de esa tarea queda bloqueada. |
 | `C1-2021-09` | La guía local coincide con la del paquete oficial de septiembre. La guía dice junio en el pie y B1 en un preámbulo. Se cotejaron las 26 respuestas de comprensión oral. La corrección automática de comprensión escrita queda bloqueada por una discrepancia entre el texto y la clave de la tarea 3, ítem 8. [Archivo oficial de la Junta](https://www.juntadeandalucia.es/educacion/portals/delegate/content/f4223032-8329-496f-ab3c-08221e3bda2f/ING_C1_sep_21) |
-| `C1-2024-06` | Los tres PDF dicen junio y la carpeta original está etiquetada mayo. El MP3 coincide en contenido y orden con las tres tareas de la guía de junio. Falta el cuadernillo CTO para el candidato. El uso de la clave queda bloqueado hasta completar el conjunto. |
+| `C1-2024-06` | Los tres PDF dicen junio y la carpeta original está etiquetada mayo. El MP3 coincide en contenido y orden con las tres tareas de la guía de junio. Falta el cuadernillo CTO para el candidato y se mantiene bloqueada la corrección de comprensión oral. Consulte el alcance específico para comprensión escrita. |
 | `B2-2024-06`, `B2-2024-09` | Los originales llamados `PCTO.pdf` son cuadernillos de producción y mediación escritas. Sus identificadores terminan en `PCTE`. |
 | Los ocho conjuntos de 2024 | Sin cuadernillos independientes identificados de producción oral para el candidato. Las guías contienen pautas de mediación oral y remiten a las hojas de observación. |
 
@@ -63,6 +65,19 @@ Hay ocho conjuntos con audio, cuadernillo y clave cotejados para puntuar toda la
 | C2 | Junio de 2024 |
 
 En B1 septiembre de 2024 se puede puntuar la tarea 3. En C2 septiembre de 2024 se pueden puntuar las tareas 2 y 3. Las demás tareas de esos dos conjuntos presentan un conflicto entre la consigna particular y el baremo general de la guía. El catálogo documenta también los rangos de respuesta que difieren entre la consigna y la cuadrícula, y las variantes que requieren juicio humano. Consulte `evaluacion_comto` antes de puntuar. El alcance aquí indicado cubre comprensión oral.
+
+## Comprensión escrita utilizable para evaluación
+
+En `solucionario.evaluacion_comte`, `tareas_aptas` identifica tareas completas y `preguntas_aptas` identifica ítems aislados de una tarea parcial. Este alcance se aplica exclusivamente a comprensión escrita, con independencia del estado de comprensión oral del conjunto. Cuando una tarea tenga preguntas bloqueadas, la puntuación podrá indicar los aciertos de los ítems aptos y la cantidad revisada. El total del ejercicio queda vacío si el alcance no comprende sus tres tareas completas.
+
+| Conjunto | Alcance de corrección automática |
+|---|---|
+| `B1-2024-09` | Tarea 3 completa |
+| `B2-2024-09` | Tareas 2 y 3 completas |
+| `C1-2024-06` | Tareas 2 y 3 completas. De T1, ítems 1 y 3–6 |
+| `C1-2024-09` | Tarea 3, ítems 1, 3–5 y 7–10 |
+
+El [registro diferencial](auditoria-diferencial-v1.2.md) documenta los bloqueos, los tiempos y el alcance de los cotejos. En A2 modelo 1, la verificación de procedencia del audio confirma que es la grabación publicada. La consigna y la numeración de la primera tarea difieren de esa grabación y se excluye la tarea completa de la corrección automática.
 
 ## Estados de la clave
 

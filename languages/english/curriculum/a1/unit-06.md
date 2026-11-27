@@ -22,7 +22,7 @@ park — a green public place with trees
 station — a place where trains or buses stop
 hospital — a place where sick people go
 restaurant — a place where you eat a meal out
-corner — the point where two streets meet
+corner — the place where two streets meet
 left — the opposite side of right
 right — the opposite side of left
 near — close to a place
@@ -42,4 +42,4 @@ between — in the middle of two things
 ## Watch out
 - She cans swim → She can swim
 - I can to drive → I can drive
-- The park is in front the school → The park is opposite/in front of the school
+- The park is in front the school → The park is in front of the school

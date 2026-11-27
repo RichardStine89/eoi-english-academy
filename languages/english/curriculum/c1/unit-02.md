@@ -3,7 +3,7 @@
 **Can-do:** I can front negative and restrictive adverbials and invert subject and auxiliary to add dramatic emphasis in formal writing and speech.
 
 ## Grammar focus
-When a negative or restrictive adverbial moves to the front of a clause, the subject and auxiliary invert as in a question. The usual triggers are *hardly / scarcely … when*, *no sooner … than*, *not only … but also*, *never / rarely / seldom*, *little*, *under no circumstances*, *only then / only after / only by*, and *not until*. This is a marked, emphatic structure reserved for formal, literary or rhetorical register — it lends weight and drama that neutral word order cannot. The auxiliary carries the inversion; where there is no auxiliary, supply *do / does / did*. Save it for effect: overuse tips into pomposity.
+When a negative or restrictive adverbial moves to the front of a clause, the subject and auxiliary invert as in a question. The usual triggers are *hardly / scarcely … when*, *no sooner … than*, *not only … but also*, *never / rarely / seldom*, *little*, *under no circumstances*, *only then / only after / only by*, and *not until*. This is a marked, emphatic structure common in formal, literary or rhetorical contexts — it lends weight and drama that neutral word order cannot. After a fronted *only after* or *not until* clause, invert the main clause: *Only after I read the letter did I understand*. The auxiliary carries the inversion; where there is no auxiliary, supply *do / does / did*. Save it for effect: overuse tips into pomposity.
 
 - Hardly had the minister spoken when the room erupted.
 - No sooner had the ceasefire been announced than fighting resumed.
@@ -23,7 +23,7 @@ mounting — gradually increasing
 watershed — a turning point that changes the course of things
 backlash — a strong adverse reaction to something
 ramifications — the complex consequences of an action
-galvanize — to shock or spur into sudden action
+galvanise — to shock or spur into sudden action
 eclipse — to surpass or overshadow completely
 staunch — loyal and firmly committed
 upheaval — a violent or sudden change

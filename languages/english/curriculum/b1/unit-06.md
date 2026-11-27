@@ -3,7 +3,7 @@
 **Can-do:** I can compare how things used to be with how they are now, and describe past habits that have changed.
 
 ## Grammar focus
-Use **used to + verb** for past habits and states that are no longer true (*I used to smoke; she used to live here*). It exists only in the past; for present habits, use the present simple with an adverb of frequency (*I usually walk to work*). The question and negative drop the *-d*: *Did you use to…? / I didn't use to…*. Be careful with the look-alike **be/get used to + -ing**, which means "be/become familiar with" — a different structure (*I'm used to getting up early*) — but the core B1 pattern here is the past-habit meaning. To compare then and now, pair *used to* with a present statement, often with *now, these days* or *anymore*.
+Use **used to + verb** for past habits and states that are no longer true (*I used to smoke; she used to live here*). It exists only in the past; for present habits, use the present simple with an adverb of frequency (*I usually walk to work*). The question and negative drop the *-d*: *Did you use to…? / I didn't use to…*. Be careful with the look-alike **be/get used to + -ing**, which means "be/become familiar with" — a different structure (*I'm used to getting up early*) — but the core B1 pattern here is the past-habit meaning. To compare then and now, pair *used to* with a present statement, often with *now, these days* or *any more*.
 
 - I **used to** eat a lot of junk food, but now I cook.
 - **Did** you **use to** play any sport at school?
@@ -26,7 +26,7 @@ sleep — the natural rest of body and mind at night
 quit — to stop doing something completely
 cut down — to reduce the amount of something
 work out — to do physical exercise to get fit
-give up — to stop trying to do something
+give up — to stop trying or to stop an activity or habit
 
 ## Functions & phrases
 - Comparing then and now: "I used to…, but now…", "Things were different back then."
@@ -42,4 +42,4 @@ give up — to stop trying to do something
 ## Watch out
 - I use to play football when I was young → I used to play football when I was young
 - Did you used to live here? → Did you use to live here?
-- I am used to smoke → I used to smoke
+- For a former habit: *I used to smoke*. For being familiar with the activity: *I'm used to smoking*.

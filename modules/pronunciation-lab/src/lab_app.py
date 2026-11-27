@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
+from itertools import islice
 from pathlib import Path
 from queue import Empty, SimpleQueue
+import re
 from threading import Thread
 from time import monotonic
 import tkinter as tk
-from tkinter import filedialog, messagebox, ttk
+from tkinter import filedialog, font as tkfont, messagebox, ttk
 from typing import Callable
 
 import numpy as np
@@ -24,6 +26,7 @@ from lab import (
     save_attempt,
     validate_metadata,
 )
+from phonetics import MAX_SECONDS, MAX_WORDS
 
 
 STUDENTS = ("alumno-01", "alumno-02")
@@ -49,6 +52,31 @@ FINDING_LABELS = {
     "possible_omission": "Posible omisión",
     "insertion": "Posible inserción",
 }
+READING_SIZES = (12, 14, 16, 18, 20, 22, 24, 28)
+FRAGMENT_WORDS = min(45, MAX_WORDS)
+TEXT_CHARACTERS = 4_000
+
+
+def split_passage(text: str) -> list[str]:
+    """Prefer complete sentences while keeping each fragment within the engine limits."""
+    remaining = text.strip()
+    fragments = []
+    while remaining:
+        words = list(islice(re.finditer(r"\b\w+\b", remaining), FRAGMENT_WORDS + 1))
+        end = words[-1].start() if len(words) > FRAGMENT_WORDS else len(remaining)
+        end = min(end, TEXT_CHARACTERS)
+        if end < len(remaining):
+            prefix = remaining[:end]
+            breaks = list(re.finditer(r"(?<=[.!?])\s+|\n[ \t]*\n", prefix))
+            if breaks and breaks[-1].start() > end // 2:
+                end = breaks[-1].start()
+            elif not remaining[end - 1].isspace() and not remaining[end].isspace():
+                spaces = list(re.finditer(r"\s+", prefix))
+                if spaces and spaces[-1].start() > end // 2:
+                    end = spaces[-1].start()
+        fragments.append(remaining[:end].strip())
+        remaining = remaining[end:].lstrip()
+    return fragments
 
 
 class Recorder:
@@ -102,6 +130,17 @@ class LabApp:
         self.device_state = tk.StringVar(root)
         self.comparison = tk.StringVar(root, NO_COMPARISON)
         self.status = tk.StringVar(root, "Selecciona tu alumno e indica la unidad, el nivel y la actividad.")
+        self.capture_state = tk.StringVar(root, "En espera")
+        self.elapsed = tk.StringVar(root, "00:00")
+        self.reading_size = tk.StringVar(root, "18")
+        self.reading_font = tkfont.Font(root=root, family="Segoe UI", size=18)
+        self.fragment_label = tk.StringVar(root)
+        self.fragments: list[str] = []
+        self.fragment_index = 0
+        self.full_passage = ""
+        self.reading_fullscreen = False
+        self.previous_window_state = "normal"
+        self.return_tab = ""
 
         self.devices: dict[str, tuple[int, int]] = {}
         self.comparisons: dict[str, dict] = {}
@@ -120,41 +159,71 @@ class LabApp:
         self._detect_devices()
         self._sync_buttons()
         root.protocol("WM_DELETE_WINDOW", self._close)
+        root.bind("<F11>", self._toggle_reading)
+        root.bind("<Escape>", self._exit_reading)
 
     def _build(self) -> None:
         root = self.root
         root.title("EOI Pronunciation Lab")
-        root.geometry(f"{min(900, root.winfo_screenwidth() - 36)}x{min(750, root.winfo_screenheight() - 86)}")
-        root.minsize(680, 610)
+        root.geometry(f"{min(1120, root.winfo_screenwidth() - 36)}x{min(780, root.winfo_screenheight() - 86)}")
+        root.minsize(640, 470)
         root.columnconfigure(0, weight=1)
         root.rowconfigure(0, weight=1)
+        if root.tk.call("tk", "windowingsystem") == "win32":
+            root.state("zoomed")
 
         style = ttk.Style(root)
         style.theme_use("clam")
-        style.configure("TFrame", background="#f3f6f6")
-        style.configure("TLabel", background="#f3f6f6", foreground="#21343c", font=("Segoe UI", 10))
-        style.configure("Title.TLabel", font=("Segoe UI", 23, "bold"), foreground="#153a45")
+        style.configure("TFrame", background="#f3f5f8")
+        style.configure("TLabel", background="#f3f5f8", foreground="#142b45", font=("Segoe UI", 10))
+        style.configure("Masthead.TFrame", background="#142b45")
+        style.configure("Title.TLabel", background="#142b45", foreground="white", font=("Segoe UI", 17, "bold"))
         style.configure("Section.TLabel", font=("Segoe UI", 11, "bold"))
-        style.configure("Hint.TLabel", foreground="#405760", font=("Segoe UI", 9))
-        style.configure("TButton", font=("Segoe UI", 9), padding=(8, 5))
-        style.configure("Primary.TButton", background="#146375", foreground="white")
-        style.map("Primary.TButton", background=[("disabled", "#d6e1e3"), ("active", "#0b4b5b")],
-                  foreground=[("disabled", "#50626b")])
+        style.configure("Hint.TLabel", foreground="#43556c", font=("Segoe UI", 9))
+        style.configure("TButton", font=("Segoe UI", 10), padding=(8, 4), background="#e8eef5",
+                        foreground="#142b45", bordercolor="#aebfd2", lightcolor="#f3f6fa", darkcolor="#aebfd2")
+        style.map("TButton", background=[("active", "#d8e5f2"), ("disabled", "#edf1f5")],
+                  foreground=[("disabled", "#657386")])
+        style.configure("Primary.TButton", background="#1a4778", foreground="white", bordercolor="#14385f")
+        style.map("Primary.TButton", background=[("disabled", "#dce3ec"), ("active", "#14385f")],
+                  foreground=[("disabled", "#4c5a6d")])
+        style.configure("Capture.Primary.TButton", font=("Segoe UI", 11, "bold"), padding=(12, 7))
+        style.configure("Stop.TButton", font=("Segoe UI", 11, "bold"), padding=(12, 7))
+        style.configure("Capture.TLabel", font=("Segoe UI", 10, "bold"))
+        style.configure("Recording.TLabel", foreground="#9e2525", font=("Segoe UI", 10, "bold"))
+        style.configure("TNotebook", background="#f3f5f8", bordercolor="#b8c5d4", borderwidth=0)
+        style.configure("TNotebook.Tab", padding=(14, 5), font=("Segoe UI", 10, "bold"),
+                        background="#e8eef5", foreground="#142b45")
+        style.map("TNotebook.Tab", background=[("selected", "#1a4778")], foreground=[("selected", "white")])
+        style.configure("TCombobox", background="#e8eef5", bordercolor="#aebfd2")
+        style.map("TCombobox", fieldbackground=[("readonly", "white"), ("disabled", "#edf1f5")])
+        style.layout("Reader.TNotebook.Tab", [])
 
-        body = ttk.Frame(root, padding=(18, 12))
+        body = self.body = ttk.Frame(root)
         body.grid(sticky="nsew")
         body.columnconfigure(0, weight=1)
-        body.rowconfigure(4, weight=1)
+        body.rowconfigure(1, weight=1)
+        body.bind("<Configure>", self._adapt_shell)
 
-        header = ttk.Frame(body)
-        header.grid(row=0, column=0, sticky="ew", pady=(0, 8))
-        ttk.Label(header, text="EOI Pronunciation Lab", style="Title.TLabel").pack(anchor="w")
-        ttk.Label(header, text="Práctica oral con análisis acústico local", style="Hint.TLabel").pack(anchor="w")
+        self.header = ttk.Frame(body, style="Masthead.TFrame", padding=(16, 5))
+        self.header.grid(row=0, column=0, sticky="ew")
+        ttk.Label(self.header, text="EOI Pronunciation Lab", style="Title.TLabel").pack(anchor="w")
 
-        form = ttk.Frame(body)
-        form.grid(row=1, column=0, sticky="ew", pady=(0, 5))
+        self.tabs = ttk.Notebook(body)
+        self.tabs.grid(row=1, column=0, sticky="nsew", padx=12, pady=(6, 0))
+        self.practice_tab = ttk.Frame(self.tabs, padding=(8, 4))
+        self.results_tab = ttk.Frame(self.tabs, padding=(8, 5))
+        self.tabs.add(self.practice_tab, text="Práctica")
+        self.tabs.add(self.results_tab, text="Resultados")
+        self.practice_tab.columnconfigure(0, weight=1)
+        self.practice_tab.rowconfigure(3, weight=1)
+        self.results_tab.columnconfigure(0, weight=1)
+        self.results_tab.rowconfigure(1, weight=1)
+
+        form = self.form = ttk.Frame(self.practice_tab)
+        form.grid(row=0, column=0, sticky="ew", pady=(0, 4))
         for column in range(5):
-            form.columnconfigure(column, weight=2 if column in (3, 4) else 1)
+            form.columnconfigure(column, weight=int(column in (3, 4)))
         student_box = self._field(form, 0, "Alumno", self.student, STUDENTS)
         student_box.bind("<<ComboboxSelected>>", self._student_changed)
         self._field(form, 1, "Unidad", self.unit)
@@ -163,66 +232,102 @@ class LabApp:
         mode_box = self._field(form, 4, "Modo", self.mode, tuple(MODES))
         mode_box.bind("<<ComboboxSelected>>", self._mode_changed)
 
-        exercise = ttk.Frame(body)
-        exercise.grid(row=2, column=0, sticky="ew", pady=(1, 7))
-        exercise.columnconfigure(0, weight=1)
-        ttk.Label(exercise, textvariable=self.mode_hint, style="Hint.TLabel").grid(sticky="w")
-        ttk.Label(exercise, text="Texto esperado", style="Section.TLabel").grid(sticky="w", pady=(3, 1))
-        self.expected = tk.Text(exercise, height=3, wrap="word", font=("Segoe UI", 10), padx=6, pady=4,
-                                undo=True, relief="solid", borderwidth=1, foreground="#21343c")
-        self.expected.grid(sticky="ew")
+        self.mode_hint_label = ttk.Label(self.practice_tab, textvariable=self.mode_hint, style="Hint.TLabel")
+        self.mode_hint_label.grid(row=1, column=0, sticky="w", pady=(0, 3))
+        self.practice_tab.bind("<Configure>", lambda event: self.mode_hint_label.configure(wraplength=event.width - 16))
 
-        controls = ttk.Frame(body)
-        controls.grid(row=3, column=0, sticky="ew", pady=(0, 6))
+        reading_header = ttk.Frame(self.practice_tab)
+        reading_header.grid(row=2, column=0, sticky="ew", pady=(0, 3))
+        ttk.Label(reading_header, text="Texto de práctica", style="Section.TLabel").pack(side="left")
+        self.reading_button = ttk.Button(reading_header, text="Pantalla completa (F11)", command=self._toggle_reading)
+        self.reading_button.pack(side="right")
+        font_choice = ttk.Combobox(reading_header, textvariable=self.reading_size, values=READING_SIZES,
+                                   width=3, state="readonly")
+        font_choice.pack(side="right", padx=(3, 8))
+        font_choice.bind("<<ComboboxSelected>>", self._set_reading_size)
+        ttk.Label(reading_header, text="Letra (pt)").pack(side="right")
+
+        exercise = ttk.Frame(self.practice_tab)
+        exercise.grid(row=3, column=0, sticky="nsew")
+        exercise.columnconfigure(0, weight=1)
+        exercise.rowconfigure(0, weight=1)
+        self.expected = tk.Text(exercise, height=5, width=1, wrap="word", font=self.reading_font, padx=14, pady=9,
+                                undo=True, relief="solid", borderwidth=1, foreground="#142b45", spacing3=6)
+        self.expected.grid(row=0, column=0, sticky="nsew")
+        scrollbar = ttk.Scrollbar(exercise, command=self.expected.yview)
+        scrollbar.grid(row=0, column=1, sticky="ns")
+        self.expected.configure(yscrollcommand=scrollbar.set)
+
+        reader_tools = self.reader_tools = ttk.Frame(self.practice_tab)
+        reader_tools.grid(row=4, column=0, sticky="ew", pady=(4, 0))
+        reader_tools.columnconfigure(1, weight=1)
+        reader_tools.bind("<Configure>", self._arrange_reader_tools)
+        self.source_tools = ttk.Frame(reader_tools)
+        self.source_tools.grid(row=0, column=0, sticky="w")
+        self.open_text_button = self._button(self.source_tools, "Abrir texto .txt…", self._open_text)
+        self.split_button = self._button(self.source_tools, "Dividir en fragmentos", self._split_text)
+        self.fragment_tools = ttk.Frame(reader_tools)
+        self.fragment_tools.grid(row=0, column=0, sticky="w")
+        self.complete_button = self._button(self.fragment_tools, "Texto completo", self._restore_passage)
+        self.previous_fragment_button = self._button(self.fragment_tools, "Anterior", lambda: self._move_fragment(-1))
+        ttk.Label(self.fragment_tools, textvariable=self.fragment_label).pack(side="left", padx=(1, 7))
+        self.next_fragment_button = self._button(self.fragment_tools, "Siguiente", lambda: self._move_fragment(1))
+        self.fragment_tools.grid_remove()
+
+        reference_row = self.reference_row = ttk.Frame(reader_tools)
+        reference_row.grid(row=1, column=0, columnspan=2, sticky="w", pady=(3, 0))
+        self.reference_button = self._button(reference_row, "Cargar audio modelo…", self._import_reference)
+        self.play_reference_button = self._button(reference_row, "Oír modelo", self._play_reference)
+        self.clear_reference_button = self._button(reference_row, "Quitar modelo", self._clear_reference)
+
+        controls = ttk.Frame(body, padding=(20, 4, 20, 5))
+        controls.grid(row=2, column=0, sticky="ew")
         controls.columnconfigure(1, weight=1)
-        ttk.Label(controls, text="Micrófono").grid(row=0, column=0, sticky="w", padx=(0, 7))
+        ttk.Label(controls, text="Micrófono", style="Section.TLabel").grid(row=0, column=0, sticky="w", padx=(0, 7))
         self.device_box = ttk.Combobox(controls, textvariable=self.device, state="readonly")
         self.device_box.grid(row=0, column=1, sticky="ew")
         self.device_box.bind("<<ComboboxSelected>>", self._device_changed)
         self.detect_button = ttk.Button(controls, text="Detectar", command=self._detect_devices)
         self.detect_button.grid(row=0, column=2, sticky="e", padx=(6, 0))
         ttk.Label(controls, textvariable=self.device_state, style="Hint.TLabel").grid(
-            row=1, column=0, columnspan=3, sticky="w", pady=(1, 3)
+            row=0, column=3, sticky="e", padx=(9, 0)
         )
 
         recording_row = ttk.Frame(controls)
-        recording_row.grid(row=2, column=0, columnspan=3, sticky="w")
+        recording_row.grid(row=1, column=0, columnspan=4, sticky="w", pady=(4, 0))
         self.record_button = self._button(recording_row, "Iniciar grabación", self._record, primary=True)
+        self.record_button.configure(style="Capture.Primary.TButton")
         self.stop_button = self._button(recording_row, "Detener y analizar", self._finish_recording)
+        self.stop_button.configure(style="Stop.TButton")
         self.import_button = self._button(recording_row, "Importar grabación…", self._import_attempt)
         self.play_button = self._button(recording_row, "Oír grabación", self._play_attempt)
 
-        reference_row = ttk.Frame(controls)
-        reference_row.grid(row=3, column=0, columnspan=3, sticky="w", pady=(3, 0))
-        self.reference_button = self._button(reference_row, "Cargar audio modelo…", self._import_reference)
-        self.play_reference_button = self._button(reference_row, "Oír modelo", self._play_reference)
-        self.clear_reference_button = self._button(reference_row, "Quitar modelo", self._clear_reference)
-        self.stop_playback_button = self._button(reference_row, "Detener reproducción", self._stop_audio)
+        capture_information = ttk.Frame(controls)
+        capture_information.grid(row=2, column=0, columnspan=4, sticky="ew", pady=(4, 0))
+        self.capture_label = ttk.Label(capture_information, textvariable=self.capture_state, style="Capture.TLabel")
+        self.capture_label.pack(side="left", padx=(0, 7))
+        ttk.Label(capture_information, textvariable=self.elapsed, font=("Consolas", 11, "bold"), width=5).pack(side="left")
+        self.stop_playback_button = ttk.Button(capture_information, text="Detener reproducción", command=self._stop_audio)
+        self.stop_playback_button.pack(side="right")
+        status = ttk.Label(capture_information, textvariable=self.status, style="Hint.TLabel", justify="left")
+        status.pack(side="left", padx=9, fill="x", expand=True)
+        status.bind("<Configure>", lambda event: status.configure(wraplength=max(event.width, 1)))
 
-        output = ttk.Frame(body)
-        output.grid(row=4, column=0, sticky="nsew")
-        output.columnconfigure(0, weight=1)
-        output.rowconfigure(1, weight=1)
-        output_header = ttk.Frame(output)
-        output_header.grid(row=0, column=0, columnspan=2, sticky="ew", pady=(4, 2))
-        ttk.Label(output_header, text="Informe para ChatGPT", style="Section.TLabel").pack(side="left")
-        self.evidence_button = ttk.Button(output_header, text="Ver evidencia fonética…", command=self._open_evidence)
-        self.evidence_button.pack(side="right")
-        self.output = tk.Text(output, height=5, wrap="word", font=("Segoe UI", 10), padx=7, pady=5,
-                              borderwidth=1, relief="solid", foreground="#21343c", state="disabled")
+        actions = ttk.Frame(self.results_tab)
+        actions.grid(row=0, column=0, columnspan=2, sticky="ew", pady=(0, 4))
+        self.copy_button = self._button(actions, "Copiar informe", self._copy, primary=True)
+        self.export_button = self._button(actions, "Exportar JSON privado", self._export)
+        self.evidence_button = self._button(actions, "Ver evidencia fonética…", self._open_evidence)
+
+        self.output = tk.Text(self.results_tab, height=5, width=1, wrap="word", font=("Segoe UI", 11), padx=9, pady=6,
+                              borderwidth=1, relief="solid", foreground="#142b45", state="disabled")
         self.output.grid(row=1, column=0, sticky="nsew")
-        scrollbar = ttk.Scrollbar(output, command=self.output.yview)
+        scrollbar = ttk.Scrollbar(self.results_tab, command=self.output.yview)
         scrollbar.grid(row=1, column=1, sticky="ns")
         self.output.configure(yscrollcommand=scrollbar.set)
 
-        actions = ttk.Frame(body)
-        actions.grid(row=5, column=0, sticky="ew", pady=(5, 0))
-        self.copy_button = self._button(actions, "Copiar informe", self._copy, primary=True)
-        self.export_button = self._button(actions, "Exportar JSON privado", self._export)
-        self.delete_button = self._button(actions, "Eliminar esta grabación…", self._delete_current)
-
-        history = ttk.Frame(body)
-        history.grid(row=6, column=0, sticky="ew", pady=(4, 0))
+        history = ttk.Frame(self.results_tab)
+        history.grid(row=2, column=0, columnspan=2, sticky="ew", pady=(5, 0))
         history.columnconfigure(1, weight=1)
         ttk.Label(history, text="Comparar con").grid(row=0, column=0, padx=(0, 6), sticky="w")
         self.comparison_box = ttk.Combobox(history, textvariable=self.comparison, values=(NO_COMPARISON,))
@@ -230,10 +335,8 @@ class LabApp:
         self.comparison_box.bind("<<ComboboxSelected>>", self._comparison_changed)
         self.history_button = ttk.Button(history, text="Historial de grabaciones…", command=self._open_history)
         self.history_button.grid(row=0, column=2, padx=(6, 0))
-
-        status = ttk.Label(body, textvariable=self.status, style="Hint.TLabel", justify="left", wraplength=820)
-        status.grid(row=7, column=0, sticky="w", pady=(5, 0))
-        body.bind("<Configure>", lambda event: status.configure(wraplength=event.width - 36))
+        self.delete_button = ttk.Button(history, text="Eliminar esta grabación…", command=self._delete_current)
+        self.delete_button.grid(row=0, column=3, padx=(6, 0))
         self._show_report()
 
     def _field(self, parent: ttk.Frame, column: int, title: str, variable: tk.StringVar,
@@ -257,11 +360,16 @@ class LabApp:
 
     def _sync_buttons(self) -> None:
         idle = not self.busy and self.recorder is None
+        text_ready = idle and self.mode.get() != "Speaking espontáneo"
         for field, normal_state in self.inputs:
             field.configure(state=normal_state if idle else "disabled")
-        self.expected.configure(state="normal" if idle and self.mode.get() != "Speaking espontáneo" else "disabled")
+        editable = text_ready and not self.reading_fullscreen and not self.fragments
+        self.expected.configure(state="normal" if editable else "disabled")
         self.device_box.configure(state="readonly" if idle and self.devices else "disabled")
         self.comparison_box.configure(state="readonly" if idle and self.comparisons else "disabled")
+        recording = self.recorder is not None
+        self.capture_state.set("Grabando" if recording else "Procesando" if self.busy else "En espera")
+        self.capture_label.configure(style="Recording.TLabel" if recording else "Capture.TLabel")
 
         states = {
             self.detect_button: idle,
@@ -278,9 +386,128 @@ class LabApp:
             self.evidence_button: idle and self.report is not None,
             self.delete_button: idle and self.audio is not None,
             self.history_button: idle and self.student.get() in STUDENTS,
+            self.open_text_button: editable,
+            self.split_button: text_ready,
+            self.complete_button: text_ready,
+            self.previous_fragment_button: text_ready and self.fragment_index > 0,
+            self.next_fragment_button: text_ready and self.fragment_index + 1 < len(self.fragments),
         }
         for button, enabled in states.items():
             button.configure(state="normal" if enabled else "disabled")
+
+    def _set_reading_size(self, _event=None) -> None:
+        self.reading_font.configure(size=int(self.reading_size.get()))
+
+    def _adapt_shell(self, _event=None) -> None:
+        scale = float(self.root.tk.call("tk", "scaling"))
+        compact = self.body.winfo_height() < 690 and scale >= 2.5
+        if self.reading_fullscreen or compact:
+            self.header.grid_remove()
+        elif not self.header.grid_info():
+            self.header.grid()
+
+    def _arrange_reader_tools(self, _event=None) -> None:
+        if self.reading_fullscreen:
+            self.reference_row.grid_remove()
+            return
+        text_tools = self.fragment_tools if self.fragments else self.source_tools
+        required = text_tools.winfo_reqwidth() + self.reference_row.winfo_reqwidth() + 8
+        if self.reader_tools.winfo_width() >= required:
+            self.reference_row.grid(row=0, column=1, columnspan=1, sticky="e", pady=0)
+        else:
+            self.reference_row.grid(row=1, column=0, columnspan=2, sticky="w", pady=(3, 0))
+
+    def _toggle_reading(self, _event=None) -> str:
+        if self.reading_fullscreen:
+            self._exit_reading()
+            return "break"
+        self.reading_fullscreen = True
+        self.previous_window_state = self.root.state()
+        self.return_tab = self.tabs.select()
+        self.tabs.select(self.practice_tab)
+        self.tabs.tab(self.results_tab, state="hidden")
+        self.tabs.configure(style="Reader.TNotebook")
+        for widget in (self.form, self.mode_hint_label):
+            widget.grid_remove()
+        self._adapt_shell()
+        self._arrange_reader_tools()
+        self.reading_button.configure(text="Salir de pantalla completa (Esc)")
+        self.root.attributes("-fullscreen", True)
+        self._sync_buttons()
+        self.expected.focus_set()
+        return "break"
+
+    def _exit_reading(self, _event=None) -> str | None:
+        if not self.reading_fullscreen:
+            return None
+        self.reading_fullscreen = False
+        self.root.attributes("-fullscreen", False)
+        self.root.state(self.previous_window_state)
+        for widget in (self.form, self.mode_hint_label):
+            widget.grid()
+        self._adapt_shell()
+        self._arrange_reader_tools()
+        self.tabs.configure(style="TNotebook")
+        self.tabs.tab(self.results_tab, state="normal")
+        self.tabs.select(self.return_tab)
+        self.reading_button.configure(text="Pantalla completa (F11)")
+        self._sync_buttons()
+        return "break"
+
+    def _set_passage(self, text: str) -> None:
+        self.expected.configure(state="normal")
+        self.expected.delete("1.0", "end")
+        self.expected.insert("1.0", text)
+        self.expected.edit_reset()
+        self.expected.yview_moveto(0)
+        self._sync_buttons()
+
+    def _open_text(self) -> None:
+        path = filedialog.askopenfilename(parent=self.root, title="Selecciona el texto de práctica",
+                                          filetypes=(("Texto plano UTF-8", "*.txt"),))
+        if not path:
+            return
+        try:
+            with Path(path).open(encoding="utf-8-sig") as source:
+                text = source.read(64_001)
+            if len(text) > 64_000:
+                raise ValueError("Abre un texto de hasta 64 000 caracteres o pega un extracto.")
+        except (OSError, ValueError) as exc:
+            self._error("No se pudo abrir el texto UTF-8", exc)
+            return
+        self._set_passage(text)
+        self.status.set("Texto cargado en memoria.")
+
+    def _split_text(self) -> None:
+        passage = self.expected.get("1.0", "end-1c")
+        parts = split_passage(passage)
+        if len(parts) < 2:
+            self.status.set("El texto cabe en un fragmento." if parts else "Pega o abre el texto para dividirlo.")
+            return
+        self.full_passage = passage
+        self.fragments = parts
+        self.fragment_index = 0
+        self.source_tools.grid_remove()
+        self.fragment_tools.grid()
+        self._arrange_reader_tools()
+        self._move_fragment(0)
+        self.status.set(f"Graba cada fragmento por separado. El cotejo fonético admite tomas de hasta {MAX_SECONDS} s.")
+
+    def _move_fragment(self, amount: int) -> None:
+        self.fragment_index += amount
+        self.fragment_label.set(f"Fragmento {self.fragment_index + 1} de {len(self.fragments)}")
+        self._set_passage(self.fragments[self.fragment_index])
+
+    def _restore_passage(self) -> None:
+        passage = self.full_passage
+        self.fragments.clear()
+        self.full_passage = ""
+        self.fragment_index = 0
+        self.fragment_label.set("")
+        self.fragment_tools.grid_remove()
+        self.source_tools.grid()
+        self._arrange_reader_tools()
+        self._set_passage(passage)
 
     def _detect_devices(self) -> None:
         selected = self.device.get()
@@ -303,15 +530,16 @@ class LabApp:
             self._device_changed()
         else:
             self.device.set("")
-            self.device_state.set("No se detectó ningún micrófono. Puedes importar un audio." if failure is None else
-                                  f"Detección no disponible. Puedes importar un audio. {failure}")
+            self.device_state.set("Sin entrada · Puedes importar audio")
+            if failure is not None:
+                self.status.set(f"Detección del micrófono no disponible. {failure}")
         self.device_box.configure(values=tuple(self.devices))
         self._sync_buttons()
 
     def _device_changed(self, _event=None) -> None:
         selected = self.devices.get(self.device.get())
         if selected:
-            self.device_state.set(f"Entrada detectada · {selected[1]:,} Hz · mono al grabar".replace(",", " "))
+            self.device_state.set(f"Entrada detectada · {selected[1]:,} Hz".replace(",", " "))
         self._sync_buttons()
 
     def _student_changed(self, _event=None) -> None:
@@ -325,8 +553,9 @@ class LabApp:
         self.activity.set("")
         self.mode.set("Lectura guiada")
         self._mode_changed()
-        self.expected.delete("1.0", "end")
-        self.expected.edit_reset()
+        self.full_passage = ""
+        self._restore_passage()
+        self.elapsed.set("00:00")
         self._refresh_comparisons()
         self._show_report()
         self.status.set(f"Perfil local activo · {self.student.get()}")
@@ -338,6 +567,9 @@ class LabApp:
     def _metadata(self, source: str) -> dict | None:
         mode = MODES[self.mode.get()][0]
         expected = self.expected.get("1.0", "end-1c").strip() if mode != "spontaneous" else None
+        if expected and len(expected) > TEXT_CHARACTERS:
+            self._error("El texto supera el límite", "Usa «Dividir en fragmentos» antes de grabar o importar.")
+            return None
         try:
             metadata = validate_metadata({
                 "student_id": self.student.get(),
@@ -356,6 +588,7 @@ class LabApp:
         metadata = self._metadata("recording")
         if metadata is None:
             return
+        self.tabs.select(self.practice_tab)
         self._stop_playback()
         device, rate = self.devices[self.device.get()]
         recorder = None
@@ -373,6 +606,7 @@ class LabApp:
             return
         self.recorder = recorder
         self.recording_metadata = metadata
+        self.status.set("Micrófono activo. Pulsa «Detener y analizar» al terminar.")
         self._sync_buttons()
         self._recording_clock(recorder)
 
@@ -380,10 +614,10 @@ class LabApp:
         if recorder is not self.recorder or self.closed:
             return
         elapsed = int(monotonic() - recorder.started_at)
+        self.elapsed.set(f"{elapsed // 60:02d}:{elapsed % 60:02d}")
         if elapsed >= MAX_AUDIO_SECONDS:
             self._finish_recording()
             return
-        self.status.set(f"Grabando · {elapsed // 60}:{elapsed % 60:02d} · Pulsa «Detener y analizar» al terminar.")
         self.root.after(150, self._recording_clock, recorder)
 
     def _finish_recording(self) -> None:
@@ -466,8 +700,15 @@ class LabApp:
             self.audio, self.report, save_error = result
             self._refresh_comparisons()
             self._show_report()
+            if self.reading_fullscreen:
+                self.return_tab = str(self.results_tab)
+            else:
+                self.tabs.select(self.results_tab)
             if save_error is None:
-                self.status.set(f"Intento privado guardado · {self.report['student_id']} · {self.report['activity_id']}")
+                message = "Intento privado guardado."
+                if self.reading_fullscreen:
+                    message += " Pulsa Esc para ver Resultados."
+                self.status.set(message)
             else:
                 self._error("El análisis se completó, pero no se guardó el intento", save_error)
         elif kind == "reference":
@@ -521,14 +762,16 @@ class LabApp:
 
     def _word_audio(self, word: dict) -> tuple[np.ndarray, int] | None:
         interval = self._word_interval(word)
-        if self.audio is None or interval is None or word.get("status") not in {
-            "no_deviation_detected", "possible_deviation",
-        }:
+        supported = word.get("alignment_supported")
+        if supported is None:
+            supported = word.get("status") in {"no_deviation_detected", "possible_deviation"}
+        if self.audio is None or interval is None or not supported:
             return None
         samples, rate = self.audio
-        if interval[1] > len(samples) / rate:
+        if interval[1] > len(samples) / rate + 0.0005:
             return None
-        first, last = (round(bound * rate) for bound in interval)
+        first = round(interval[0] * rate)
+        last = min(round(interval[1] * rate), len(samples))
         if first < last:
             return samples[first:last], rate
         return None
@@ -542,6 +785,8 @@ class LabApp:
             lines.append(f"IPA británica de referencia · {word['expected_ipa']}")
         elif word.get("reference_phones"):
             lines.append("Secuencia de referencia del modelo · " + " ".join(word["reference_phones"]))
+        if word.get("reference_ipa_variants"):
+            lines.append("Variantes británicas · " + ", ".join(word["reference_ipa_variants"]))
         if word.get("observed_phones"):
             lines.append("Hipótesis fonética · " + " ".join(word["observed_phones"]))
         if word.get("reason"):
@@ -554,6 +799,14 @@ class LabApp:
             lines.append(f"{label} · esperado {expected} → hipótesis {observed}{signal}")
             if finding.get("recommendation"):
                 lines.append(finding["recommendation"])
+        if free := word.get("free_ctc"):
+            phones = " ".join(item["phone"] for item in free["phones"])
+            lines.append(f"CTC libre, exploratorio (sin confianza calibrada) · {phones}")
+            if candidate := free.get("review_candidate"):
+                expected = candidate.get("expected") or "—"
+                observed = candidate.get("observed") or "—"
+                label = FINDING_LABELS.get(candidate.get("kind"), "Indicio fonético")
+                lines.append(f"Pista para revisar por escucha · {label.lower()} · {expected} → {observed}")
         return "\n".join(lines)
 
     def _open_evidence(self) -> None:
@@ -565,6 +818,9 @@ class LabApp:
         window = tk.Toplevel(self.root)
         window.title("Evidencia fonética del intento")
         window.transient(self.root)
+        scale = float(window.tk.call("tk", "scaling")) / (96 / 72)
+        width = min(round(810 * scale), window.winfo_screenwidth() - 70)
+        window.geometry(f"{width}x{min(round(460 * scale), window.winfo_screenheight() - 100)}")
         window.columnconfigure(0, weight=1)
         window.rowconfigure(0, weight=1)
         content = ttk.Frame(window, padding=12)
@@ -584,8 +840,8 @@ class LabApp:
                           "a la evidencia observada por el motor.")
         elif not phonetics:
             labels.append("Este informe se generó antes de incorporar el análisis fonético.")
-        labels.extend(phonetics.get("limitations") or [])
-        summary = ttk.Label(content, text="\n".join(labels), style="Hint.TLabel", wraplength=720, justify="left")
+        limits = phonetics.get("limitations") or []
+        summary = ttk.Label(content, text="\n".join(labels), style="Hint.TLabel", wraplength=width - 35, justify="left")
         summary.grid(row=1, column=0, sticky="w", pady=(4, 7))
 
         actions = ttk.Frame(content)
@@ -611,10 +867,13 @@ class LabApp:
             tree.grid(row=0, column=0, sticky="nsew")
             scrollbar = ttk.Scrollbar(table, orient="vertical", command=tree.yview)
             scrollbar.grid(row=0, column=1, sticky="ns")
-            tree.configure(yscrollcommand=scrollbar.set)
-            for key, label, width in columns:
+            across = ttk.Scrollbar(table, orient="horizontal", command=tree.xview)
+            across.grid(row=1, column=0, sticky="ew")
+            tree.configure(yscrollcommand=scrollbar.set, xscrollcommand=across.set)
+            for key, label, column_width in columns:
                 tree.heading(key, text=label)
-                tree.column(key, width=width, minwidth=50, anchor="w")
+                pixels = round(column_width * scale)
+                tree.column(key, width=pixels, minwidth=pixels, anchor="w")
             for number, word in enumerate(words):
                 interval = self._word_interval(word)
                 time_text = f"{interval[0]:.2f}–{interval[1]:.2f}" if interval else "—"
@@ -626,9 +885,15 @@ class LabApp:
                     f"{confidence:.2f}" if confidence is not None else "—", time_text,
                 ))
 
-            detail = tk.Text(content, height=6, wrap="word", font=("Segoe UI", 10), padx=6, pady=4,
-                             relief="solid", borderwidth=1, state="disabled")
-            detail.grid(row=3, column=0, sticky="ew", pady=(7, 0))
+            panel = ttk.Frame(content)
+            panel.grid(row=3, column=0, sticky="ew", pady=(7, 0))
+            panel.columnconfigure(0, weight=1)
+            detail = tk.Text(panel, height=6, wrap="word", font=("Segoe UI", 10), padx=6, pady=4,
+                             width=1, relief="solid", borderwidth=1, state="disabled")
+            detail.grid(row=0, column=0, sticky="ew")
+            detail_scroll = ttk.Scrollbar(panel, command=detail.yview)
+            detail_scroll.grid(row=0, column=1, sticky="ns")
+            detail.configure(yscrollcommand=detail_scroll.set)
 
             def selected_word() -> dict | None:
                 selection = tree.selection()
@@ -663,6 +928,9 @@ class LabApp:
             tree.focus_set()
             show_word()
 
+        if limits:
+            self._button(actions, "Alcance y límites…", lambda: messagebox.showinfo(
+                "Alcance de la evidencia fonética", "\n\n".join(limits), parent=window))
         self._button(actions, "Cerrar", close)
         window.protocol("WM_DELETE_WINDOW", close)
         window.bind("<Escape>", lambda _event: close())

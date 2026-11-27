@@ -3,7 +3,7 @@
 **Can-do:** I can build new words with prefixes and suffixes, and choose natural word partnerships.
 
 ## Grammar focus
-English builds words with **affixes**. Prefixes change meaning (*un-, dis-, mis-, over-, under-, re-, ir-*) while suffixes change word class: *-tion, -ment, -ness, -ity* make nouns; *-ise / -ize, -en* make verbs; *-al, -ous, -ful, -less, -able* make adjectives; *-ly* makes adverbs. **Collocations** are words that naturally go together (*make a decision*, *heavy rain*, *strong argument* — not *do a decision*). **Phrasal verbs** often form families around one particle (*put off, put up with, put forward*); some are separable, some inseparable, and the meaning is rarely literal, so learn them as whole units.
+English builds words with **affixes**. Prefixes change meaning (*un-, dis-, mis-, over-, under-, re-, ir-*) while many suffixes change word class: *-tion, -ment, -ness, -ity* make nouns; *-ise / -ize, -en* make verbs; *-al, -ous, -ful, -less, -able* make adjectives; adverb-forming *-ly* changes *careful* to *carefully*. Other *-ly* words, such as *friendly*, are adjectives. **Collocations** are words that naturally go together (*make a decision*, *heavy rain*, *strong argument* — not *do a decision*). **Phrasal verbs** often form families around one particle (*put off, put up with, put forward*); some are separable, some inseparable, and the meaning is rarely literal, so learn them as whole units.
 
 - *possible → impossibility*; *nation → nationalise*; *care → careless → carelessly*.
 - The government failed to **take action** on **rising unemployment**.

@@ -3,7 +3,7 @@
 **Can-do:** I can talk about quantities of food, order a meal, and say whether there is too much, too little or enough of something.
 
 ## Grammar focus
-Quantifiers, *too / enough*, and *would like* review. Use *much* with uncountable nouns and *many* with countable nouns, mostly in questions and negatives; *a lot of* works with both, usually in positive sentences. Use *(a) few* with countable nouns and *(a) little* with uncountable nouns. *too + adjective* means "more than you want"; *enough* means "as much as you need" (it goes after adjectives but before nouns). *would like* is a polite way to ask for or offer something.
+Quantifiers, *too / enough*, and *would like* review. Use *much* with uncountable nouns and *many* with countable nouns, mostly in questions and negatives; *a lot of* works with both, usually in positive sentences. Use *(a) few* with plural countable nouns and *(a) little* with uncountable nouns. *A few / a little* mean some; *few / little* suggest less than expected or needed. *too + adjective* means "more than you want"; *enough* means "as much as you need" (it goes after adjectives but before nouns). *would like* is a polite way to ask for or offer something.
 
 - There isn't **much** salt in the soup.
 - How **many** dishes did you order?

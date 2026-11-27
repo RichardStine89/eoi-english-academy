@@ -3,7 +3,7 @@
 **Can-do:** I can write in an objective academic register, using nominalization and layered passive constructions to foreground processes and findings rather than the people behind them.
 
 ## Grammar focus
-Nominalization turns verbs and adjectives into nouns (*decide → decision*, *wide → width*), packing information densely and shifting attention from actors to abstract processes — a hallmark of scholarly prose. The complex passive (*It is thought that…*, *X is believed to have…*, *are said to be*) removes or backgrounds the agent and reports claims impersonally, lending detachment and caution. Combine the two to sound formal and authoritative. The danger is opacity: a chain of nominalizations can bury the action and hide who actually did what, so use them to focus attention, not to evade it.
+Nominalisation turns verbs and adjectives into nouns (*decide → decision*, *wide → width*), packing information densely and shifting attention from actors to abstract processes — a hallmark of scholarly prose. The complex passive (*It is thought that…*, *X is believed to have…*, *are said to be*) removes or backgrounds the agent and reports claims impersonally, lending detachment and caution. Combine the two to sound formal and authoritative. The danger is opacity: a chain of nominalisations can bury the action and hide who actually did what, so use them to focus attention, not to evade it.
 
 - The implementation of the reform led to a marked reduction in emissions.
 - It is widely believed that the recession was avoidable.
@@ -21,7 +21,7 @@ empirical — based on observation or experiment rather than theory
 correlation — a mutual relationship between two variables
 paradigm — a typical model or overarching framework
 peer review — evaluation of work by experts in the same field
-replicate — to reproduce a study's results independently
+replicate — to repeat a study independently to test whether its findings hold
 inference — a conclusion drawn from evidence and reasoning
 variable — a factor liable to change in an experiment
 robust — strong and reliable, as of findings
@@ -35,11 +35,11 @@ rigorous — thorough, careful and exact
 - Reviewing the literature: "Prior research has established that…"
 
 ## Suggested activities
-- reading: a journal abstract — convert three passive or nominalized sentences back into plain active ones.
+- reading: a journal abstract — convert three passive or nominalised sentences back into plain active ones.
 - conversation: summarise a study aloud in academic register, avoiding "I" and "you".
-- quiz focus: nominalizing given verbs and completing complex-passive reporting frames.
+- quiz focus: nominalising given verbs and completing complex-passive reporting frames.
 
 ## Watch out
-- They have proved that… (in a report) → It has been proved that…
+- For an impersonal report: *They have proved that…* → *It has been proved that…*. Retain the agent when attribution matters.
 - The reducing of costs… → The reduction of costs…
-- It is believed that the sample was been contaminated. → It is believed to have been contaminated.
+- It is believed that the sample was been contaminated. → The sample is believed to have been contaminated.

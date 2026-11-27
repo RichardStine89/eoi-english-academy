@@ -117,6 +117,8 @@ Usa la secuencia de doce unidades por nivel. Reconoce los contenidos anteriores 
 
 ## Recursos gratuitos por nivel
 
+Para cada clase, consulta primero los tres recursos de su fila en [recursos y complementos por unidad](curriculo-practica.md). Comprueba el estado indicado para el audio y conserva las soluciones o transcripciones hasta que el alumno entregue. Si un recurso no abre, usa la alternativa del mismo nivel indicada en esa guía.
+
 Como apoyo inicial, estas páginas de proveedores se consultaron el 19 de noviembre de 2026. La revisión confirma la identificación y el contenido publicado de las páginas. La reproducción y la corrección interactiva deben comprobarse en el navegador del estudiante si hay restricciones o si un elemento no carga.
 
 | Nivel | Ejercicio interactivo autocorregible | Listening con audio | Pronunciación |

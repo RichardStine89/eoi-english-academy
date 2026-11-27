@@ -156,8 +156,12 @@
           "estado": "clave_impresa_con_incidencias",
           "tareas_aptas": [],
           "notas": {
-            "correccion": "Conservar las exclusiones. La ficha privada distingue las interpretaciones académicas de la clave impresa. Una interpretación no se convierte en clave oficial."
-          }
+            "correccion": "Conservar las exclusiones. La ficha privada distingue las interpretaciones académicas de la clave impresa. Una interpretación no se convierte en clave oficial.",
+            "consigna_tarea_1": "El contenido y la numeración de la consigna de la p. 1 del cuadernillo no coinciden con la grabación publicada."
+          },
+          "tareas_bloqueadas": [
+            1
+          ]
         }
       },
       "rubrica": {
@@ -168,7 +172,8 @@
       "incidencias": [
         "claves_embebidas_en_tres_pdf",
         "algunas_respuestas_orales_necesitan_cotejo",
-        "año_del_modelo_sin_confirmar"
+        "año_del_modelo_sin_confirmar",
+        "consigna_y_audio_no_coinciden_comto_tarea_1"
       ]
     },
     {
@@ -1111,6 +1116,30 @@
           "notas": {
             "baremo": "La consigna particular de las tareas 1 y 2 descuenta por distractores utilizados. La guía da la regla general de 0 para error. Se bloquea el cálculo automático de ambas hasta aclarar su aplicación."
           }
+        },
+        "evaluacion_comte": {
+          "estado": "parcial",
+          "cuadernillo": "B1-2024-09-CTE",
+          "duracion_maxima_minutos": 60,
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "tareas_aptas": [
+            3
+          ],
+          "tareas_bloqueadas": [
+            1,
+            2
+          ],
+          "preguntas_aptas": {},
+          "preguntas_bloqueadas": {},
+          "puntuacion_total_autorizada": false,
+          "paginas_guia_cotejadas": [
+            4,
+            5
+          ]
         }
       },
       "rubrica": {
@@ -1120,7 +1149,8 @@
       },
       "incidencias": [
         "cuadernillo_de_produccion_oral_no_identificado",
-        "baremo_en_conflicto_comto_tareas_1_y_2"
+        "baremo_en_conflicto_comto_tareas_1_y_2",
+        "baremo_en_conflicto_comte_tareas_1_y_2"
       ]
     },
     {
@@ -2026,6 +2056,30 @@
           "notas": {
             "consigna_tarea_2": "La consigna dice A–J. La cuadrícula y la clave incluyen A–K. Indicar el rango impreso antes de la tarea, sin revelar el ejemplo adicional ni anticipar respuestas."
           }
+        },
+        "evaluacion_comte": {
+          "estado": "parcial",
+          "cuadernillo": "B2-2024-09-CTE",
+          "duracion_maxima_minutos": 75,
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "tareas_aptas": [
+            2,
+            3
+          ],
+          "tareas_bloqueadas": [
+            1
+          ],
+          "preguntas_aptas": {},
+          "preguntas_bloqueadas": {},
+          "puntuacion_total_autorizada": false,
+          "paginas_guia_cotejadas": [
+            4,
+            5
+          ]
         }
       },
       "rubrica": {
@@ -2036,7 +2090,8 @@
       "incidencias": [
         "nombre_pcto_con_contenido_escrito",
         "cuadernillo_de_produccion_oral_no_identificado",
-        "rango_de_consigna_distinto_de_cuadricula_comto_tarea_2"
+        "rango_de_consigna_distinto_de_cuadricula_comto_tarea_2",
+        "baremo_en_conflicto_comte_tarea_1"
       ]
     },
     {
@@ -2795,10 +2850,28 @@
       },
       "rubrica": {
         "archivo": null,
-        "estado": "hoja_oficial_no_identificada",
-        "guia_con_pautas": null
+        "estado": "hojas_oficiales_enlazadas_por_destreza",
+        "guia_con_pautas": null,
+        "fuentes_cotejadas": [
+          {
+            "id": "JUNTA-2022-23-C1-C2-MEDTE",
+            "destreza": "mediacion_escrita",
+            "edicion": "2022/2023",
+            "estado": "consultada_aplicable_al_conjunto",
+            "url": "https://www.juntadeandalucia.es/educacion/portales/documents/20123/837433/Tabla%20de%20mediacio%C2%BFn%20escrita%20definitva%20NIVEL%20C1%20C2%2031%2001%202023.pdf/e0e16145-ccc5-51ef-c377-fa1ffbaba260?version=1.1"
+          },
+          {
+            "id": "JUNTA-2022-23-C1-C2-MEDTO",
+            "destreza": "mediacion_oral",
+            "edicion": "2022/2023",
+            "estado": "consultada_aplicable_al_conjunto",
+            "url": "https://www.juntadeandalucia.es/educacion/portales/documents/20123/837433/Tabla%20de%20mediacio%C2%BFn%20oral%20definitiva%20NIVEL%20C1%20C2%2031%2001%202023.pdf/f7060e93-6c6c-2bde-9e9c-253ec4478a54?version=1.1"
+          }
+        ]
       },
-      "incidencias": []
+      "incidencias": [
+        "tiempos_internos_incongruentes_pcto_tres_candidatos"
+      ]
     },
     {
       "id": "C1-2024-06",
@@ -2834,6 +2907,40 @@
         "evaluacion_comto": {
           "estado": "cuadernillo_ausente",
           "tareas_aptas": []
+        },
+        "evaluacion_comte": {
+          "estado": "parcial",
+          "cuadernillo": "C1-2024-06-CTE",
+          "duracion_maxima_minutos": 75,
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "tareas_aptas": [
+            2,
+            3
+          ],
+          "tareas_bloqueadas": [],
+          "preguntas_aptas": {
+            "1": [
+              1,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          "preguntas_bloqueadas": {
+            "1": [
+              2
+            ]
+          },
+          "puntuacion_total_autorizada": false,
+          "paginas_guia_cotejadas": [
+            4,
+            5
+          ]
         }
       },
       "rubrica": {
@@ -2844,7 +2951,8 @@
       "incidencias": [
         "cuadernillo_de_produccion_oral_no_identificado",
         "cuadernillo_de_comprension_oral_no_identificado",
-        "audio_coincide_con_guia_de_junio_sin_cuadernillo_cto"
+        "audio_coincide_con_guia_de_junio_sin_cuadernillo_cto",
+        "clave_dudosa_comte_tarea_1_item_2"
       ]
     },
     {
@@ -2897,6 +3005,44 @@
           "notas": {
             "consigna_tarea_2": "La consigna dice B–M. La cuadrícula y la clave incluyen B–K y el ejemplo A. No se crean ni puntúan L o M."
           }
+        },
+        "evaluacion_comte": {
+          "estado": "parcial",
+          "cuadernillo": "C1-2024-09-CTE",
+          "duracion_maxima_minutos": 75,
+          "maximo_por_tarea": [
+            6,
+            10,
+            10
+          ],
+          "tareas_aptas": [],
+          "tareas_bloqueadas": [
+            1,
+            2
+          ],
+          "preguntas_aptas": {
+            "3": [
+              1,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          "preguntas_bloqueadas": {
+            "3": [
+              2,
+              6
+            ]
+          },
+          "puntuacion_total_autorizada": false,
+          "paginas_guia_cotejadas": [
+            4,
+            5
+          ]
         }
       },
       "rubrica": {
@@ -2906,7 +3052,9 @@
       },
       "incidencias": [
         "cuadernillo_de_produccion_oral_no_identificado",
-        "rango_de_consigna_distinto_de_cuadricula_comto_tarea_2"
+        "rango_de_consigna_distinto_de_cuadricula_comto_tarea_2",
+        "baremo_en_conflicto_comte_tareas_1_y_2",
+        "claves_dudosas_comte_tarea_3_items_2_y_6"
       ]
     },
     {

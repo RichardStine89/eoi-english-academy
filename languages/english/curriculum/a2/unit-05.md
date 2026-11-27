@@ -3,7 +3,7 @@
 **Can-do:** I can describe how I feel, say what is wrong, and give and understand simple health advice.
 
 ## Grammar focus
-*should* (advice) and *have to / must* (obligation). Use *should / shouldn't + base verb* for advice and opinions. Use *must* for strong obligation or a rule the speaker feels is important, and *have to* for obligation that comes from outside (a rule, a situation); *has to* for he/she/it. The negatives differ in meaning: *mustn't* = it is not allowed; *don't have to* = it isn't necessary.
+*should* (advice) and *have to / must* (obligation). Use *should / shouldn't + base verb* for advice and opinions. *Must* and *have to* both express obligation. *Must* often sounds strong or official; *have to* commonly describes a necessity or external requirement. They can overlap. Use *has to* for he/she/it. The negatives differ in meaning: *mustn't* = it is not allowed; *don't have to* = it isn't necessary.
 
 - You **should** drink more water.
 - You **shouldn't** go to work with a fever.

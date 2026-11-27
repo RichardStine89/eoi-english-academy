@@ -41,5 +41,5 @@ run out — to have no more of something left
 
 ## Watch out
 - If it will rain, we will stay home → If it rains, we will stay home
-- I will meet my friends at 6 (fixed plan) → I'm meeting my friends at 6
-- This time tomorrow I fly to Rome → This time tomorrow I'll be flying to Rome
+- To present it as a fixed arrangement: *I'm meeting my friends at six*.
+- For an activity in progress at that hour: *This time tomorrow I'll be flying to Rome*.

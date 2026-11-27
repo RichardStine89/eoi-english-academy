@@ -3,7 +3,7 @@
 **Can-do:** I can give extra information about people, things and places in one sentence using relative clauses.
 
 ## Grammar focus
-**Defining relative clauses** identify exactly which person, thing or place you mean; without them the sentence is incomplete or unclear. Join two ideas with a relative pronoun: **who** for people, **which** for things, **that** for people or things, **where** for places, and **whose** for possession (*The guide who showed us round was great. The hotel where we stayed was tiny.*). When the relative pronoun is the object of the clause, you can leave it out (*the city (that) we visited*). Do not add an extra pronoun — say *the man who called me*, not *the man who he called me*. Defining clauses take no commas.
+**Defining relative clauses** identify exactly which person, thing or place you mean; without them you may refer to someone or something different. Join two ideas with a relative word: **who** for people, **which** for things, **that** for people or things, **where** for a location within the clause, and **whose** for possession (*The guide who showed us round was great. The hotel where we stayed was tiny.*). When the relative pronoun is the object of the clause, you can leave it out (*the city (that) we visited*). Do not add an extra pronoun — say *the man who called me*, not *the man who he called me*. Defining clauses take no commas.
 
 - The friend **who** invited me lives abroad.
 - That's the app **which** helps you find cheap flights.

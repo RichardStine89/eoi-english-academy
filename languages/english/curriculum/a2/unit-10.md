@@ -3,7 +3,7 @@
 **Can-do:** I can talk about rules, general truths, and real future possibilities and their results.
 
 ## Grammar focus
-Zero and first conditional, plus *must / mustn't / don't have to*. The **zero conditional** (*If + present simple, present simple*) states facts and general truths that are always true. The **first conditional** (*If + present simple, will + base verb*) talks about a real or likely future situation and its result; *if* and *when* can both introduce the condition. For rules: *must* = necessary, *mustn't* = not allowed, *don't have to* = not necessary.
+Zero and first conditional, plus *must / mustn't / don't have to*. The **zero conditional** (*If + present simple, present simple*) states facts and general truths that are always true. The **first conditional** (*If + present simple, will + base verb*) talks about a real or likely future situation and its result; *If* introduces a condition whose fulfilment is uncertain; *when* introduces a time the speaker expects to come: *If it rains, we'll stay in* vs *When you arrive, I'll open the door*. For rules: *must* = necessary, *mustn't* = not allowed, *don't have to* = not necessary.
 
 - **If** you heat ice, it **melts**.
 - **If** it **rains** tomorrow, we'**ll stay** at home.
@@ -42,4 +42,4 @@ notice — a written sign giving information
 ## Watch out
 - If it will rain, we stay home → If it rains, we'll stay home
 - You mustn't to park here → You mustn't park here
-- You don't must be late → You mustn't be late
+- To say lateness is not allowed: *You mustn't be late*. To say something is optional: *You don't have to arrive early*.

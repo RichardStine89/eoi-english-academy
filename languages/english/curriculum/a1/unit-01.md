@@ -3,7 +3,7 @@
 **Can-do:** Can greet people, introduce myself and others, and give basic personal information using simple fixed phrases.
 
 ## Grammar focus
-The verb *to be* (present) and subject pronouns. *To be* has three forms: **am** (I), **is** (he/she/it), **are** (you/we/they). Make negatives with **not** (I am not, she is not) and questions by putting the verb first (Are you…? Is he…?). Short forms are normal in speech: *I'm, you're, he's, she's, it's, we're, they're; isn't, aren't.* Subject pronouns replace the person's name and come before the verb.
+The verb *to be* (present) and subject pronouns. In the present simple, *be* has three forms: **am** (I), **is** (he/she/it), **are** (you/we/they). Make negatives with **not** (I am not, she is not) and questions by putting the verb first (Are you…? Is he…?). Short forms are normal in speech: *I'm, you're, he's, she's, it's, we're, they're; isn't, aren't.* Subject pronouns stand for people or things. They usually come before the verb in statements: *Ana is here → She is here*.
 
 - I am from Canada. / I'm a student.
 - She is my teacher. / He's here.

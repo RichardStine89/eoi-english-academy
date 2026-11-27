@@ -3,7 +3,7 @@
 **Can-do:** I can use the subjunctive and diplomatic phrasing to make demands, recommendations and objections sound formal, measured and tactful.
 
 ## Grammar focus
-The mandative subjunctive uses the bare infinitive after verbs and adjectives of demand, recommendation and importance — *suggest, insist, recommend, propose, demand, essential that, vital that*: "We insist that he **be** present." It is invariant across all persons, taking no *-s* and no past form. *Were* is the past subjunctive of unreal conditions (*If I were…*, *Were the proposal to fail…*). Formal register also favours *would*, *should*, *if I may* and softened requests. Diplomacy blends the subjunctive with hedging, letting you demand, recommend or disagree without confrontation and leaving your counterpart room to save face.
+The mandative subjunctive uses the plain form of the verb after verbs and adjectives of demand, recommendation and importance — *suggest, insist, recommend, propose, demand, essential that, vital that*: "We insist that he **be** present." It is invariant across all persons, taking no *-s* and no past form. A *should* clause is also idiomatic in British English: *We insist that he should be present*. With factual *insist* meaning 'maintain that something is true', use a regular indicative verb: *She insists that he is already here*. *Were* is the past subjunctive of unreal conditions (*If I were…*, *Were the proposal to fail…*). Formal register also favours *would*, *should*, *if I may* and softened requests. Diplomacy blends the subjunctive with hedging, letting you demand, recommend or disagree without confrontation and leaving your counterpart room to save face.
 
 - The board recommends that the CEO step down immediately.
 - It is imperative that every delegate be briefed beforehand.
@@ -40,6 +40,6 @@ overrule — to reject a decision by higher authority
 - quiz focus: completing subjunctive frames after *suggest / insist / essential* and choosing the diplomatic option.
 
 ## Watch out
-- I suggest that he goes home. → I suggest that he go home.
-- It is essential that she is informed. → It is essential that she be informed.
+- Practise two formal recommendation patterns: *I suggest that he go home* / *I suggest that he should go home*.
+- Formal alternatives: *It is essential that she be informed* / *It is essential that she should be informed*.
 - If I was you, I'd resign. (formal) → If I were you, I would resign.

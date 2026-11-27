@@ -31,8 +31,8 @@ grandfather — your parent's father
 ## Functions & phrases
 - Describing family: "I have got two brothers." / "She has got a big family."
 - Asking about family: "Have you got any sisters?" / "How many children have you got?"
-- Saying who people are: "This is my father." / "Her name is Emma, my daughter."
-- Using numbers: "I have got three cousins." / "We are five people at home."
+- Saying who people are: "This is my father." / "This is my daughter, Emma."
+- Using numbers: "I have got three cousins." / "There are five of us at home."
 
 ## Suggested activities
 - reading: a short family description with names and how many people are in the family
@@ -41,5 +41,5 @@ grandfather — your parent's father
 
 ## Watch out
 - She have got a son → She has got a son
-- Is my father brother → He is my father's brother / my brother
+- Is my father brother → He is my father's brother
 - Two childs → two children

@@ -3,7 +3,7 @@
 **Can-do:** I can talk about my intentions, make predictions, and offer to do things, choosing the right future form.
 
 ## Grammar focus
-*be going to* vs *will*. Use *be going to* for plans and intentions decided before now, and for predictions based on what you can see. Use *will* for predictions or beliefs about the future, for offers and promises, and for quick decisions made at the moment of speaking. Present continuous is also common for fixed arrangements with a time and place.
+*be going to* vs *will*. Use *be going to* for plans and intentions decided before now, and for predictions based on what you can see. Use *will* for predictions or beliefs about the future, for offers and promises, and for quick decisions made at the moment of speaking. The present continuous is also common for fixed arrangements. These patterns can overlap: speakers choose the form that best presents the situation.
 
 - I'**m going to** look for a new job next month.
 - Look at those clouds — it'**s going to** rain.
@@ -40,6 +40,6 @@ save — to keep money to use later
 - quiz focus: choosing *going to* (plan/evidence) vs *will* (prediction/offer/decision).
 
 ## Watch out
-- I will buy a car next year (already decided) → I'm going to buy a car next year
-- Wait, I'm going to help you now → Wait, I'll help you now
+- To make the prior intention clear: *I'm going to buy a car next year*. *I'll buy a car next year* is also grammatical.
+- For a spontaneous offer: *Wait, I'll help you.*
 - I hope I will to pass → I hope I'll pass

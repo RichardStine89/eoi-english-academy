@@ -3,14 +3,14 @@
 **Can-do:** I can combine all B2 grammar under exam conditions and handle B2 First (FCE) Use of English task types.
 
 ## Grammar focus
-This unit consolidates B2: all conditionals (including third and mixed), *wish / if only*, the full passive and passive reporting, causative *have / get something done*, perfect modals, complete reported speech, relative and participle clauses, future perfect and continuous, and basic inversion and cleft sentences. The **B2 First Use of English** paper tests these through four task types: **multiple-choice cloze** (choose the best word for meaning or collocation), **open cloze** (fill one word per gap, often a grammar word), **word formation** (change a root word to fit the gap), and **key word transformation** (rewrite a sentence with a given word so the meaning stays the same).
+This unit consolidates B2: all conditionals (including third and mixed), *wish / if only*, the full passive and passive reporting, causative *have / get something done*, perfect modals, complete reported speech, relative and participle clauses, future perfect and continuous, and basic inversion and cleft sentences. The **Use of English tasks in B2 First** tests these through four task types: **multiple-choice cloze** (choose the best word for meaning or collocation), **open cloze** (fill one word per gap, often a grammar word), **word formation** (change a root word to fit the gap), and **key word transformation** (rewrite a sentence with a given word so the meaning stays the same).
 
 - Open cloze: "It was the noise **that** kept me awake."
 - Word formation: "*decide* → Her **decision** was final."
 - Key word transformation (WISH): "I regret selling my car." → "I **wish I hadn't sold** my car."
-- Transformation (HAVING): "Someone is repairing my laptop." → "I **am having my laptop** repaired."
+- Transformation (HAVING): "I arranged for a technician to repair my laptop, and the repair is in progress." → "I **am having my laptop** repaired."
 - Transformation (MIGHT): "Perhaps she forgot." → "She **might have forgotten**."
-- Transformation (TOLD): "'Don't run,' the teacher said." → "The teacher **told us not to** run."
+- Transformation (TOLD): "'Don't run,' the teacher said to us." → "The teacher **told us not to** run."
 
 ## Target vocabulary (10–12 items)
 consolidate — to combine or strengthen into a firm whole

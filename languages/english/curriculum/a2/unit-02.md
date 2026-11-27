@@ -3,7 +3,7 @@
 **Can-do:** I can describe what was happening at a moment in the past and set the background to a story about a trip.
 
 ## Grammar focus
-Past continuous, and past continuous vs past simple. Form the past continuous with *was / were + verb-ing*. Use it for an action in progress at a past moment, or for the longer background action that another (shorter) action interrupts. The interrupting action goes in the past simple, often joined with *when*; two parallel background actions are joined with *while*.
+Past continuous, and past continuous vs past simple. Form the past continuous with *was / were + verb-ing*. Use it for an action in progress at a past moment, or for the longer background action that another (shorter) action interrupts. An interruption normally takes the past simple, often with *when*. *While* often links actions in progress. Choose the tense according to the timeline you mean.
 
 - At 8 p.m. we **were flying** over the sea.
 - They **weren't sleeping** when the plane landed.
@@ -39,6 +39,6 @@ sunbathe — to sit or lie in the sun
 - quiz focus: choosing past continuous for background vs past simple for the interrupting action.
 
 ## Watch out
-- When I arrived, she cooked dinner → When I arrived, she was cooking dinner
+- If the cooking was already in progress: *When I arrived, she was cooking dinner*. *When I arrived, she cooked dinner* can describe cooking that started after I arrived.
 - We was waiting for the bus → We were waiting for the bus
 - While we were walk in the city → While we were walking in the city

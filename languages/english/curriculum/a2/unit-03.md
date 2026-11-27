@@ -3,7 +3,7 @@
 **Can-do:** I can compare two or more people, places or objects and say which is the best or worst.
 
 ## Grammar focus
-Comparatives, superlatives and *as … as*. Short adjectives add *-er / -est* (cheap → cheaper → the cheapest); adjectives ending in *-y* change to *-ier / -iest* (easy → easier). Long adjectives use *more / most* (more modern, the most popular). Some are irregular: good → better → best, bad → worse → worst. Use *than* after a comparative, *the* before a superlative, and *(not) as … as* to say two things are (or aren't) equal.
+Comparatives, superlatives and *as … as*. Many short adjectives add *-er / -est* (cheap → cheaper → the cheapest); adjectives ending in *-y* change to *-ier / -iest* (easy → easier). Most longer adjectives use *more / most* (more modern, the most popular). Some are irregular: good → better → best, bad → worse → worst. Use *than* before the second item in an explicit comparison and usually *the* before a superlative noun phrase, and use *(not) as … as* to say two things are (or aren't) equal.
 
 - This hotel is **cheaper than** the other one.
 - Today is **hotter than** yesterday.

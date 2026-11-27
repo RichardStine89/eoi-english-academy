@@ -38,7 +38,7 @@ transition — the process of changing from one state to another
 - quiz focus: choosing future continuous vs future perfect from time markers (*at* vs *by*).
 
 ## Watch out
-- By 2030 we will finish the project → By 2030 we will have finished the project
-- This time tomorrow I will fly → This time tomorrow I will be flying
-- By the time she comes, we will leave → By the time she comes, we will have left
+- To look back from 2030 at a completed project: *By 2030 we will have finished the project*. *We will finish the project by 2030* is also grammatical.
+- To describe an action in progress at this time tomorrow: *This time tomorrow I will be flying*.
+- To say the departure will precede her arrival: *By the time she comes, we will have left*.
 - I will have finish it → I will have finished it

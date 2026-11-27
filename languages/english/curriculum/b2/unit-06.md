@@ -3,14 +3,14 @@
 **Can-do:** I can criticise, deduce and speculate about past actions using perfect modals.
 
 ## Grammar focus
-Perfect modals talk about the past with *modal + have + past participle*. *should / shouldn't have* criticises or regrets a past action ("You **should have called**"). *must have* is a confident past deduction ("She **must have left** already"), and *can't / couldn't have* is its opposite, an impossibility ("He **can't have known**"). *might / may / could have* express a past possibility you are unsure about ("They **might have missed** the turn"). *needn't have + past participle* means you did something that was not necessary. The *have* never changes form after the modal, whatever the subject.
+Perfect modals talk about the past with *modal + have + past participle*. *should / shouldn't have* criticises or regrets a past action ("You **should have called**"). *must have* is a confident past deduction ("She **must have left** already"), and *can't / couldn't have* is its opposite, an impossibility ("He **can't have known**"). *might / may / could have* can express an uncertain past possibility ("They **might have missed** the turn"). *needn't have + past participle* means you did something that was not necessary. *Could have* can also describe an opportunity that was not taken: *He could have warned us, but chose not to*. The *have* never changes form after the modal, whatever the subject.
 
 - You **should have booked** the tickets earlier.
 - I **shouldn't have eaten** so much.
 - The keys aren't here — I **must have dropped** them.
 - She **can't have finished** already; it's too soon.
 - They **might have got** stuck in traffic.
-- He **could have warned** us about the delay.
+- He **could have warned** us about the delay, but he chose not to.
 - We **needn't have worried** — everything was fine.
 - **Might** she **have forgotten** the meeting?
 

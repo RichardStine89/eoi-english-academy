@@ -10,7 +10,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from lab import brief_report
-from phonetics import _word_evidence, analyze_phonetics
+from phonetics import _unique_edit, _word_evidence, analyze_phonetics
 from test_lab import METADATA
 
 
@@ -28,6 +28,13 @@ def candidate(expected, observed, kind="substitution"):
 
 
 class PhoneticContractTests(unittest.TestCase):
+    def test_free_ctc_distinguishes_edits_and_ignores_accepted_variant(self):
+        self.assertEqual(_unique_edit(["θ", "r", "i"], ["t", "r", "i"])["kind"], "substitution")
+        self.assertEqual(_unique_edit(["f", "l", "i"], ["f", "i"])["kind"], "possible_omission")
+        self.assertEqual(_unique_edit(["s", "p", "i"], ["ə", "s", "p", "i"])["kind"], "insertion")
+        self.assertIsNone(_unique_edit(["w", "ɪ", "θ"], ["w", "ɪ", "ð"], "with"))
+        self.assertIsNone(_unique_edit(["s", "s", "i"], ["s", "i"]))
+
     def test_named_hypothesis_has_time_and_stays_distinct_from_transcript(self):
         word = SimpleNamespace(text="sheep", start=0.07, end=0.52, present_prob=0.92, omitted=False,
                                phones=[phone("ʃ", 0.89), phone("i", 0.21), phone("p", 0.89)], syllables=[])

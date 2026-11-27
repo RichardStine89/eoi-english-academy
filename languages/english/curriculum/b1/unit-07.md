@@ -3,7 +3,7 @@
 **Can-do:** I can report what other people said, and use *say* and *tell* correctly.
 
 ## Grammar focus
-**Reported (indirect) speech** tells what someone said without their exact words. When the reporting verb is in the past (*said, told*), the reported verb usually shifts one tense back: present simple → past simple, present continuous → past continuous, past simple → past perfect, *will* → *would*, *can* → *could*. Pronouns and time/place words also change (*I → he, today → that day, here → there*). The key verb choice: **tell** needs a person after it (*She told me she was tired*), while **say** does not take a person object (*She said she was tired*). *That* is optional after both.
+**Reported (indirect) speech** tells what someone said without their exact words. When the reporting verb is in the past (*said, told*), the reported verb usually shifts one tense back: present simple → past simple, present continuous → past continuous, past simple → past perfect, *will* → *would*, *can* → *could*. Adjust pronouns, time and place words when the viewpoint changes (*I → he, today → that day, here → there*). Keep a present or future form if it still applies: *She said she will call later today*.  The key verb choice: **tell** needs a person after it (*She told me she was tired*), while **say** introduces the message directly and uses *to* to name the listener (*She said she was tired*). *That* is optional after both.
 
 - "I'm busy." → She **said** (that) she **was** busy.
 - "We'll call you." → They **told** me they **would** call me.
@@ -42,4 +42,4 @@ find out — to learn something you did not know before
 ## Watch out
 - She said me she was tired → She told me she was tired / She said she was tired
 - He told that he was busy → He said that he was busy / He told me he was busy
-- She said she will call → She said she would call
+- From a past viewpoint: *She said she would call*. If the call is still expected: *She said she will call*.

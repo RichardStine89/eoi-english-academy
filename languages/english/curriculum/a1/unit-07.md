@@ -3,7 +3,7 @@
 **Can-do:** Can ask and answer wh- questions about jobs and study, and say dates.
 
 ## Grammar focus
-Present simple *wh-* questions, plus dates and ordinal numbers. Wh- questions ask for information and start with a question word (**what, where, when, who, why, how**). The pattern is: **wh- word + do/does + subject + base verb**: *Where do you work? What does she do?* For *to be*, put the verb after the wh- word: *What is your job?* Ordinal numbers name positions and dates (**first, second, third, fourth…**): *the first of May, the twenty-third of July.*
+Present simple *wh-* questions, plus dates and ordinal numbers. Wh- questions ask for information and start with a question word (**what, where, when, who, why, how**). When the question word is not the subject, the usual pattern is **wh- word + do/does + subject + base verb**: *Where do you work? What does she do?* When **who** is the subject, ask *Who works here?* For *to be*, put the verb after the wh- word: *What is your job?* Ordinal numbers name positions and dates (**first, second, third, fourth…**): *the first of May, the twenty-third of July.*
 
 - What do you do? — I'm a nurse.
 - Where does he work? — He works in an office.
@@ -17,7 +17,7 @@ Present simple *wh-* questions, plus dates and ordinal numbers. Wh- questions as
 ## Target vocabulary (10–12 items)
 doctor — a person who helps sick people
 nurse — a person who cares for patients
-driver — a person who drives a car, bus or truck
+driver — a person who drives a car, bus or lorry
 cook — a person who makes food in a kitchen
 waiter — a person who brings food in a restaurant
 farmer — a person who grows food or keeps animals

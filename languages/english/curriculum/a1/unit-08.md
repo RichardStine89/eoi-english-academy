@@ -16,7 +16,7 @@ Present continuous, and a first look at present continuous vs. present simple. F
 
 ## Target vocabulary (10–12 items)
 read — to look at words and understand them
-play — to do a game or a sport for fun
+play — to take part in a game or sport
 run — to move fast on your feet
 swim — to move through water
 dance — to move your body to music

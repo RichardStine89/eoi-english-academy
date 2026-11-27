@@ -3,7 +3,7 @@
 **Can-do:** I can add emphasis and connect ideas smoothly using inversion, cleft sentences and discourse markers.
 
 ## Grammar focus
-**Inversion** puts the auxiliary before the subject after a fronted negative adverbial, for emphasis: *Never, Rarely, Seldom, Not only… (but also), No sooner… than, Hardly… when, Only then* ("**Never have I seen** such a mess"; "**Not only did he apologise**, but he also paid"). **Cleft sentences** split one idea to spotlight a part: *It was… that…* ("**It was** the price **that** shocked me") and *What… is…* ("**What I need is** a break"). **Discourse markers** organise argument and attitude: *however, on the other hand, admittedly, in fact, moreover, as a result, to be honest*.
+**Inversion** puts the auxiliary before the subject after a fronted negative or restrictive adverbial, for emphasis: *Never, Rarely, Seldom, Not only… (but also), No sooner… than, Hardly… when, Only then* ("**Never have I seen** such a mess"; "**Not only did he apologise**, but he also paid"). **Cleft sentences** split one idea to spotlight a part: *It was… that…* ("**It was** the price **that** shocked me") and *What… is…* ("**What I need is** a break"). **Discourse markers** organise argument and attitude: *however, on the other hand, admittedly, in fact, moreover, as a result, to be honest*.
 
 - **Never have I heard** such a weak excuse.
 - **Not only was** the film long, **but it was** also dull.

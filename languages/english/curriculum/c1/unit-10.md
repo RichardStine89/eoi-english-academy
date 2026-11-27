@@ -1,12 +1,12 @@
-# C1 · Unit 10 — Sounding Native
+# C1 · Unit 10 — Register, Idiom & Implication
 
 **Can-do:** I can deploy idioms, strong collocations and shifts of register, and recognise humour and irony, so as to sound natural and read between the lines.
 
 ## Grammar focus
-Native-like fluency rests less on grammar than on collocation (*strong tea, heavy rain, a vested interest*), idiom (*a blessing in disguise, the elephant in the room*) and register agility — moving between formal, neutral and colloquial to suit the audience and moment. Irony says the opposite of what is meant and depends on shared context and tone; understatement (*not exactly cheap*) and hyperbole shade attitude without stating it. At C1, reading these cues matters as much as producing them: a mistimed idiom, a wrong collocate, or a literal reading of an ironic remark instantly marks a non-native speaker.
+Precise, flexible expression draws on grammar, collocation (*strong tea, heavy rain, a vested interest*), idiom (*a blessing in disguise, the elephant in the room*) and register agility — moving between formal, neutral and colloquial to suit the audience and moment. Verbal irony often implies a different or opposite attitude to the literal words and depends on shared context and tone. Understatement (*not exactly cheap*) and hyperbole can convey attitude indirectly. At C1, reading these cues matters as much as producing them: compare what the words say literally with what the speaker wants the listener to infer.
 
 - The merger was, to put it mildly, not a roaring success.
-- Let's not beat around the bush: the project is over budget.
+- Let's not beat about the bush: the project is over budget.
 - She has a real knack for defusing tense meetings.
 - "Lovely weather," he muttered, as the storm knocked out the power.
 - That's the elephant in the room nobody wants to address.
@@ -15,7 +15,7 @@ Native-like fluency rests less on grammar than on collocation (*strong tea, heav
 - The whole plan went belly up within a month.
 
 ## Target vocabulary (10–12 items)
-knack — a natural, acquired skill or talent
+knack — a particular skill or talent
 banter — playful, teasing exchange of remarks
 wry — dryly and cleverly humorous, often ironic
 tongue-in-cheek — meant humorously, not seriously

@@ -3,7 +3,7 @@
 **Can-do:** Can describe my daily routine, say how often I do things, and tell the time.
 
 ## Grammar focus
-Present simple for habits and routines. Use the base verb for I/you/we/they and add **-s** (or **-es**) for he/she/it: *I work / she works, I go / he goes.* Negatives use **don't** / **doesn't** + base verb: *I don't work, she doesn't work.* Questions use **do** / **does** + base verb: *Do you work? Does he sleep?* Adverbs of frequency (**always, usually, often, sometimes, never**) go before the main verb but after *to be*. Tell the time with *It's…*: *It's seven o'clock. It's half past six.*
+Present simple for habits and routines. Use the base verb for I/you/we/they and add **-s** (or **-es**) for he/she/it: *I work / she works, I go / he goes.* Negatives use **don't** / **doesn't** + base verb: *I don't work, she doesn't work.* Questions use **do** / **does** + base verb: *Do you work? Does he sleep?* Adverbs of frequency (**always, usually, often, sometimes, never**) usually go before the main verb but after *be*: *She often walks to work. She is often early.* Tell the time with *It's…*: *It's seven o'clock. It's half past six.*
 
 - I get up at seven o'clock.
 - She works every day.

@@ -3,7 +3,7 @@
 **Can-do:** I can narrate a short sequence of past events in my life and ask and answer simple questions about when things happened.
 
 ## Grammar focus
-Past simple (regular and irregular). Use the past simple for finished actions at a definite time in the past. Regular verbs add *-ed* (work → worked, live → lived); many common verbs are irregular (go → went, have → had, see → saw). The form is the same for all persons. Negatives and questions use *did / didn't* with the base verb, so the main verb loses its past ending. Time expressions like *yesterday, last week, in 2019, two years ago* usually go at the end.
+Past simple (regular and irregular). Use the past simple for finished past actions. The context can tell us when they happened, even without a date. Regular verbs add *-ed* (work → worked, live → lived); many common verbs are irregular (go → went, have → had, see → saw). The form is the same for all persons except *be* (*was/were*, A1-11). Negatives and questions use *did / didn't* with the base verb, so the main verb loses its past ending. Time expressions like *yesterday, last week, in 2019, two years ago* usually go at the end.
 
 - I **studied** English at school.
 - She **went** to Canada last summer.

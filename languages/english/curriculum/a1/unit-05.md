@@ -3,7 +3,7 @@
 **Can-do:** Can say what food and drink I like and dislike, and order simple things in a café.
 
 ## Grammar focus
-*Like / love / hate* + **-ing**, plus *some / any* and *would like*. After **like, love, hate** you can use a noun or a verb in **-ing**: *I like tea. I love cooking.* Use **some** in positive sentences and **any** in negatives and questions: *I have some bread. I don't have any milk. Do you have any eggs?* Use **would like** (I'd like) as a polite way to ask for or offer things — it is more polite than *want*: *I'd like a coffee, please.*
+*Like / love / hate* + **-ing**, plus *some / any* and *would like*. After **like, love, hate** you can use a noun or a verb in **-ing**: *I like tea. I love cooking.* We usually use **some** in positive sentences and **any** in negatives and questions: *I have some bread. I don't have any milk. Do you have any eggs?* Use **some** in offers and requests such as *Would you like some tea?* and *Can I have some water?* Use **would like** (I'd like) as a polite way to ask for or offer things — it is more polite than *want*: *I'd like a coffee, please.*
 
 - I like fish but I hate eggs.
 - She loves cooking dinner.
@@ -16,12 +16,12 @@
 
 ## Target vocabulary (10–12 items)
 bread — a basic food made from flour
-rice — small white grains you cook and eat
+rice — small grains you cook and eat
 chicken — meat from a common farm bird
 fish — an animal from water that you eat
 egg — food with a shell from a bird
 milk — a white drink from cows
-water — a clear drink with no color
+water — a clear liquid with no colour
 coffee — a hot brown drink that wakes you up
 tea — a hot drink made from leaves
 apple — a round red or green fruit

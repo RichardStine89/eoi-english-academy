@@ -3,7 +3,7 @@
 **Can-do:** I can add extra, non-essential information to a sentence smoothly using relative clauses.
 
 ## Grammar focus
-**Non-defining relative clauses** give extra information that could be removed without changing who or what you mean; they sit between commas and never use *that* ("My boss, **who is from Canada**, speaks four languages"). Use *which* to comment on a whole clause ("He was late, **which annoyed everyone**"). **Reduced relative clauses** drop the relative pronoun and *be*: an active clause becomes an *-ing* participle ("the man **who is waiting**" → "the man **waiting**"), and a passive one becomes a past participle ("the car **that was stolen**" → "the car **stolen**"). Reducing clauses this way tightens formal writing.
+**Non-defining relative clauses** give extra information that could be removed without changing who or what you mean; in writing, use commas to set them off. They never use *that* ("My boss, **who is from Canada**, speaks four languages"). Use *which* to comment on a whole clause ("He was late, **which annoyed everyone**"). **Reduced relative clauses** use a non-finite form with the same referent. Common patterns are active *-ing* ("the man **who is waiting**" → "the man **waiting**"), and passive past participles ("the car **that was stolen**" → "the car **stolen**"). Reducing clauses this way tightens formal writing.
 
 - Venice, **which attracts millions of tourists**, is slowly sinking.
 - My neighbour, **whose son is a pilot**, travels a lot.
@@ -38,7 +38,7 @@ restore — to return something to its original condition
 - quiz focus: commas and *that* vs *which / who*; reducing full relative clauses.
 
 ## Watch out
-- My father who is a doctor lives in Rome → My father, who is a doctor, lives in Rome
+- To add a fact about an already identified person: *My father, who is a doctor, lives in Rome*.
 - Rome, that is in Italy, is beautiful → Rome, which is in Italy, is beautiful
 - The people waited on the platform were angry → The people waiting on the platform were angry
 - He passed the exam, what pleased his parents → He passed the exam, which pleased his parents

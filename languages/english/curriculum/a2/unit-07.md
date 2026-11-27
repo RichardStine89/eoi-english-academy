@@ -3,7 +3,7 @@
 **Can-do:** I can talk about life experiences without saying exactly when, and ask others what they have done.
 
 ## Grammar focus
-Present perfect with *ever / never / just / already / yet*, and a first look at present perfect vs past simple. Form it with *have / has + past participle*. Use it for experiences at some time in your life (time not stated) and for recent actions with a result now. *ever* asks "at any time?"; *never* = at no time; *just* = a very short time ago; *already* = sooner than expected; *yet* goes at the end of questions and negatives. Compare: use the **past simple** (not the present perfect) as soon as you give a finished time such as *last year* or *in 2020*.
+Present perfect with *ever / never / just / already / yet*, and a first look at present perfect vs past simple. Form it with *have / has + past participle*. Use it for experiences at some time in your life (time not stated) and for recent actions with a result now. *ever* asks "at any time?"; *never* = at no time; *just* = a very short time ago; *already* = before now or before the time expected; *yet* goes at the end of questions and negatives. Compare: use the **past simple** (not the present perfect) as soon as you give a finished time such as *last year* or *in 2020*.
 
 - **Have** you **ever** been abroad?
 - I'**ve never** tried sushi.
@@ -14,7 +14,7 @@ Present perfect with *ever / never / just / already / yet*, and a first look at 
 - I'**ve been** to Rome. → I **went** to Rome **last spring**.
 
 ## Target vocabulary (10–12 items)
-experience — something that happens to you and that you learn from
+experience — something that happens to you or that you do
 achievement — something good you succeed in doing with effort
 adventure — an exciting or slightly dangerous activity
 champion — the winner of a competition

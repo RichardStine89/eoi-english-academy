@@ -3,7 +3,7 @@
 **Can-do:** Can describe my home and the things in a room, saying what there is and pointing to objects near and far.
 
 ## Grammar focus
-*There is / there are* and the articles *a/an/the*; demonstratives *this/that/these/those*. Use **there is** (there's) for one thing and **there are** for more than one: *There is a table. There are two chairs.* Negatives: *there isn't / there aren't.* Use **a** before a consonant sound, **an** before a vowel sound, and **the** for something specific or already known. **This/these** point to things near you; **that/those** to things far from you (this = one near, these = many near, that = one far, those = many far).
+*There is / there are* and the articles *a/an/the*; demonstratives *this/that/these/those*. Use **there is** (there's) with a singular noun or an uncountable noun and **there are** with a plural noun: *There is a table. There is some water. There are two chairs.* Negatives: *there isn't / there aren't.* Use **a/an** with a singular countable noun when the listener cannot yet identify which one. Choose by sound: **a** university, **an** hour. Use **the** when the listener can identify the thing: *There is a door. The door is open.* **This/these** point to things near you; **that/those** to things far from you (this = one near, these = many near, that = one far, those = many far).
 
 - There is a kitchen and a bathroom.
 - There are three bedrooms in my house.

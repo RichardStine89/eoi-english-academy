@@ -15,7 +15,7 @@ Persuasion at C1 marries structure to rhetoric. Signal your claim, support it wi
 - We can quibble over figures, but the trend is undeniable.
 
 ## Target vocabulary (10–12 items)
-rebuttal — a counterargument that refutes a claim
+rebuttal — a reasoned reply that challenges a claim
 refute — to prove a statement or accusation wrong
 compelling — convincing and forceful
 fallacy — a flaw in reasoning; a mistaken belief
@@ -40,6 +40,6 @@ dismissive — treating something as unworthy of consideration
 - quiz focus: matching debate moves to their phrases and identifying the logical fallacy in short arguments.
 
 ## Watch out
-- I refute to accept that. → I refuse to accept that.
+- *I refuse to accept that* means I decline to accept it. *I refute that claim* means I show why it is wrong.
 - In spite I disagree, … → Much as I disagree, … / Although I disagree, …
 - That proofs my point. → That proves my point.

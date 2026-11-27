@@ -343,6 +343,13 @@ def _phonetic_summary(report: dict, evidence: dict, previous: dict | None) -> li
                       else f"posible omisión de /{finding['expected']}/")
         lines.append(f"Revisar {word['expected']}{ipa} ({start:.2f}–{end:.2f} s): {hypothesis}. "
                      f"Confianza técnica {finding['confidence']:.2f}. {finding['recommendation']}")
+    exploratory = [(word, word["free_ctc"]["review_candidate"]) for word in words
+                   if word.get("free_ctc") and word["free_ctc"].get("review_candidate") and not word["findings"]]
+    for word, change in exploratory[:2]:
+        canonical = f"/{change['expected']}/" if change["expected"] else "sin fonema previsto"
+        decoded = f"/{change['observed']}/" if change["observed"] else "sin token observado"
+        lines.append(f"Escucha exploratoria (sin confianza calibrada): {word['expected']} "
+                     f"{word['start_seconds']:.2f}–{word['end_seconds']:.2f} s, {canonical} → {decoded}.")
     if len(possible) > 5:
         lines.append(f"Otros {len(possible) - 5} indicios en el JSON privado.")
     older = previous.get("phonetics") if previous is not None else None

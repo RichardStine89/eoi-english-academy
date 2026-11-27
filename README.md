@@ -2,6 +2,8 @@
 
 **EOI English Academy** · Para estudiar inglés A1–C1 directamente en ChatGPT, empieza en la [guía de la academia](docs/academia/README.md). El resto de este README describe las herramientas de AI Language Tutor.
 
+La [candidata v1.2](docs/academia/desarrollo-v1.2.md) reúne la auditoría, las comprobaciones y los límites para la aceptación académica.
+
 <p align="center">
   <img src="assets/tutor-mascot.png" alt="AI Language Tutor mascot reading a book" width="240">
 </p>

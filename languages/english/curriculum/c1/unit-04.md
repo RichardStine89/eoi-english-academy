@@ -3,7 +3,7 @@
 **Can-do:** I can leave out or replace repeated words with *so*, *neither*, *one*, *do so* and other pro-forms to keep my speech and writing economical and cohesive.
 
 ## Grammar focus
-Ellipsis omits words the listener can recover from context; substitution replaces them with a pro-form. Use *so / nor / neither* for agreement and short responses (*so do I*, *neither can they*), *one / ones* for countable nouns, and *do so / do it / do that* for whole verb phrases. After verbs like *think, hope, suppose, be afraid*, use *so* or *not* to stand in for a clause (*I hope not*). Auxiliary ellipsis (*She could have, but didn't*) trims repetition while keeping the grammar intact. These devices signal fluency and tight cohesion, but overuse can leave the meaning ambiguous.
+Ellipsis omits words the listener can recover from context; substitution replaces them with a pro-form. Use *so* after an affirmative and *nor / neither* after a negative when adding a parallel statement (*so do I*, *neither can they*), *one / ones* for countable nouns, and *do so / do it / do that* for whole verb phrases. After verbs like *think, hope, suppose, be afraid*, use *so* or *not* to stand in for a clause (*I hope not*). Auxiliary ellipsis (*She could have, but didn't*) trims repetition while keeping the grammar intact. These devices signal fluency and tight cohesion, but overuse can leave the meaning ambiguous.
 
 - She promised to review the report, and she duly did so.
 - "The economy is fragile." — "It is indeed, and so is confidence."
