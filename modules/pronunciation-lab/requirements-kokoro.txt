@@ -1,0 +1,2 @@
+# Windows x64 release wheel containing the offline eSpeak NG library and dictionary.
+espeakng-loader==0.2.4 --hash=sha256:41f1e08ac9deda2efd1ea9de0b81dab9f5ae3c4b24284f76533d0a7b1dd7abd7

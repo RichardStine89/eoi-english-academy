@@ -41,6 +41,10 @@ El PDF descargado de la Junta consta de 27 páginas. En la portada y las hojas f
 
 Estas páginas permiten preparar observaciones pedagógicas. La escala publicada como borrador sigue fuera de la calificación oficial simulada. El baremo de mediación de 2022/23 se conserva en los conjuntos de esa edición.
 
+## Hojas 2024/25
+
+Se abrieron las hojas de observación de la Junta para A2, B1, B2, C1 y C2 publicadas por la EOI de Málaga. La página marco cita la resolución del curso 2025/26. Los encabezados de los cinco PDF identifican el curso 2024/25. En C1, las seis hojas de producción y coproducción escrita y oral y de mediación escrita y oral preceden a los descriptores del PDF de 66 páginas. Úselas con las tareas y la edición correspondientes. [Hojas de C1](https://www.eoimalaga.com/web/wp-content/uploads/2025/05/C1-Hojas-de-observacion-Criterios-y-descriptores.pdf) · [Índice por nivel y edición](recursos-externos-v1.2.json)
+
 ## Producción y coproducción
 
 Para una producción escrita individual se observa el ajuste al propósito y al lector, el desarrollo y la organización del texto, el repertorio y el control de la lengua. En coproducción escrita se verifica además cómo se responde a la situación y al interlocutor. En producción oral se observa la organización y fluidez del monólogo. En coproducción oral se comprueba también la gestión de turnos y la interacción. La pronunciación solo se valora si hay evidencia audible suficiente. Las pp. 12–14 de la guía general 2025/26 describen las categorías. [Guía de candidatos 2025/26](https://www.juntadeandalucia.es/educacion/portales/documents/20123/2871771/Gu%C3%ADa%20de%20las%20personas%20candidatas%20-%20Pruebas%20de%20certificaci%C3%B3n%202025-2026.pdf/70a98a00-ba82-7ea4-ae5b-8f6e65bdbeda?version=3.0)

@@ -15,6 +15,7 @@ from typing import Callable
 import numpy as np
 import sounddevice as sd
 
+from experimental_review import ReviewUnavailable, select_fragment
 from lab import (
     MAX_AUDIO_SECONDS,
     analyze_attempt,
@@ -128,6 +129,8 @@ class LabApp:
         self.capture_state = tk.StringVar(root, "En espera")
         self.elapsed = tk.StringVar(root, "00:00")
         self.reading_size = tk.StringVar(root, "18")
+        self.model_speed = tk.DoubleVar(root, 1.0)
+        self.review_enabled = tk.BooleanVar(root, False)
         self.reading_font = tkfont.Font(root=root, family="Segoe UI", size=18)
         self.fragment_label = tk.StringVar(root)
         self.fragments: list[str] = []
@@ -144,6 +147,7 @@ class LabApp:
         self.recording_metadata: dict | None = None
         self.audio: tuple[np.ndarray, int] | None = None
         self.reference: tuple[np.ndarray, int] | None = None
+        self.model_dialog: tk.Misc | None = None
         self.report: dict | None = None
         self.copied_text: str | None = None
         self.results: SimpleQueue = SimpleQueue()
@@ -272,6 +276,14 @@ class LabApp:
         reference_row = self.reference_row = ttk.Frame(reader_tools)
         reference_row.grid(row=1, column=0, columnspan=2, sticky="w", pady=(3, 0))
         self.reference_button = self._button(reference_row, "Cargar audio modelo…", self._import_reference)
+        self.model_menu = ttk.Menubutton(reference_row, text="Modelo británico ▾")
+        model_actions = tk.Menu(self.model_menu, tearoff=False)
+        model_actions.add_command(label="Generar y oír el guion visible", command=self._generate_visible_model)
+        model_actions.add_separator()
+        for speed, label in ((0.8, "Velocidad lenta"), (1.0, "Velocidad normal"), (1.15, "Velocidad rápida")):
+            model_actions.add_radiobutton(label=label, variable=self.model_speed, value=speed)
+        self.model_menu.configure(menu=model_actions)
+        self.model_menu.pack(side="left", padx=(0, 5))
         self.play_reference_button = self._button(reference_row, "Oír modelo", self._play_reference)
         self.clear_reference_button = self._button(reference_row, "Quitar modelo", self._clear_reference)
 
@@ -332,6 +344,13 @@ class LabApp:
         self.history_button.grid(row=0, column=2, padx=(6, 0))
         self.delete_button = ttk.Button(history, text="Eliminar esta grabación…", command=self._delete_current)
         self.delete_button.grid(row=0, column=3, padx=(6, 0))
+
+        review = ttk.Frame(self.results_tab)
+        review.grid(row=3, column=0, columnspan=2, sticky="ew", pady=(5, 0))
+        self.review_toggle = ttk.Checkbutton(review, text="Modo experimental de revisión",
+                                             variable=self.review_enabled, command=self._sync_buttons)
+        self.review_toggle.pack(side="left", padx=(0, 7))
+        self.review_button = self._button(review, "Buscar un fragmento para escuchar", self._run_review)
         self._show_report()
 
     def _field(self, parent: ttk.Frame, column: int, title: str, variable: tk.StringVar,
@@ -373,12 +392,15 @@ class LabApp:
             self.import_button: idle,
             self.play_button: idle and self.audio is not None,
             self.reference_button: idle,
+            self.model_menu: text_ready,
             self.play_reference_button: idle and self.reference is not None,
             self.clear_reference_button: idle and self.reference is not None,
             self.stop_playback_button: idle,
             self.copy_button: idle and self.report is not None,
             self.export_button: idle and self.report is not None,
             self.evidence_button: idle and self.report is not None,
+            self.review_toggle: idle,
+            self.review_button: idle and self.review_enabled.get() and self.report is not None and self.audio is not None,
             self.delete_button: idle and self.audio is not None,
             self.history_button: idle and self.student.get() in STUDENTS,
             self.open_text_button: editable,
@@ -543,6 +565,7 @@ class LabApp:
         self.audio = None
         self.reference = None
         self.report = None
+        self.review_enabled.set(False)
         self.unit.set("")
         self.level.set("")
         self.activity.set("")
@@ -653,6 +676,41 @@ class LabApp:
     def _load_reference(path: Path) -> tuple:
         return "reference", load_audio(path), path.name
 
+    def _generate_visible_model(self) -> None:
+        self._generate_model(self.expected.get("1.0", "end-1c").strip())
+
+    def _generate_model(self, text: str, parent: tk.Misc | None = None) -> None:
+        if self.busy:
+            return
+        if not text:
+            self._error("Falta el texto del modelo", "Escribe una palabra, una frase o un guion breve.", parent=parent)
+            return
+        self.model_dialog = parent
+        self._start_job("Preparando el modelo británico local…", self._synthesize_model, text, self.model_speed.get())
+
+    @staticmethod
+    def _synthesize_model(text: str, speed: float) -> tuple:
+        from kokoro_model import KokoroUnavailable, synthesize_british
+
+        try:
+            return "british_model", synthesize_british(text, speed)
+        except (KokoroUnavailable, ValueError) as exc:
+            return "model_unavailable", str(exc)
+
+    def _run_review(self) -> None:
+        if self.busy or not self.review_enabled.get() or self.audio is None or self.report is None:
+            return
+        evidence = listening_evidence(self.report.get("phonetics")) or {}
+        self._start_job("Buscando un fragmento del guion para escuchar…",
+                        self._review_audio, self.audio, evidence.get("words", []))
+
+    @staticmethod
+    def _review_audio(audio: tuple[np.ndarray, int], words: list[dict]) -> tuple:
+        try:
+            return "experimental_review", select_fragment(audio, words)
+        except ReviewUnavailable as exc:
+            return "review_unavailable", str(exc)
+
     def _load_attempt(self, path: Path, metadata: dict) -> tuple:
         return self._analyze(load_audio(path), metadata)
 
@@ -709,7 +767,30 @@ class LabApp:
         elif kind == "reference":
             self.reference, filename = result
             self.status.set(f"Modelo listo para reproducir · {filename}")
+        elif kind in ("british_model", "model_unavailable"):
+            parent = self.model_dialog
+            self.model_dialog = None
+            if kind == "british_model":
+                model, = result
+                if parent is None:
+                    self.reference = model
+                    self._play(model, "Reproduciendo modelo británico sintético · Kokoro bf_emma.")
+                elif parent.winfo_exists():
+                    self._play(model, "Reproduciendo la palabra del modelo británico sintético.", parent=parent)
+            elif parent is None or parent.winfo_exists():
+                self.status.set("Puedes cargar un modelo de audio local autorizado.")
+                self._error("Modelo británico no disponible", result[0], parent=parent)
+        elif kind == "experimental_review":
+            selected, = result
+            if selected is None:
+                self.status.set("Revisión experimental finalizada. Continúa con la escucha manual.")
+            else:
+                self.status.set("Fragmento disponible para escucha experimental.")
+                self._open_evidence(selected)
+        elif kind == "review_unavailable":
+            self.status.set(result[0])
         else:
+            self.model_dialog = None
             self._error("No se pudo procesar el audio", result[0])
         self._sync_buttons()
 
@@ -781,7 +862,7 @@ class LabApp:
             lines.append(word["reason"])
         return "\n".join(lines)
 
-    def _open_evidence(self) -> None:
+    def _open_evidence(self, experimental_selection: int | None = None) -> None:
         report = self.report
         if report is None:
             return
@@ -811,6 +892,8 @@ class LabApp:
             labels.append("Los intervalos aproximados siguen las palabras del guion. Valora la toma por escucha.")
         elif not phonetics:
             labels.append("Este informe anterior conserva las mediciones acústicas.")
+        if experimental_selection is not None:
+            labels.append("Fragmento seleccionado para revisión experimental. Escucha y compara con el modelo británico.")
         limits = phonetics.get("limitations") or []
         summary = ttk.Label(content, text="\n".join(labels), style="Hint.TLabel", wraplength=width - 35, justify="left")
         summary.grid(row=1, column=0, sticky="w", pady=(4, 7))
@@ -871,16 +954,26 @@ class LabApp:
                 nonlocal fragment_started
                 word = selected_word()
                 audio = self._word_audio(word) if word and self.report is report else None
-                if audio is not None:
+                if audio is not None and not self.busy:
                     fragment_started = True
                     self._play(audio, f"Reproduciendo el fragmento de «{word['expected']}».", parent=window)
 
             play_button = self._button(actions, "Oír fragmento", play_word)
 
+            def model_word() -> None:
+                nonlocal fragment_started
+                word = selected_word()
+                if word and not self.busy:
+                    fragment_started = True
+                    self._generate_model(word["expected"], parent=window)
+
+            model_button = self._button(actions, "Oír palabra británica", model_word)
+
             def show_word(_event=None) -> None:
                 word = selected_word()
                 audio = self._word_audio(word) if word and self.report is report else None
                 play_button.configure(state="normal" if audio is not None else "disabled")
+                model_button.configure(state="normal" if word else "disabled")
                 if word:
                     description = self._word_details(word)
                     if audio is None:
@@ -891,8 +984,10 @@ class LabApp:
                     detail.configure(state="disabled")
 
             tree.bind("<<TreeviewSelect>>", show_word)
-            tree.selection_set("0")
-            tree.focus("0")
+            initial = str(experimental_selection if experimental_selection is not None else 0)
+            tree.selection_set(initial)
+            tree.focus(initial)
+            tree.see(initial)
             tree.focus_set()
             show_word()
 

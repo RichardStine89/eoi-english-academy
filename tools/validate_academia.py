@@ -4,7 +4,7 @@ from collections import Counter
 import json
 from pathlib import Path
 import re
-from urllib.parse import unquote
+from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,6 +30,9 @@ def validate_curriculum():
     practice = (ACADEMY / "curriculo-practica.md").read_text(encoding="utf-8")
     resources = Counter(re.findall(r"(?m)^\| ((?:A[12]|B[12]|C1)-\d\d) \|", practice))
     assert resources == Counter(UNITS), "Each unit needs a resource row"
+    pronunciation = (ACADEMY / "pronunciacion-por-unidad.md").read_text(encoding="utf-8")
+    drills = Counter(re.findall(r"(?m)^\| ((?:A[12]|B[12]|C1)-\d\d) \|", pronunciation))
+    assert drills == Counter(UNITS), "Each unit needs a pronunciation row"
     return len(found)
 
 
@@ -98,11 +101,26 @@ def validate_exam_gates():
     return len(assets), len(exam_rows), eligible
 
 
+def validate_external_references():
+    index = ACADEMY / "examenes" / "recursos-externos-v1.2.json"
+    resources = json.loads(index.read_text(encoding="utf-8"))["recursos"]
+    assert len({row["id"] for row in resources}) == len(resources)
+    for row in resources:
+        original = urlsplit(row["url_original"])
+        assert original.scheme == "https" and original.hostname, row["id"]
+        assert not row["referencia_drive"] and original.hostname not in {"drive.google.com", "docs.google.com"}, row["id"]
+        assert row["niveles"] and set(row["niveles"]) <= {*LEVELS, "C2"}, row["id"]
+        assert row["estado"] and row["condiciones"] and row["restriccion"], row["id"]
+    return len(resources)
+
+
 def main():
     units = validate_curriculum()
     links = validate_links()
     assets, exams, items = validate_exam_gates()
-    print(f"{units} units, {links} internal links, {assets} inventory rows, {exams} exam sets, {items} enabled COMTE items")
+    external = validate_external_references()
+    print(f"{units} units, {links} internal links, {assets} inventory rows, {exams} exam sets, "
+          f"{items} enabled COMTE items, {external} public external references")
 
 
 if __name__ == "__main__":

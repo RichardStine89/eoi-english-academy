@@ -11,6 +11,8 @@ Inventario del 19 de noviembre de 2026, con revisión diferencial v1.2 del 24 al
 | [Manifiesto para ChatGPT](manifiesto-chatgpt.md) | Cómo elegir el material, preparar una sesión y reservar la clave hasta el cierre |
 | [Auditoría diferencial v1.2](auditoria-diferencial-v1.2.md) | Cobertura del cotejo, páginas, tareas y condiciones de uso |
 | [Fuentes de evaluación](fuentes-evaluacion.md) | Normativa, guías y hojas de observación por edición |
+| [Ampliación e inventario de Drive](ampliacion-v1.2.md) | Conciliación de los PDF, permisos comprobados y matriz de nuevas fuentes y documentos pendientes |
+| [Índice de fuentes institucionales](recursos-externos-v1.2.json) | Referencias externas por nivel, destreza, organismo, disponibilidad y condiciones de uso |
 | `biblioteca/inventario-privado.json` | En la carpeta hermana privada `ExpEDIENTES EOI English Academy`. Vincula los 442 identificadores con nombres y rutas locales exactas, tamaño en bytes y huellas SHA-256 |
 
 El campo `convocatoria_id` del catálogo enlaza con `id` en el índice de convocatorias. El `id` de archivo enlaza con el inventario privado. Los sufijos `CTE` y `CTO` identifican los cuadernillos de comprensión, `PCTE` y `PCTO` los de producción escrita y oral, `ME` los archivos de mediación, `AUDIO-01` y `AUDIO-02` las pistas y `KEY` las claves o guías. Los sufijos reflejan el contenido catalogado, que puede diferir del nombre local.

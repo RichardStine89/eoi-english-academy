@@ -13,9 +13,19 @@ La ventana abre maximizada. Pulsa **F11** para la vista de lectura a pantalla co
 
 La toma queda en `%LOCALAPPDATA%\EOI English Academy\Pronunciation Lab\alumno-XX`, con un informe por intento. **Eliminar esta grabación…** y **Historial de grabaciones…** borran solo la copia local de la toma tras confirmación. Conservan su informe y el original que se haya importado. La separación por alumno se aplica dentro de la interfaz. En un equipo compartido, usa cuentas de Windows separadas si necesitas que cada alumno tenga acceso exclusivo a sus datos.
 
+## Modelo británico y revisión experimental
+
+Durante la instalación, [Instalar.cmd](Instalar.cmd) intenta preparar Kokoro `bf_emma` en la caché local ignorada por Git. Reutiliza los archivos verificados disponibles. El laboratorio base abre y admite modelos de audio autorizados aunque Kokoro no se haya preparado. La generación combina Kokoro 82M ONNX en CPU, su voz británica y un diccionario inglés de Gran Bretaña de eSpeak NG. El texto se procesa en Windows y el modelo recién generado queda en memoria. La ejecución ordinaria no realiza descargas. [Modelo fijado y licencia Apache-2.0](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/blob/a70f0e45c1cc0df9abdfbfa0f6dee9073579ee99/README.md) · [Ficha de las voces](https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md) · [eSpeak NG 1.52.0, GPL](https://github.com/espeak-ng/espeak-ng/blob/1.52.0/COPYING) · [Paquete fijado espeakng-loader](https://pypi.org/project/espeakng-loader/0.2.4/)
+
+En **Modelo británico ▾**, elige velocidad y genera el texto visible. Puedes repetir con **Oír modelo** o comparar con **Oír grabación**. El cuadro de tramos reproduce la palabra inglesa seleccionada por separado. Para un guion largo, usa fragmentos que puedas repetir con comodidad. Trata la voz como modelo sintético y comprueba por escucha las palabras importantes, incluidos los homógrafos, nombres propios y variantes.
+
+En **Resultados**, la casilla **Modo experimental de revisión** empieza desactivada. Actívala y pulsa **Buscar un fragmento para escuchar** para probar IF-MDD con el intento actual. Se limita a /z/ dentro de una palabra entre vocales, con coincidencia temporal entre el guion alineado y la salida del motor. Un tramo solo invita a escuchar. Las notas, el informe, el JSON y el expediente permanecen fuera de este flujo. Desactiva la casilla para seguir con revisión manual.
+
+IF-MDD usa un Python separado del laboratorio y los cinco archivos con SHA-256 fijado en [ifmdd_worker.py](src/ifmdd_worker.py). Se probó con Python 3.12, Torch y TorchAudio 2.7.1 CPU, Transformers 4.57.0 y flashlight-text 0.0.7. La instalación base no descarga estos pesos. Si ya tienes el entorno privado de investigación, el laboratorio lo busca en una instalación local `IF-MDD` dentro de su carpeta de datos o, si no existe, en `%TEMP%\eoi-ifmdd-audit`. Puedes especificar el ejecutable de ese entorno mediante `EOI_IFMDD_PYTHON` y la carpeta que contiene los pesos mediante `EOI_IFMDD_MODELS`. Un entorno temporal se puede perder al limpiar Windows. Si el motor no carga, **Ver tramos del guion…** sigue disponible. [Licencia y código IF-MDD](https://github.com/Secondtonumb/IF-MDD#license) · [Pesos CTC Apache-2.0](https://huggingface.co/Haopeng/CTC_for_IF-MDD)
+
 ## Motor y alcance
 
-La ampliación requiere aproximadamente **124 MB de descarga** en Windows x64, incluidos los pesos cuantizados ZIPA de 70,7 MB y las dependencias nuevas. Una instalación limpia suma unos 54 MB de los paquetes acústicos ya existentes. En la validación se usó Python 3.12.14, Windows 11 x64 y AMD Ryzen 9 7900X. El cotejo funciona en CPU. Procesa tomas de hasta 30 segundos y guiones de hasta 65 palabras. La función acústica mantiene su límite de tres minutos.
+La instalación base requiere aproximadamente **124 MB de descarga** en Windows x64, incluidos los pesos cuantizados ZIPA de 70,7 MB y las dependencias fonéticas. Una instalación limpia suma unos 54 MB de los paquetes acústicos. Kokoro añade sus archivos verificados y el diccionario de eSpeak NG. En la validación se usó Python 3.12.14, Windows 11 x64 y AMD Ryzen 9 7900X. El cotejo funciona en CPU. Procesa tomas de hasta 30 segundos y guiones de hasta 65 palabras. La función acústica mantiene su límite de tres minutos.
 
 | Componente | Función y licencia |
 |---|---|
@@ -43,13 +53,9 @@ Desde el directorio del módulo, una vez instalado:
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
-.\tests\smoke_phonetics.ps1
-.\.venv\Scripts\python.exe tests\benchmark_phonetics.py --download
-.\.venv\Scripts\python.exe tests\benchmark_phonetics.py --all-annotated --download
-.\.venv\Scripts\python.exe tests\benchmark_l2_arctic.py --download
 ```
 
-Las pruebas unitarias comprueban regresiones acústicas, abstención, informes anteriores y separación de datos. La matriz SAPI usa siete pares de prueba y guiones coincidentes e intercambiados. Requiere una voz inglesa de Windows. El benchmark usa un subconjunto pequeño de grabaciones humanas con anotación fonética del conjunto de prueba de SpeechOcean762. Descarga el corpus de muestra una vez y repite el comando sin `--download` para usar la copia local. El corpus usa inglés con referencia estadounidense y no valida la fiabilidad con hispanohablantes ni inglés británico. [Corpus y condiciones de uso](https://www.openslr.org/101/)
+Las pruebas unitarias comprueban regresiones acústicas, abstención, informes anteriores, separación de datos y las integraciones opcionales. La audición y el micrófono se comprueban en la [aceptación real](../../docs/academia/aceptacion-v1.2.md). Los scripts de la matriz SAPI y de los benchmarks se conservan como evidencia histórica. La evaluación histórica sobre SpeechOcean762 usó un subconjunto pequeño de grabaciones humanas con anotación fonética y referencia estadounidense. [Corpus y condiciones de uso](https://www.openslr.org/101/)
 
 En la comprobación principal se usaron 24 tomas de 20 voces adultas. De 12 contrastes anotados como errores, el detector omitió 4 y se abstuvo en 8. De 12 controles correctos, dejó 11 sin indicio y se abstuvo en 1. Hubo 0 detecciones correctas y 0 falsos positivos. La puesta en marcha tardó alrededor de un segundo con la primera toma. La mediana de las tomas siguientes fue de unos 62 ms y el pico de memoria del proceso fue de unos 424 MiB. Los resultados justifican usar los intervalos para revisión por escucha. La detección de errores reales queda pendiente de validación.
 

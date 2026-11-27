@@ -96,9 +96,25 @@ Conserva las pestañas, formatos, gráficos y registros existentes. Calcula la m
 
 Se comprobaron en lectura dos libros distintos, los dos códigos esperados, diez pestañas y 60 unidades sin duplicar en cada uno. En el primer libro, `Resumen!B12:D27` contiene indicadores de recuento, progreso y medias, y la API enumera dos gráficos. Sus fórmulas de media aún dependen de etiquetas literales y todas las notas numéricas de la columna, sin filtro explícito de escala o tipo. En el segundo libro no se encontraron fórmulas en el bloque correspondiente de `Resumen` ni gráficos en los metadatos. La visualización y el aislamiento desde cada cuenta quedan para aceptación humana. Los encabezados de **Historial** tienen `Detalle` y `Verificado` y carecen de un campo propio para el ID de operación.
 
+El 27 de noviembre de 2026 se cotejaron las 60 unidades y los cinco denominadores de 12 en ambos libros. Los recuentos y porcentajes globales y por nivel del primer libro coincidieron con sus filas de unidades. La media de Speaking mostraba «Sin nota» en la lectura del panel. El libro de alumno 01 mostró permiso de propietario y el de alumno 02, propietario y editor individuales. Ninguno mostró acceso público o de dominio. El acceso desde la cuenta de cada alumno y la presentación visual de los gráficos quedan por comprobar. La auditoría se realizó en modo lectura.
+
 - En el primer libro, conserva el bloque `Resumen!A11:D20` y sus vínculos. En una copia de prueba, valida los recuentos sobre códigos distintos y los denominadores 60 y 12. Revisa el tratamiento de códigos inválidos o duplicados antes de proponer sustituciones de fórmulas.
 - En `Resumen!A22:B27` y las filas libres debajo, prepara la futura tabla canónica solo después de leer ocupación, encabezados y fuentes de gráficos. Usa `Evaluaciones!D` para destreza, `E` para tipo y `F` para nota. Mapea las etiquetas en inglés y español tras quitar espacios y normalizar mayúsculas. Separa `mediacion_oral`, `mediacion_escrita` y `pronunciacion`; conserva `Repaso mixto` aparte cuando no exista destreza principal. Incluye en la media solo números de 0 a 10 con escala pedagógica confirmada. Los baremos de **Exámenes EOI** se conservan como puntuaciones independientes.
 - Para el segundo libro, prueba el bloque de indicadores y sus dos gráficos en una copia sintética usando únicamente su propia estructura. No copies notas, filas de sesiones ni vínculos del primer libro. Para pendientes de repaso, usa fecha prevista y estado; para errores, agrupa el patrón confirmado; para objetivos, conserva prioridad, estado y fecha de cierre. Mantén la línea temporal de sesiones y las puntuaciones de examen vinculadas a sus pestañas.
 - Propón añadir `ID de operación` a **Historial** en el primer encabezado libre cuando lo apruebe el titular. Hasta entonces, registra el token exacto `operacion_id=<id>` en **Detalle** y búscalo antes de repetir cualquier lote. Usa cotejo exacto del token, código de alumno y revisión. Haz una sola modificación por revisión y relee los rangos al final. Si ya existe el token, verifica el resultado y detén la repetición.
 
 La propuesta se prueba con escenarios sintéticos de código cruzado, revisión antigua, operación repetida, calificación vacía, cero medido y baremos incompatibles. La autorización se solicita por alumno y cambio concreto antes de modificar sus fórmulas, gráficos o encabezados.
+
+Para aprobar el cambio del panel, valida primero en una copia sin datos personales este esquema de celdas. Relee la ocupación antes de utilizar los rangos.
+
+| Rango | Cambio propuesto tras autorización |
+|---|---|
+| `Evaluaciones!I1:K1` | Añadir `Escala`, `Estado de evidencia` y `Destreza canónica`. Una nota comparable lleva `pedagogica_10` y `evaluada`. Un criterio pendiente deja puntuación vacía y lleva `pendiente`. Clasifica entradas antiguas solo si su evidencia lo permite. |
+| `Resumen!B14` | Mostrar la media de las notas pedagógicas comparables mediante la fórmula de abajo. Mantener un cero evaluado dentro de la media. |
+| `Resumen!A22:C` | Tras comprobar el rango libre, mostrar etiqueta, media y código canónico. Cada media añade al filtro la igualdad de `Evaluaciones!K2:K` con el código de la fila. Incluir reading, listening, writing, speaking, mediación oral, mediación escrita y pronunciación. Grammar y repaso mixto pueden seguir como indicadores complementarios. |
+| `Historial!G1` | Añadir `ID de operación` si está libre y el titular lo aprueba. Mantener el historial anterior y la búsqueda de tokens históricos en `Detalle`. |
+| Panel de alumno 02 | Añadir un panel propio en `Resumen!A11:D` y dos gráficos con los datos de ese libro tras verificar sus celdas libres. |
+
+```text
+=IFERROR(AVERAGE(FILTER(Evaluaciones!F2:F;ISNUMBER(Evaluaciones!F2:F);Evaluaciones!F2:F>=0;Evaluaciones!F2:F<=10;Evaluaciones!I2:I="pedagogica_10";Evaluaciones!J2:J="evaluada"));"")
+```

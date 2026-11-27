@@ -1,0 +1,664 @@
+{
+  "version_esquema": 1,
+  "consulta": "2026-11-27",
+  "alcance": "Referencias institucionales. El fondo original, los materiales en Drive y las fuentes externas se cuentan por separado.",
+  "recursos": [
+    {
+      "id": "C1-2015-06-CTE",
+      "titulo": "Comprensión escrita, junio de 2015",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTE"
+      ],
+      "tipo": "cuadernillo",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2015-06",
+      "url_original": "https://eoialcaladeguadaira.es/wp-content/uploads/2018/04/ING_C1_CL_JUN1.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "pdf_abierto",
+      "soluciones": null,
+      "audio": null,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": null,
+      "paginas": 6
+    },
+    {
+      "id": "C1-2015-06-CTO",
+      "titulo": "Comprensión oral, junio de 2015",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTO"
+      ],
+      "tipo": "cuadernillo",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2015-06",
+      "url_original": "https://eoialcaladeguadaira.es/wp-content/uploads/2018/04/ING_C1_CO_JUN1.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "pdf_abierto",
+      "soluciones": null,
+      "audio": "pendiente",
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "Sin pista cotejada. No puntuar.",
+      "paginas": 3
+    },
+    {
+      "id": "C1-2015-06-PCTE",
+      "titulo": "Expresión e interacción escrita, junio de 2015",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTE",
+        "COPROTE"
+      ],
+      "tipo": "cuadernillo",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2015-06",
+      "url_original": "https://eoialcaladeguadaira.es/wp-content/uploads/2018/04/ING_C1_EEIE_JUN1.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "pdf_abierto",
+      "soluciones": null,
+      "audio": null,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": null,
+      "paginas": 3
+    },
+    {
+      "id": "C1-2015-06-PCTO",
+      "titulo": "Expresión e interacción oral, junio de 2015",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTO",
+        "COPROTO"
+      ],
+      "tipo": "cuadernillo",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2015-06",
+      "url_original": "https://eoialcaladeguadaira.es/wp-content/uploads/2018/04/ING_C1_EOIO.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "pdf_abierto",
+      "soluciones": null,
+      "audio": null,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El PDF contiene material de administración y fichas. Seleccionar solo la ficha de candidato antes de asignar la actividad.",
+      "paginas": 23
+    },
+    {
+      "id": "C1-2015-06-AUDIO",
+      "titulo": "Pista de comprensión oral indicada por el centro",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTO"
+      ],
+      "tipo": "audio",
+      "fuente": "EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2015-06",
+      "url_original": "https://eoialcaladeguadaira.es/wp-content/uploads/2018/04/ING_C1_CO_JUN1.mp3",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "enlace_devuelve_404",
+      "soluciones": null,
+      "audio": "pendiente",
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El enlace institucional devolvió HTTP 404."
+    },
+    {
+      "id": "C1-2016-06-CTE",
+      "titulo": "Comprensión escrita, junio de 2016",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTE"
+      ],
+      "tipo": "cuadernillo",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2016-06",
+      "url_original": "https://eoialcaladeguadaira.es/wp-content/uploads/2018/05/ING_C1_CL_JUN1_2016.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "pdf_abierto",
+      "soluciones": null,
+      "audio": null,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": null,
+      "paginas": 6
+    },
+    {
+      "id": "C1-2016-06-CTO",
+      "titulo": "Comprensión oral, junio de 2016",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTO"
+      ],
+      "tipo": "cuadernillo",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2016-06",
+      "url_original": "https://eoialcaladeguadaira.es/wp-content/uploads/2018/05/ING_C1_CO_JUN1_2016.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "pdf_abierto",
+      "soluciones": null,
+      "audio": "pendiente",
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "Sin pista cotejada. No puntuar.",
+      "paginas": 3
+    },
+    {
+      "id": "C1-2016-06-PCTE",
+      "titulo": "Expresión e interacción escrita, junio de 2016",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTE",
+        "COPROTE"
+      ],
+      "tipo": "cuadernillo",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2016-06",
+      "url_original": "https://eoialcaladeguadaira.es/wp-content/uploads/2018/05/ING_C1_EEIE_JUN1_2016.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "pdf_abierto",
+      "soluciones": null,
+      "audio": null,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": null,
+      "paginas": 3
+    },
+    {
+      "id": "C1-2016-06-PCTO",
+      "titulo": "Expresión e interacción oral, junio de 2016",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTO",
+        "COPROTO"
+      ],
+      "tipo": "cuadernillo",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2016-06",
+      "url_original": "https://eoialcaladeguadaira.es/wp-content/uploads/2018/05/ING_C1_EOIO_2016.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "enlace_identificado_pendiente_de_lectura",
+      "soluciones": null,
+      "audio": null,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El enlace excedió el límite de lectura. Verificar portada y separar las hojas de candidato antes de asignarlo.",
+      "paginas": null
+    },
+    {
+      "id": "C1-2016-06-AUDIO",
+      "titulo": "Pista de comprensión oral indicada por el centro",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTO"
+      ],
+      "tipo": "audio",
+      "fuente": "EOI de Alcalá de Guadaíra",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "C1-2016-06",
+      "url_original": "https://eoialcaladeguadaira.es/nivel-c1-ingles-alumnado-libre/",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "acceso_no_comprobado",
+      "soluciones": null,
+      "audio": "pendiente",
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El enlace de audio del centro remitió a autenticación. No hubo una pista accesible para cotejo."
+    },
+    {
+      "id": "EOI-AND-2024-25-A2-RUB",
+      "titulo": "Hojas de observación A2, 2024/25",
+      "niveles": [
+        "A2"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTE",
+        "COPROTE",
+        "PROCTO",
+        "COPROTO",
+        "MED_TE",
+        "MED_TO"
+      ],
+      "tipo": "rubrica",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Málaga",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2024/25",
+      "url_original": "https://www.eoimalaga.com/web/wp-content/uploads/2025/05/A2-Hojas-de-observacion.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "edicion_verificada_en_pdf",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El índice del centro cita 2025/26. La edición impresa en las hojas es 2024/25.",
+      "paginas": 6
+    },
+    {
+      "id": "EOI-AND-2024-25-B1-RUB",
+      "titulo": "Hojas de observación B1, 2024/25",
+      "niveles": [
+        "B1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTE",
+        "COPROTE",
+        "PROCTO",
+        "COPROTO",
+        "MED_TE",
+        "MED_TO"
+      ],
+      "tipo": "rubrica",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Málaga",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2024/25",
+      "url_original": "https://www.eoimalaga.com/web/wp-content/uploads/2025/05/B1-Hojas-de-observacion-Criterios-y-descriptores.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "edicion_verificada_en_pdf",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El índice del centro cita 2025/26. La edición impresa en las hojas es 2024/25.",
+      "paginas": 63
+    },
+    {
+      "id": "EOI-AND-2024-25-B2-RUB",
+      "titulo": "Hojas de observación B2, 2024/25",
+      "niveles": [
+        "B2"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTE",
+        "COPROTE",
+        "PROCTO",
+        "COPROTO",
+        "MED_TE",
+        "MED_TO"
+      ],
+      "tipo": "rubrica",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Málaga",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2024/25",
+      "url_original": "https://www.eoimalaga.com/web/wp-content/uploads/2025/05/B2-Hojas-de-observacion-Criterios-y-descriptores.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "edicion_verificada_en_pdf",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El índice del centro cita 2025/26. La edición impresa en las hojas es 2024/25.",
+      "paginas": 69
+    },
+    {
+      "id": "EOI-AND-2024-25-C1-RUB",
+      "titulo": "Hojas de observación C1, 2024/25",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTE",
+        "COPROTE",
+        "PROCTO",
+        "COPROTO",
+        "MED_TE",
+        "MED_TO"
+      ],
+      "tipo": "rubrica",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Málaga",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2024/25",
+      "url_original": "https://www.eoimalaga.com/web/wp-content/uploads/2025/05/C1-Hojas-de-observacion-Criterios-y-descriptores.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "edicion_verificada_en_pdf",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El índice del centro cita 2025/26. La edición impresa en las hojas es 2024/25.",
+      "paginas": 66
+    },
+    {
+      "id": "EOI-AND-2024-25-C2-RUB",
+      "titulo": "Hojas de observación C2, 2024/25",
+      "niveles": [
+        "C2"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTE",
+        "COPROTE",
+        "PROCTO",
+        "COPROTO",
+        "MED_TE",
+        "MED_TO"
+      ],
+      "tipo": "rubrica",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Málaga",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2024/25",
+      "url_original": "https://www.eoimalaga.com/web/wp-content/uploads/2025/05/C2-Hojas-de-observacion-Criterios-y-descriptores.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "edicion_verificada_en_pdf",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El índice del centro cita 2025/26. La edición impresa en las hojas es 2024/25.",
+      "paginas": 68
+    },
+    {
+      "id": "EOI-AND-2024-25-NORMA",
+      "titulo": "Resolución general de certificación 2024/25",
+      "niveles": [
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "unidad": null,
+      "destrezas": [],
+      "tipo": "convocatoria_normativa",
+      "fuente": "BOJA",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2024/25",
+      "url_original": "https://www.juntadeandalucia.es/boja/2025/52/22",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "publicacion_verificada",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "Los centros organizan A2. Documento normativo."
+    },
+    {
+      "id": "EOI-AND-2024-25-GUIA",
+      "titulo": "Guía de las personas candidatas 2024/25",
+      "niveles": [
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "unidad": null,
+      "destrezas": [],
+      "tipo": "guia_candidato",
+      "fuente": "Junta de Andalucía, publicación de la EOI de Jerez",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2024/25",
+      "url_original": "https://www.eoijerez.com/wp-content/uploads/2025/05/Guia-de-las-personas-candidatas-PEC-2024-2025.pdf",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "pdf_abierto",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": null,
+      "paginas": 43
+    },
+    {
+      "id": "EOI-AND-2025-26-NORMA",
+      "titulo": "Resolución general de certificación 2025/26",
+      "niveles": [
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "unidad": null,
+      "destrezas": [],
+      "tipo": "convocatoria_normativa",
+      "fuente": "BOJA",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2025/26",
+      "url_original": "https://www.juntadeandalucia.es/boja/2026/46/22",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "publicacion_verificada",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "Los centros organizan A2. Documento normativo."
+    },
+    {
+      "id": "EOI-AND-2025-26-GUIA",
+      "titulo": "Guía de las personas candidatas 2025/26",
+      "niveles": [
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "unidad": null,
+      "destrezas": [],
+      "tipo": "guia_candidato",
+      "fuente": "Junta de Andalucía",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2025/26",
+      "url_original": "https://www.juntadeandalucia.es/educacion/portales/documents/20123/2871771/Gu%C3%ADa%20de%20las%20personas%20candidatas%20-%20Pruebas%20de%20certificaci%C3%B3n%202025-2026.pdf/70a98a00-ba82-7ea4-ae5b-8f6e65bdbeda?version=3.0",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "cotejo_previo",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": null,
+      "paginas": 43
+    },
+    {
+      "id": "EOI-AND-2026-27-GENERAL-RUB",
+      "titulo": "Hojas de observación generales 2027",
+      "niveles": [
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTE",
+        "COPROTE",
+        "PROCTO",
+        "COPROTO",
+        "MED_TE",
+        "MED_TO"
+      ],
+      "tipo": "rubrica",
+      "fuente": "Junta de Andalucía",
+      "ambito": "EOI Andalucía",
+      "convocatoria": "2026/27",
+      "url_original": "https://www.juntadeandalucia.es/educacion/portales/documents/20123/840656/Hojas%20de%20Observaci%C3%B3n%20-%20General%20-%202027%20-%20Web.pdf/d873e0cb-a163-70b1-185b-abcaa6b414d6?version=1.1",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "cotejo_previo_borrador",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "El gestor indica Aprobado, las hojas indican Borrador. Uso pedagógico. Confirmar versión definitiva antes de adoptar como baremo oficial.",
+      "paginas": 27
+    },
+    {
+      "id": "AND-2026-27-BACH-RUB",
+      "titulo": "Hojas de observación de Bachillerato 2027",
+      "niveles": [
+        "B2"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "PROCTE",
+        "COPROTE",
+        "PROCTO",
+        "COPROTO",
+        "MED_TE",
+        "MED_TO"
+      ],
+      "tipo": "rubrica",
+      "fuente": "Junta de Andalucía",
+      "ambito": "Bachillerato Andalucía",
+      "convocatoria": "2026/27",
+      "url_original": "https://www.juntadeandalucia.es/educacion/portales/documents/20123/836079/Hojas%20de%20Observaci%C3%B3n%20-%20Bachillerato%20-%202027%20-%20Web.pdf/35be7782-1e0b-7e42-36c4-4b7b6a824e62?version=1.1",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "pdf_abierto_fuera_de_ambito",
+      "soluciones": false,
+      "audio": false,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "Solo Bachillerato. Excluir como fuente de EOI adulta."
+    },
+    {
+      "id": "EOI-MAD-MODELOS",
+      "titulo": "Guías y modelos de pruebas de certificación",
+      "niveles": [
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTE",
+        "COMTO",
+        "PROCTE",
+        "COPROTE",
+        "PROCTO",
+        "COPROTO"
+      ],
+      "tipo": "portal_de_muestras",
+      "fuente": "Comunidad de Madrid",
+      "ambito": "EOI Madrid",
+      "convocatoria": null,
+      "url_original": "https://www.comunidad.madrid/educacion/certificacion-nivel-idiomas",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "portal_abierto",
+      "soluciones": true,
+      "audio": true,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "Formato y escala propios. Seleccionar material de candidato sin las claves."
+    },
+    {
+      "id": "CAM-C1-PREP",
+      "titulo": "Preparación de C1 Advanced",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTE",
+        "COMTO",
+        "PROCTE",
+        "PROCTO"
+      ],
+      "tipo": "portal_de_muestras",
+      "fuente": "Cambridge English",
+      "ambito": "Cambridge English",
+      "convocatoria": null,
+      "url_original": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/advanced/preparation/",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "portal_abierto",
+      "soluciones": true,
+      "audio": true,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "Formato y escala propios. Seleccionar material de candidato sin las claves."
+    },
+    {
+      "id": "TRINITY-ISE3-PREP",
+      "titulo": "Tareas y muestras de ISE III",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTO"
+      ],
+      "tipo": "portal_de_muestras",
+      "fuente": "Trinity College London",
+      "ambito": "Trinity College London",
+      "convocatoria": null,
+      "url_original": "https://resources.trinitycollege.com/language/support/learner/ise/iseiii",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "portal_abierto",
+      "soluciones": true,
+      "audio": true,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "Formato y escala propios. Seleccionar material de candidato sin las claves."
+    },
+    {
+      "id": "OXFORD-OTE-ADV-PREP",
+      "titulo": "Práctica Oxford Test of English Advanced",
+      "niveles": [
+        "C1"
+      ],
+      "unidad": null,
+      "destrezas": [
+        "COMTE",
+        "COMTO",
+        "PROCTE",
+        "PROCTO"
+      ],
+      "tipo": "portal_de_muestras",
+      "fuente": "Oxford University Press",
+      "ambito": "Oxford Test of English",
+      "convocatoria": null,
+      "url_original": "https://www.oup.es/c1-practice-tests/",
+      "referencia_drive": null,
+      "condiciones": "Consulta en la fuente. No consta permiso de redistribución en esta revisión.",
+      "estado": "portal_abierto",
+      "soluciones": true,
+      "audio": true,
+      "restriccion": "Selección docente. Sin corrección automática en esta referencia.",
+      "incidencia": "Formato y escala propios. Seleccionar material de candidato sin las claves."
+    }
+  ]
+}

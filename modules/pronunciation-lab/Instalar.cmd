@@ -40,9 +40,15 @@ goto install
 ".venv\Scripts\python.exe" -m pip check || goto failed
 ".venv\Scripts\python.exe" -c "import av, numpy, parselmouth, sounddevice, tkinter, onnxruntime, pronunciada; root = tkinter.Tk(); root.withdraw(); root.destroy()" || goto failed
 ".venv\Scripts\python.exe" src\phonetic_model.py || goto failed
+call :install_kokoro || echo La referencia britanica Kokoro no esta disponible. El laboratorio base puede abrirse.
 echo Instalacion completa. Para iniciar el laboratorio abre Abrir.cmd.
 if /i not "%~1"=="--no-pause" pause
 exit /b 0
+
+:install_kokoro
+".venv\Scripts\python.exe" -m pip --isolated install --index-url https://pypi.org/simple --only-binary=:all: --require-hashes --no-deps --disable-pip-version-check -r requirements-kokoro.txt || exit /b 1
+".venv\Scripts\python.exe" src\kokoro_model.py
+exit /b %ERRORLEVEL%
 
 :failed
 echo No se completo la instalacion. Revisa el mensaje anterior.

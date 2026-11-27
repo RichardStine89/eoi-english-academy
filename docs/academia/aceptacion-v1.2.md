@@ -20,7 +20,7 @@ Se conserva como evidencia previa comunicada la captura y transferencia del labo
 | Simulacro | Convocatoria, modalidad, tiempos, hojas de candidato, entrega y clave autorizada verificadas | Prueba positiva B1 junio 2024 COMTO y prueba negativa con una tarea bloqueada |
 | Expedientes | Código correcto, propuesta explícita, revisión única y relectura; cuenta cruzada o duplicado rechazados | Datos sintéticos para el ensayo. Para una escritura real, usa solo un objetivo o actividad real y autorizado |
 
-**A · Pruebas técnicas.** Desde el módulo ejecuta las pruebas unitarias y los dos benchmarks desde sus cachés privadas cuando ya existan. Comprueba lanzamiento, captura iniciada por acción explícita, importación, separación de alumnos, exportación y lectura de JSON anterior. Comprueba la vista de lectura, F11/Escape y controles de grabación visibles. [Comandos reproducibles](../../modules/pronunciation-lab/README.md)
+**A · Pruebas técnicas.** Desde el módulo ejecuta las pruebas unitarias. Comprueba lanzamiento, captura iniciada por acción explícita, importación, separación de alumnos, exportación y lectura de JSON anterior. Comprueba la vista de lectura, F11/Escape y controles de grabación visibles. Los benchmarks fonéticos quedan como evidencia histórica. [Comandos reproducibles](../../modules/pronunciation-lab/README.md)
 
 Desde la raíz del repositorio, `python tools/validate_academia.py` verifica rutas, los 60 identificadores, las filas de recursos y los bloqueos del catálogo sin abrir exámenes privados.
 
@@ -46,7 +46,7 @@ Antes de aplicar el umbral interno de la guía, fija tareas, ponderaciones y esc
 
 ## Plan de preparación hasta septiembre de 2027
 
-Septiembre de 2027 es el **horizonte académico**. El artículo 18.4 de la Orden de 31 de agosto de 2026 fija las pruebas extraordinarias antes de finalizar junio. Comprueba la resolución oficial de inglés C1, su calendario y la vía de inscripción antes de fijar una fecha de examen. [Orden vigente, artículo 18](https://www.juntadeandalucia.es/boja/2026/168/c03/2)
+Septiembre de 2027 es el **horizonte académico**. El artículo 18 de la Orden de 31 de agosto de 2026 modifica los artículos 18 y 22 de la orden de 2020. Establece del 1 al 15 de abril para la inscripción ordinaria del alumnado oficial en la modalidad anual y fija las pruebas extraordinarias antes de finalizar junio. A 27 de noviembre de 2026, la consulta localizó el portal para candidatos y sus hojas de observación 2027. La fecha concreta de inglés C1 y los plazos para alumnado libre siguen pendientes de una resolución aplicable. Comprueba la resolución y la EOI elegida antes de inscribirte. [BOJA](https://www.juntadeandalucia.es/boja/2026/168/c03/2) · [Portal de certificación](https://www.juntadeandalucia.es/educacion/portales/es/web/educacion/alumnado/idiomas/pruebas-certificacion)
 
 | Momento | Prioridad y comprobación |
 |---|---|
@@ -57,10 +57,15 @@ Septiembre de 2027 es el **horizonte académico**. El artículo 18.4 de la Orden
 
 Como referencia de carga, en una semana tipo reserva dos sesiones de 60 minutos, dos bloques de 30 minutos de deberes y cinco repasos de 10 minutos. Incluye conversación real, corrección y reescritura. Calcula las unidades restantes desde el diagnóstico. Revisar las 60 a partir de A1 antes de terminar junio exigiría unas dos unidades por semana desde finales de noviembre y apenas dejaría margen para recuperaciones. Usa esa estimación para ajustar el plan, con hitos por evidencia y una fase de simulacros intensivos solo cuando se sostenga el nivel.
 
+Para orientar la decisión sobre C1, revisa cada cuatro semanas las horas realizadas, las evidencias que faltan y el progreso por destreza. En los dos simulacros finales, usa convocatorias independientes con alcance comprobado. Pide una valoración externa de speaking, writing y mediación con criterios EOI cuando esté disponible. Usa esa evidencia para ajustar la fecha objetivo de la certificación.
+
 ## Intervención humana antes de aceptar
 
-1. Comprueba desde cada cuenta que solo accedes al expediente y a las fuentes autorizadas del alumno correspondiente. Prueba un código incorrecto con datos de ensayo y verifica que la escritura queda bloqueada.
-2. Completa en el chat existente una clase con writing, recurso autocorregible y listening. Ejecuta la mediación oral en Voz y entrega la escrita en texto.
-3. Graba dos intentos voluntarios del mismo guion breve. Comprueba la lectura en pantalla, los intervalos, la reproducción y el informe que llega a ChatGPT. Anota únicamente observaciones respaldadas por la escucha.
-4. Haz el simulacro habilitado con clave reservada y la prueba de bloqueo. Autoriza por separado una operación académica real y verifica que la revisión se incrementó una vez.
-5. Registra el resultado de cada prueba y pasa los bloqueos a Dirección Académica. La decisión de aceptación y cualquier etiqueta definitiva corresponden a Dirección.
+- [ ] **Fuentes y cuentas.** Desde cada cuenta de ChatGPT, abre en GitHub el currículo y la guía docente. Localiza una actividad por código de unidad. Abre en Drive un archivo de candidato seleccionado para esa cuenta. Comprueba que el expediente y los materiales reservados del otro perfil están fuera de su alcance. Prueba el bloqueo ante un código incorrecto con datos de ensayo.
+- [ ] **Clase.** Termina una clase del nivel confirmado. Comprueba teoría, ejemplos, un recurso autocorregible, writing con reescritura, listening audible, pronunciación, repaso y deberes. Conserva evidencia de práctica en la cuenta correspondiente.
+- [ ] **Speaking y mediación.** Responde en Voz a una consigna y una pregunta de seguimiento. Ejecuta los casos de mediación escrita y oral y guarda sus evidencias por separado. Verifica que los criterios sin audio quedan pendientes.
+- [ ] **Laboratorio y Kokoro.** Graba dos intentos voluntarios del mismo guion con el micrófono de uso habitual. Comprueba reproducción en los altavoces o auriculares, F11, selección por palabras, comparación entre intentos y transferencia voluntaria del informe al chat. Escucha una palabra, una frase, un guion y un par mínimo en Kokoro. Comprueba la voz y las velocidades útiles.
+- [ ] **Revisión experimental.** Verifica que la casilla empieza apagada y que se puede apagar de nuevo. Si al activarla se selecciona un tramo, escúchalo y comprueba que la interfaz solo invita a revisar. Compara el informe y su exportación antes y después. Comprueba la escucha manual si IF-MDD falta o no selecciona un fragmento. El resultado experimental no se registra en Sheets.
+- [ ] **Examen.** Haz el alcance habilitado de B1 junio de 2024. Pide una solución antes de la entrega, confirma que se reserva, coteja después una corrección y subtotal con la clave y comprueba que el caso bloqueado deja la nota completa pendiente.
+- [ ] **Expedientes.** Lee por separado cada libro desde su cuenta. Comprueba que los contadores visibles coinciden con sus filas y que el panel presenta los valores disponibles. Autoriza una operación académica real y acotada del alumno correspondiente, verifica las celdas por lectura nueva, la revisión incrementada una vez y el identificador en Historial.
+- [ ] **Decisión.** Registra cuenta, fecha, alcance y resultado real de cada prueba. Entrega a Dirección los bloqueos y la evidencia en privado. La etiqueta definitiva requiere su aprobación expresa.
