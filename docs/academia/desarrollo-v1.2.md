@@ -1,5 +1,11 @@
 # Seguimiento de EOI English Academy v1.2
 
+## Cierre documental · 27 de noviembre de 2026
+
+Base `cf465f1a7cb09120ccacd4aaf31e18eea7850001`. La relectura confirmó las 15 secciones privadas de Drive y las seis carpetas históricas en su ubicación original. Se incorporaron y verificaron por listado directo 79 archivos documentales, entre ellos las 60 unidades A1–C1 con sus prácticas de pronunciación y el documento con 20 actividades turísticas. Se cotejó el contenido de una unidad por nivel y tres documentos complementarios. Los dos índices existentes se actualizaron conservando su identificador y se verificaron por contenido completo. El punto de reanudación privado está en `auditoria-drive-v1.2`, excluido del seguimiento de Git. [Navegación de Drive](biblioteca-drive-v1.2.md)
+
+Las referencias institucionales pasan de 25 a 29 y se añaden 25 fichas educativas. Se conservan los 70 conjuntos y todos los bloqueos previos. El recuento local confirmó 370 PDF y 72 MP3. El navegador mostró al menos 20 MP3 compartidos candidatos. Quedan pendientes de identificar por carpeta, tamaño y convocatoria los 72 originales en Drive. Las verificaciones de acceso de ambos estudiantes y las demás pruebas de aceptación corresponden a Dirección Académica. [Recursos](recursos-seleccionados-v1.2.md) · [Exámenes](examenes/ampliacion-v1.2.md)
+
 ## Candidata de cierre · 27 de noviembre de 2026
 
 Base de esta entrega `a5b3be3eadb0c3e432785d569678b5fed8a715dd`. Se conservan los resultados de investigación, los modelos en sus ubicaciones privadas y los límites de evaluación. La investigación fonética de esta versión está cerrada. La versión de la academia espera la aceptación real de Dirección Académica.

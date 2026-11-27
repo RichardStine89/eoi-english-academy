@@ -16,6 +16,8 @@ Academia de inglés A1–C1 impartida en **ChatGPT**. Cada estudiante tiene su d
 | [Currículo A1–C1](curriculo-eoi.md) | Índice de las 60 unidades y su relación con el MCER y las cinco actividades de lengua de EOI Andalucía |
 | [Recursos y complementos](curriculo-practica.md) | Práctica interactiva, listening y pronunciación por unidad, con actividades de refuerzo y claves propias |
 | [Biblioteca de aprendizaje](biblioteca-aprendizaje.md) | Recursos de práctica por destreza y certificaciones complementarias |
+| [Biblioteca de Drive](biblioteca-drive-v1.2.md) | Cómo localizar unidades y exámenes, reservar las claves y consultar audios autorizados |
+| [Recursos seleccionados v1.2](recursos-seleccionados-v1.2.md) | Actividades gratuitas con enlaces directos y consignas por unidad |
 | [Pronunciación por unidad](pronunciacion-por-unidad.md) | 60 prácticas, de los sonidos de A1 a la inteligibilidad y adaptación del registro en C1 |
 | [Inglés turístico](ingles-turistico.md) | Itinerario complementario para situaciones profesionales de A1 a C1 |
 | [Guía docente](docencia.md) | Diagnóstico, estructura de clase, recursos gratuitos, práctica oral, corrección y progresión |
